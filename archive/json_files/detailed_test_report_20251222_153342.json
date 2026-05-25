@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-12-22T15:33:42.200297",
+  "total_tests": 7,
+  "success_count": 7,
+  "success_rate": "100.0%",
+  "results": [
+    {
+      "query": "درآمد های حاصل از بخش درآمد های مالیاتی در سال 1401",
+      "expected": "سال 1401 - بخش مالیاتی",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "درآمد وزارت نفت",
+      "expected": "سال 1403 (پیش‌فرض) - وزارت نفت",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "درآمد سازمان امور مالیاتی در سال 98",
+      "expected": "سال 1398 - سازمان امور مالیاتی",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "درآمد عمومی شرکت بازرگانی گاز ایران در سال 98",
+      "expected": "سال 1398 - درآمد عمومی",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "درآمد ملی بانک ملی",
+      "expected": "سال 1403 (پیش‌فرض) - درآمد ملی",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "اعتبارات هزینه ای فرهنگستان علوم ایران در سال های 98 تا 403",
+      "expected": "سال 1398-1403 - هزینه‌ای",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    },
+    {
+      "query": "هزینه های سرمایه ای وزارت اطلاعات در سال 1402",
+      "expected": "سال 1402 - سرمایه‌ای",
+      "success": true,
+      "response_preview": null,
+      "metadata": {}
+    }
+  ]
+}

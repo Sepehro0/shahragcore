@@ -1,0 +1,433 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:core.refactored_rag_system:🚀 Initializing Refactored RAG System...
+INFO:ultimate_rag_system:🚀 Initializing Ultimate RAG System...
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:services.qwen_client:QwenClient initialized: http://localhost:8080
+INFO:search.multi_hop_retriever:🚀 Multi-Hop Retriever initialized in ENHANCED mode
+INFO:search.multi_hop_retriever:🧠 Intelligent mode also available
+INFO:services.database_service:✅ PostgreSQL connection successful
+INFO:services.database_service:✅ Database engine initialized successfully
+INFO:services.database_service:✅ Database connection test successful
+INFO:ultimate_rag_system:   - 🗄️ Database Integration: ENABLED
+INFO:ultimate_rag_system:   - 🎯 Intelligent Query Classifier: ENABLED
+INFO:ultimate_rag_system:✅ Database service updated in HybridQueryAnalyzer
+INFO:ultimate_rag_system:✅ Ultimate RAG System initialized (basic components)
+INFO:ultimate_rag_system:   - ChromaDB: Enabled
+INFO:ultimate_rag_system:   - Qwen Client: Enabled
+INFO:ultimate_rag_system:   - Persian Embeddings: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Reranker: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Multi-Hop: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Advanced PDF: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - 🌟 Universal AI Components: Enabled
+INFO:ultimate_rag_system:      ├─ Universal Pattern Detector
+INFO:ultimate_rag_system:      ├─ Universal Sequential Detector
+INFO:ultimate_rag_system:      └─ Universal Metadata Extractor
+INFO:core.refactored_rag_system:📚 Using parent class retrieve_and_answer
+INFO:ultimate_rag_system:💬 Query: صندوق باور چیست؟
+INFO:ultimate_rag_system:📂 Collection domain: general (confidence: 0.60)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'صندوق باور چیست؟' -> 'صندوق باور چیست؟'
+2025-12-05 21:55:09.924256: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 161, in <module>
+    success = asyncio.run(test_comprehensive())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 72, in test_comprehensive
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 650, in retrieve_and_answer
+    return await UltimateRAGSystem.retrieve_and_answer(self, *args, **kwargs)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 161, in <module>
+    success = asyncio.run(test_comprehensive())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 72, in test_comprehensive
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 650, in retrieve_and_answer
+    return await UltimateRAGSystem.retrieve_and_answer(self, *args, **kwargs)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+WARNING:services.smart_query_preprocessor:Could not initialize embedding client: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 161, in <module>
+    success = asyncio.run(test_comprehensive())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 72, in test_comprehensive
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 650, in retrieve_and_answer
+    return await UltimateRAGSystem.retrieve_and_answer(self, *args, **kwargs)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'تعریف'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: تعریف, context: N/A
+ERROR:ultimate_rag_system:❌ Query failed: 'UltimateRAGSystem' object has no attribute 'text_normalizer'
+Traceback (most recent call last):
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4143, in retrieve_and_answer
+    normalized_query = self.normalize_text(query)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 463, in normalize_text
+    return self.text_normalizer.normalize_text(text)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 151, in __getattr__
+    return getattr(self._parent_system, name)
+AttributeError: 'UltimateRAGSystem' object has no attribute 'text_normalizer'
+
+🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯
+FINAL COMPREHENSIVE TEST - RefactoredRAGSystem
+🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯
+
+1️⃣ Initialization...
+   ✓ Initialized in 0.16s
+   ✓ Orchestrators: ❌ Disabled
+   ✓ Collections: 4 (zabete_qa, karbaran_omomi, zinaf_dakheli, budget_financial)
+
+2️⃣ Testing Queries...
+
+   QA - Exact Match:
+      Query: صندوق باور چیست؟
+Traceback (most recent call last):
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4143, in retrieve_and_answer
+    normalized_query = self.normalize_text(query)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 463, in normalize_text
+    return self.text_normalizer.normalize_text(text)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 151, in __getattr__
+    return getattr(self._parent_system, name)
+AttributeError: 'UltimateRAGSystem' object has no attribute 'text_normalizer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 161, in <module>
+    success = asyncio.run(test_comprehensive())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_final_refactored.py", line 72, in test_comprehensive
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 650, in retrieve_and_answer
+    return await UltimateRAGSystem.retrieve_and_answer(self, *args, **kwargs)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 5110, in retrieve_and_answer
+    return {"success": False, "error": str(e), "metadata": build_metadata()}
+UnboundLocalError: local variable 'build_metadata' referenced before assignment

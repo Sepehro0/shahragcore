@@ -1,0 +1,50 @@
+{
+  "test_info": {
+    "date": "2025-12-07T09:55:03.093517",
+    "method": "API",
+    "api_url": "http://localhost:8001",
+    "collection": "budget_financial",
+    "total_tests": 6,
+    "successful_total": 0,
+    "successful_db_routing": 0,
+    "success_rate": "0.0%"
+  },
+  "results": [
+    {
+      "test_id": "1a-1",
+      "query": "اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "test_id": "1a-2",
+      "query": "اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "test_id": "1a-3",
+      "query": "تملک دارایی عمومی دانشگاه تهران در سال 1403",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "test_id": "1a-4",
+      "query": "تملک دارایی اختصاصی ستاد کل نیروهای مسلح در سال 1400",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "test_id": "1a-5",
+      "query": "تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403",
+      "success": false,
+      "error": "HTTP 500"
+    },
+    {
+      "test_id": "1a-6",
+      "query": "تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403",
+      "success": false,
+      "error": "HTTP 500"
+    }
+  ]
+}

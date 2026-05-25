@@ -1,0 +1,23 @@
+{
+  "collection_name": "zavabet",
+  "display_name": "zavabet",
+  "collection_type": "general",
+  "processing_mode": "rag_only",
+  "description": "",
+  "system_prompt": "",
+  "created_at": "2026-03-14T15:53:58.359367",
+  "updated_at": "2026-03-14T20:40:45.407291",
+  "documents_count": 926,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {}
+}

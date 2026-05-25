@@ -1,0 +1,249 @@
+{
+  "timestamp": "2025-12-12T13:52:09.427806",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "total_tests": 8,
+  "successful": 8,
+  "results": [
+    {
+      "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+      "success": true,
+      "answer": "اطلاعات کافی برای پاسخ به سوال در متن موجود نیست. ماده 46 در اسناد ارائه‌شده ذکر نشده است.",
+      "confidence": 0.7918888888888889,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.32000000000000006,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7918888888888889,
+          "user_satisfaction": 3.775666666666666
+        }
+      },
+      "test_case": {
+        "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+        "expected": "باید در فیلد answer جستجو کند و پاسخ بدهد",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "توضیح ماده 48 شرایط عمومی پیمان",
+      "success": true,
+      "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+      "confidence": 0.0,
+      "sources_count": 0,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7319607843137257,
+          "user_satisfaction": 3.5958823529411763
+        }
+      },
+      "test_case": {
+        "query": "توضیح ماده 48 شرایط عمومی پیمان",
+        "expected": "باید در فیلد answer جستجو کند",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": true,
+      "answer": "اطلاعات کافی برای توضیح قراردادهای QBC در دسترس نیست. هیچ اشاره‌ای به این مفهوم در اسناد موجود یافت نشد.",
+      "confidence": 0.8221720430107528,
+      "sources_count": 5,
+      "dynamic_top_k": 4,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.26666666666666666,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8221720430107528,
+          "user_satisfaction": 3.866516129032258
+        }
+      },
+      "test_case": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected": "باید تشخیص دهد نامرتبط است یا پاسخ مناسب بدهد",
+        "category": "irrelevant_query"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC",
+      "success": true,
+      "answer": "در پیمان‌های EPC صنعتی مبتنی بر بخشنامه 54/7105-105/18929، استفاده از بخشنامه 5090/54/11082-1 برای محاسبه تاخیر در پرداخت مجاز نیست و کارفرما باید جبران هزینه‌های اضافی پیمانکار را طبق شرایط خصوصی پرداخت کند. این مقررات فقط برای پیمان‌های صنعتی EPC اعمال می‌شود و به قراردادهای QBC اشاره‌ای نشده است.",
+      "confidence": 0.8703703703703703,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8703703703703703,
+          "user_satisfaction": 4.011111111111111
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای EPC",
+        "expected": "باید نتایج مرتبط با EPC پیدا کند",
+        "category": "specific_contract_type"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+      "success": true,
+      "answer": "بخشنامه شماره 5090/54/11082-1 به قراردادهای طرح و ساخت، تامین کالا و تجهیزات و نصب توام PC اعمال نمی‌شود. در صورت تاخیر در پرداخت، باید از ضوابط قرارداد یا بخشنامه‌های جدید مطابق مصوبات سازمان برنامه و بودجه کشور استفاده شود. اطلاعات کافی برای محاسبه مبلغ تاخیر وجود ندارد.",
+      "confidence": 0.8403717728055077,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8403717728055077,
+          "user_satisfaction": 3.921115318416523
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+        "expected": "باید از چند منبع استنتاج کند",
+        "category": "multi_source_inference"
+      }
+    },
+    {
+      "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+      "success": true,
+      "answer": "تفاوت بین قراردادهای EPC و طرح و ساخت در این است که در قراردادهای طرح و ساخت، محدودیت 25 درصدی برای کاهش مبالغ کارها وجود دارد و در صورت تمدید پیمان، تعدیل قیمت بر اساس ماده 13-8 انجام می‌شود. همچنین، هیات تحویل موقت کارها شامل نمایندگان طرفین پیمان و مهندس مشاور است و نماینده سازمان برنامه و بودجه در آن لحاظ نشده است.",
+      "confidence": 0.7078405315614618,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.2,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7078405315614618,
+          "user_satisfaction": 3.523521594684385
+        }
+      },
+      "test_case": {
+        "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+        "expected": "باید مقایسه کند و dynamic_top_k بالاتر باشد",
+        "category": "comparison"
+      }
+    },
+    {
+      "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+      "success": true,
+      "answer": "در پیمان‌های مشمول تعدیل آحاد بهای پیمان، مبلغ مصالح پایکار و کارکرد طبق شاخص‌های دوره تاریخ واقعی انجام کار تعدیل می‌شود و در صورت عدم لحاظ کردن بخشی از کار در صورت وضعیت اولیه، تعدیل بر اساس تاریخ واقعی اجرای کار محاسبه می‌گردد. در پیمان‌های ریالی فاقد تعدیل، از دستورالعمل جبران افزایش نرخ ارز استفاده می‌شود که بر اساس شاخص دوره انجام کار تعیین می‌گردد.",
+      "confidence": 0.8473396300669027,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8473396300669027,
+          "user_satisfaction": 3.942018890200708
+        }
+      },
+      "test_case": {
+        "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+        "expected": "باید از keyword matching استفاده کند",
+        "category": "keyword_based"
+      }
+    },
+    {
+      "query": "چگونگی اجرای بخشنامه 54/842",
+      "success": true,
+      "answer": "اجرای بخشنامه 54/842-102/1088 مورخ 1378/03/03 مطابق مقررات نشریه شماره 4311 سازمان برنامه و بودجه کشور است و در صورت تغییر مبلغ یا مدت پیمان، باید مطابق ماده‌های 29 و 30 شرایط عمومی پیمان اعمال شود. در صورت عدم توافق، ماده 53 به عنوان مسیر حل اختلاف مورد استفاده قرار می‌گیرد. اطلاعات مربوط به مبلغ پیمان در متن موجود نیست.",
+      "confidence": 0.7864084084084083,
+      "sources_count": 5,
+      "dynamic_top_k": 4,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7864084084084083,
+          "user_satisfaction": 3.7592252252252245
+        }
+      },
+      "test_case": {
+        "query": "چگونگی اجرای بخشنامه 54/842",
+        "expected": "باید بخشنامه را شناسایی و پاسخ بدهد",
+        "category": "bokshname_code"
+      }
+    }
+  ]
+}

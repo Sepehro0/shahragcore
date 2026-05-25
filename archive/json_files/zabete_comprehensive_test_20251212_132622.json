@@ -1,0 +1,249 @@
+{
+  "timestamp": "2025-12-12T13:26:22.383570",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "total_tests": 8,
+  "successful": 8,
+  "results": [
+    {
+      "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+      "success": true,
+      "answer": "اطلاعات کافی برای توضیح ماده ۴۶ شرایط عمومی پیمان در دسترس نیست. هیچ محتوای مرتبطی در متن موجود نیافت شد.",
+      "confidence": 0.774547803617571,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.32000000000000006,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.774547803617571,
+          "user_satisfaction": 3.7236434108527128
+        }
+      },
+      "test_case": {
+        "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+        "expected": "باید در فیلد answer جستجو کند و پاسخ بدهد",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "توضیح ماده 48 شرایط عمومی پیمان",
+      "success": true,
+      "answer": "در پیمان‌های مشمول ماده ۴۸، مصالح موجود در کارگاه بر اساس نرخ متعارف روز و با توافق دو طرف اندازه‌گیری و بهای آنها محاسبه می‌شود و تنها هزینه بالاسری پیمان به آن اعمال می‌گردد. هزینه تجهیز و برچیدن کارگاه تنها در صورت انجام توسط پیمانکار و به تناسب پیشرفت عملیات قابل پرداخت است و در صورت خاتمه پیمان از سوی کارفرما، هیچ وجهی به عنوان برچیدن کارگاه پرداخت نمی‌شود.",
+      "confidence": 0.7747863247863247,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.32000000000000006,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7747863247863247,
+          "user_satisfaction": 3.724358974358974
+        }
+      },
+      "test_case": {
+        "query": "توضیح ماده 48 شرایط عمومی پیمان",
+        "expected": "باید در فیلد answer جستجو کند",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": true,
+      "answer": "کارفرما باید ظرف 15 روز پس از دریافت صورت حساب آن را بررسی و پس از کسر کسور، حق الزحمه را پرداخت کند. در صورت تاخیر بیش از 15 روز، این مدت نیز در محاسبه بازه زمانی حفظ قدرت خرید اسناد خزانه اسلامی لحاظ می‌شود.",
+      "confidence": 0.867855072463768,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.7333333333333333,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.867855072463768,
+          "user_satisfaction": 4.003565217391304
+        }
+      },
+      "test_case": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected": "باید تشخیص دهد نامرتبط است یا پاسخ مناسب بدهد",
+        "category": "irrelevant_query"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC",
+      "success": true,
+      "answer": "در پیمان‌های EPC منعقد شده بر اساس بخشنامه 7105/54-18929/105، محاسبه تاخیر در پرداخت صورت وضعیت‌ها بر اساس بند (53-8) شرایط عمومی پیمان و شرایط خصوصی انجام می‌شود و کاربرد بخشنامه 5090/54/11082-1 مورخ 02/09/1360 وجود ندارد. این مقررات فقط برای پیمان‌های EPC صنعتی اعمال می‌شود و اطلاعات کافی برای محاسبه مبلغ جبران خسارت به صورت میلیون ریال فراهم نیست.",
+      "confidence": 0.8504311774461029,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8504311774461029,
+          "user_satisfaction": 3.9512935323383083
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای EPC",
+        "expected": "باید نتایج مرتبط با EPC پیدا کند",
+        "category": "specific_contract_type"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+      "success": true,
+      "answer": "بخشنامه شماره 5090/54/11082-1 مورخ 1360/09/02 به قراردادهای طرح و ساخت صنعتی، غیرصنعتی، تامین کالا و تجهیزات و نصب توام PC اعمال نمی‌شود. برای محاسبه تاخیرات ناشی از تاخیر در پرداخت در این قراردادها، باید از ضوابط مربوط به نوع قرارداد و مصوبات مربوطه استفاده شود.",
+      "confidence": 0.8697584204413472,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8697584204413472,
+          "user_satisfaction": 4.009275261324041
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+        "expected": "باید از چند منبع استنتاج کند",
+        "category": "multi_source_inference"
+      }
+    },
+    {
+      "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+      "success": true,
+      "answer": "قرارداد EPC مسئولیت کلی طراحی، تهیه و ساخت پروژه را بر عهده دارد و معمولاً در پروژه‌های صنعتی استفاده می‌شود، در حالی که قرارداد طرح و ساخت غیرصنعتی بر اساس بخشنامه 85428/101 اجرا می‌شود و محدودیت‌هایی مانند کاهش حداکثر 25 درصد مبلغ پیمان دارد. هیات تحویل موقت در این قراردادها شامل نمایندگان طرفین و مهندس مشاور است و حضور نماینده سازمان برنامه و بودجه کشور لحاظ نشده است.",
+      "confidence": 0.7592386655260907,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7592386655260907,
+          "user_satisfaction": 3.6777159965782715
+        }
+      },
+      "test_case": {
+        "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+        "expected": "باید مقایسه کند و dynamic_top_k بالاتر باشد",
+        "category": "comparison"
+      }
+    },
+    {
+      "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+      "success": true,
+      "answer": "در پیمان‌های ریالی فاقد تعدیل، شاخص دوره انجام کار بر اساس تاخیرات مجاز یا غیرمجاز مطابق بند 4-1 یا 4-2 دستورالعمل شماره 101/173073 مورخ 1382/09/15 محاسبه می‌شود. در پیمان‌های مشمول تعدیل، مبلغ تعدیل بر اساس شاخص‌های ابلاغی و تاریخ واقعی انجام کار تعیین می‌گردد. اطلاعات کافی برای محاسبه مبلغ تعدیل به صورت میلیون ریال وجود ندارد.",
+      "confidence": 0.8742898550724638,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8742898550724638,
+          "user_satisfaction": 4.022869565217391
+        }
+      },
+      "test_case": {
+        "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+        "expected": "باید از keyword matching استفاده کند",
+        "category": "keyword_based"
+      }
+    },
+    {
+      "query": "چگونگی اجرای بخشنامه 54/842",
+      "success": true,
+      "answer": "در پیمان‌های مبتنی بر بخشنامه 54/842، در صورت عدم توافق پیمانکار با مهندس مشاور در مورد تمدید مدت پیمان، تصمیم کارفرما اجرا می‌شود و پیمانکار می‌تواند مطابق ماده 53 پیمان مساله را حل کند. همچنین، در صورت ابلاغ کار جدید بدون ردیف در فهرست بها، قیمت آن با استفاده از نرخ واقعی و ضریب بالاسری تعیین می‌شود، با سقف 10 درصد مبلغ اولیه پیمان.",
+      "confidence": 0.8735744680851063,
+      "sources_count": 5,
+      "dynamic_top_k": 2,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8735744680851063,
+          "user_satisfaction": 4.020723404255318
+        }
+      },
+      "test_case": {
+        "query": "چگونگی اجرای بخشنامه 54/842",
+        "expected": "باید بخشنامه را شناسایی و پاسخ بدهد",
+        "category": "bokshname_code"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:ultimate_rag_system:🚀 Initializing Ultimate RAG System...
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:services.qwen_client:QwenClient initialized: http://localhost:8009
+INFO:search.multi_hop_retriever:🚀 Multi-Hop Retriever initialized in ENHANCED mode
+INFO:search.multi_hop_retriever:🧠 Intelligent mode also available
+INFO:services.database_service:✅ PostgreSQL connection successful
+INFO:services.database_service:✅ Database engine initialized successfully
+INFO:services.database_service:✅ Database connection test successful
+INFO:ultimate_rag_system:   - 🗄️ Database Integration: ENABLED
+INFO:ultimate_rag_system:   - 🎯 Intelligent Query Classifier: ENABLED
+INFO:ultimate_rag_system:✅ Database service updated in HybridQueryAnalyzer
+INFO:ultimate_rag_system:✅ Ultimate RAG System initialized (basic components)
+INFO:ultimate_rag_system:   - ChromaDB: Enabled
+INFO:ultimate_rag_system:   - Qwen Client: Enabled
+INFO:ultimate_rag_system:   - Persian Embeddings: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Reranker: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Multi-Hop: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Advanced PDF: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - 🌟 Universal AI Components: Enabled
+INFO:ultimate_rag_system:      ├─ Universal Pattern Detector
+INFO:ultimate_rag_system:      ├─ Universal Sequential Detector
+INFO:ultimate_rag_system:      └─ Universal Metadata Extractor
+INFO:ultimate_rag_system:📊 Processing Excel: karbaran_omomi_latest.xlsx...
+INFO:ultimate_rag_system:📊 Dynamic schema detected: type=qa, columns=['عنوان زیرمجموعه ', 'کتگوری سوال ', 'سوال ', 'پاسخ ']
+INFO:ultimate_rag_system:📊 Dynamic schema detected: type=qa, columns=['عنوان زیرمجموعه', 'کتگوری سوالات', 'سوال', 'پاسخ']
+INFO:ultimate_rag_system:✅ Created 341 chunks from Excel
+INFO:ultimate_rag_system:🔍 Classifying Excel document domain...
+INFO:processors.document_domain_classifier:🔍 Classifying document domain: karbaran_omomi_latest.xlsx
+INFO:processors.document_domain_classifier:📊 Running heuristic classification...
+INFO:processors.document_domain_classifier:📊 Heuristic classification: educational (confidence: 0.50)
+INFO:processors.document_domain_classifier:   Matched keywords: درس, test, karbaran, omomi, سوال
+INFO:processors.document_domain_classifier:   Heuristic: educational (confidence: 0.50)
+INFO:processors.document_domain_classifier:🤖 Running LLM classification...
+INFO:services.qwen_client:✅ aiohttp session created in event loop 140059149533088
+================================================================================
+🔄 بازسازی Collection با فایل اکسل جدید
+================================================================================
+
+📁 فایل اکسل: /home/user01/qwen-api/enhanced_rag_system_dev/archive/data_files/karbaran_omomi_latest.xlsx
+🗄️  Collection: karbaran_omomi
+💾 مسیر دیتابیس: /home/user01/qwen-api/enhanced_rag_system_dev/chroma_db
+
+📦 ایجاد نسخه پشتیبان...
+✅ نسخه پشتیبان: /home/user01/qwen-api/enhanced_rag_system_dev/chroma_db_backup_20251209_080844
+
+🚀 راه‌اندازی سیستم RAG...
+✅ سیستم RAG آماده است
+
+🗑️  حذف collection قدیمی: karbaran_omomi
+✅ Collection قدیمی حذف شد
+
+📖 پردازش فایل اکسل...
+   📦 حجم فایل: 57.39 KB
+🔹 [QwenClient] Messages count: 1
+🔹 [QwenClient] System prompt: None...
+🔹 [QwenClient] User prompt: لطفاً دامنه/حوزه این سند را تشخیص دهید.
+
+**نام فایل:** karbaran_omomi_latest.xlsx
+
+**نمونه محتوا:**
+سوال: فلسفه و ماموریت اصلی صندوق باور چیست؟
+پاسخ: صندوق «باور» با هدف حمایت از ایده های نوآورانه و ف...
+ERROR:processors.document_domain_classifier:JSON extraction failed: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:processors.document_domain_classifier:✅ Using heuristic result: educational
+INFO:ultimate_rag_system:✅ Domain detected: educational (confidence: 0.50, method: heuristic)
+INFO:ultimate_rag_system:   Summary: سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی
+INFO:ultimate_rag_system:🔢 Generating Persian embeddings...
+INFO:ultimate_rag_system:   Loading Persian Embedding model...
+INFO:services.persian_embedding_service:🔄 Loading SentenceTransformer model: sentence-transformers/distiluse-base-multilingual-cased-v2
+INFO:services.persian_embedding_service:✅ Using CPU for embeddings (vLLM uses GPU memory)
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+INFO:services.persian_embedding_service:✅ Model loaded and cached (dim=512, device=cpu)
+INFO:services.persian_embedding_service:PersianEmbeddingService initialized with 512-dim model on cpu
+INFO:ultimate_rag_system:📝 Storing collection with domain: educational
+INFO:ultimate_rag_system:✅ Stored 341 chunks in 'karbaran_omomi'
+INFO:processors.excel_to_database:📊 Processing Excel file: karbaran_omomi_latest.xlsx for collection: karbaran_omomi
+INFO:processors.excel_to_database:  Processing sheet: کاربر عمومی
+INFO:services.database_service:✅ Created table 'karbaran_omomi_latest_کاربر_عمومی' with 194 rows
+INFO:services.database_service:✅ Materialized SQL table 'karbaran_omomi_latest_کاربر_عمومی' for direct queries
+INFO:processors.excel_to_database:  ✅ Sheet 'کاربر عمومی' processed: 194 rows, 5 columns
+INFO:processors.excel_to_database:  Processing sheet: ذی نفع داخلی
+INFO:services.database_service:✅ Created table 'karbaran_omomi_latest_ذی_نفع_داخلی' with 147 rows
+INFO:services.database_service:✅ Materialized SQL table 'karbaran_omomi_latest_ذی_نفع_داخلی' for direct queries
+INFO:processors.excel_to_database:  ✅ Sheet 'ذی نفع داخلی' processed: 147 rows, 4 columns
+INFO:ultimate_rag_system:✅ Excel data stored in PostgreSQL: 2 tables
+✅ پردازش موفق!
+   📊 تعداد سند: N/A
+   🔢 تعداد chunk: 341
+
+================================================================================
+🧪 تست جستجو
+================================================================================
+
+تست 1/4: اگر ایدم خیلی خام باشه میتونم بازم برا دانشمند ایدمو بفرستم؟
+   ❌ خطا: 'UltimateRAGSystem' object has no attribute 'semantic_search'
+
+تست 2/4: ایمیل صندوق باور چیه؟
+   ❌ خطا: 'UltimateRAGSystem' object has no attribute 'semantic_search'
+
+تست 3/4: چقدر سرمایه می‌تونم بگیرم؟
+   ❌ خطا: 'UltimateRAGSystem' object has no attribute 'semantic_search'
+
+تست 4/4: ماموریت های موسسه دانشمند
+   ❌ خطا: 'UltimateRAGSystem' object has no attribute 'semantic_search'
+
+================================================================================
+✅ بازسازی کامل شد!
+================================================================================
+
+📊 خلاصه:
+   - Collection: karbaran_omomi
+   - Embedding Model: DistilUSE (512-dim)
+   - Text Format: Clean (بدون noise)
+   - Backup: /home/user01/qwen-api/enhanced_rag_system_dev/chroma_db_backup_20251209_080844
+

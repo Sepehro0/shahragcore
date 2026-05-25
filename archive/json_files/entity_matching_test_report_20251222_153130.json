@@ -1,0 +1,245 @@
+{
+  "entity_matching": [
+    {
+      "query": "معاونت علمی و فناوری",
+      "expected_match": "معاونت علمی و فناوری رییس جمهور",
+      "wrong_match": "پارک علم و فناوری قم",
+      "similarity_correct": 0.7843137254901961,
+      "word_overlap_correct": 1.0,
+      "combined_correct": 0.9137254901960784,
+      "similarity_wrong": 0.7,
+      "word_overlap_wrong": 0.3333333333333333,
+      "combined_wrong": 0.48,
+      "should_reject": true,
+      "pass": true
+    },
+    {
+      "query": "وزارت نفت",
+      "expected_match": "وزارت نفت",
+      "similarity": 1.0,
+      "word_overlap": 1.0,
+      "combined": 1.0,
+      "pass": true
+    },
+    {
+      "query": "بانک ملی",
+      "expected_match": "بانک ملی ایران",
+      "similarity": 0.7272727272727273,
+      "word_overlap": 1.0,
+      "combined": 0.8909090909090909,
+      "pass": true
+    },
+    {
+      "query": "سازمان امور مالیاتی",
+      "expected_match": "سازمان امور مالیاتی کشور",
+      "similarity": 0.8837209302325582,
+      "word_overlap": 1.0,
+      "combined": 0.9534883720930233,
+      "pass": true
+    },
+    {
+      "query": "فرهنگستان علوم ایران",
+      "expected_match": "فرهنگستان علوم جمهوری اسلامی ایران",
+      "similarity": 0.7407407407407407,
+      "word_overlap": 1.0,
+      "combined": 0.8962962962962963,
+      "pass": true
+    },
+    {
+      "query": "ستاد توسعه زیست فناوری",
+      "expected_match": "ستاد توسعه فناوری نانو",
+      "similarity": 0.7727272727272727,
+      "word_overlap": 0.75,
+      "combined": 0.759090909090909,
+      "pass": true
+    }
+  ],
+  "income_queries": [
+    {
+      "query": "درآمد های حاصل از بخش درآمد های مالیاتی در سال 1401",
+      "expected_year": "1401",
+      "expected_entity": "درآمدهای مالیاتی",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "منابع حاصل از بند درآمد های حاصل از خدمات در سال 402",
+      "expected_year": "1402",
+      "expected_entity": "درآمدهای حاصل از خدمات",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد وزارت نفت",
+      "expected_year": "1403",
+      "expected_entity": "وزارت نفت",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد حاصل از قسمت واگذاری دارایی های سرمایه ای در سال 400",
+      "expected_year": "1400",
+      "expected_entity": "واگذاری دارایی‌های سرمایه‌ای",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد سازمان امور مالیاتی در سال 98",
+      "expected_year": "1398",
+      "expected_entity": "سازمان امور مالیاتی",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد حاصل از بند درآمد های متفرقه در سال های 98 تا 400",
+      "expected_year": "1398-1400",
+      "expected_entity": "درآمدهای متفرقه",
+      "category": "income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    }
+  ],
+  "supplementary_income_queries": [
+    {
+      "query": "درآمد عمومی شرکت بازرگانی گاز ایران در سال 98",
+      "expected_year": "1398",
+      "expected_entity": "شرکت بازرگانی گاز ایران",
+      "category": "supplementary_income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد استانی اختصاصی وزارت اموزش پرورش در سال های 98 تا 403",
+      "expected_year": "1398-1403",
+      "expected_entity": "وزارت آموزش و پرورش",
+      "category": "supplementary_income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "درآمد ملی بانک ملی",
+      "expected_year": "1403",
+      "expected_entity": "بانک ملی ایران",
+      "category": "supplementary_income",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    }
+  ],
+  "expense_queries": [
+    {
+      "query": "اعتبارات هزینه ای فرهنگستان علوم ایران در سال های 98 تا 403",
+      "expected_year": "1398-1403",
+      "expected_entity": "فرهنگستان علوم ایران",
+      "category": "expense",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "هزینه های سرمایه ای وزارت اطلاعات در سال 1402",
+      "expected_year": "1402",
+      "expected_entity": "وزارت اطلاعات",
+      "category": "expense",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "هزینه های سرمایه ای عمومی ستاد توسعه زیست فناوری",
+      "expected_year": "1403",
+      "expected_entity": "ستاد توسعه زیست فناوری",
+      "category": "expense",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    },
+    {
+      "query": "اعتبارات هزینه ای اختصاصی انسستیو پاستور 401",
+      "expected_year": "1401",
+      "expected_entity": "انستیتو پاستور",
+      "category": "expense",
+      "success": true,
+      "answer": "",
+      "route_path": "unknown",
+      "confidence": 0,
+      "metadata": {},
+      "error": null
+    }
+  ],
+  "summary": {
+    "entity_matching": {
+      "passed": 6,
+      "total": 6
+    },
+    "income_queries": {
+      "success": 6,
+      "total": 6
+    },
+    "supplementary_income": {
+      "success": 3,
+      "total": 3
+    },
+    "expense_queries": {
+      "success": 4,
+      "total": 4
+    },
+    "total_api": {
+      "success": 13,
+      "total": 13
+    },
+    "route_paths": {
+      "unknown": 13
+    },
+    "timestamp": "2025-12-22T15:31:30.076442"
+  }
+}

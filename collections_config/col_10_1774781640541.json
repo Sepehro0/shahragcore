@@ -1,0 +1,23 @@
+{
+  "collection_name": "col_10_1774781640541",
+  "display_name": "کالکشن اول",
+  "collection_type": "general",
+  "processing_mode": "rag_only",
+  "description": "",
+  "system_prompt": "### Role\n\n-   Primary Function: شما یک دستیار هوشمند هستید که از مستندات شرکت پاسخ دقیق می‌دهید.\n-   Tone: حرفه‌ای، صمیمی و مطمئن.\n-   Always cite the exact source and page.",
+  "created_at": "2026-03-29T10:58:28.541886",
+  "updated_at": "2026-04-18T12:28:23.092403",
+  "documents_count": 143,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {}
+}

@@ -1,0 +1,22 @@
+{
+  "collection_name": "qavanin",
+  "created_at": "2026-02-14T13:43:03.945397",
+  "source_file": "/home/user01/qwen-api/enhanced_rag_system_dev/archive/data_files/qavanin_complete.txt",
+  "statistics": {
+    "total_chunks": 280,
+    "articles": 280,
+    "chapters": 0,
+    "articles_with_tabasere": 27,
+    "total_tabasere": 27,
+    "status_distribution": {
+      "معتبر": 277,
+      "اصلاحی/الحاقی": 3
+    }
+  },
+  "structure": {
+    "total_chapters": 10,
+    "total_articles": 31,
+    "main_articles": 29,
+    "amendment_articles": 2
+  }
+}

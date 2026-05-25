@@ -1,0 +1,25 @@
+{
+  "collection_name": "e2e_takallo_20260406_112139",
+  "display_name": "E2E Takallo",
+  "collection_type": "legal",
+  "processing_mode": "rag_only",
+  "description": "End-to-end API test collection",
+  "system_prompt": "شما یک دستیار حقوقی/فنی هستید. پاسخ‌ها را بر اساس متن اسناد بدهید و اگر اطلاعات کافی نیست بگویید.",
+  "created_at": "2026-04-06T11:21:39.357691",
+  "updated_at": "2026-04-06T11:21:39.357696",
+  "documents_count": 0,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {
+    "test": "e2e"
+  }
+}

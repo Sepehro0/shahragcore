@@ -1,0 +1,3 @@
+costs_years [1403]
+incomes_years_unique_count 6
+incomes_years_minmax 1398 1403

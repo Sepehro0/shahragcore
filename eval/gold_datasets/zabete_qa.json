@@ -1,0 +1,61 @@
+{
+  "collection_name": "zabete_qa",
+  "version": "1.0.0",
+  "description": "Gold dataset for zabete_qa collection — construction regulations & standards",
+  "created_at": "2026-04-26",
+  "test_cases": [
+    {
+      "id": "zq-001",
+      "query": "ضوابط خاص پیمان‌های سرجمع یا ساختار شکست در خصوص پرداخت، تغییرات و تاخیرات چیست؟",
+      "expected_source_codes": ["29918814030210-13", "4-509014021002-4", "29918814020813-1", "29918814020715-9"],
+      "expected_answer_keywords": ["سرجمع", "ساختار شکست", "پرداخت", "تاخیر"],
+      "answer_type": "multi_source_explanation",
+      "difficulty": "hard"
+    },
+    {
+      "id": "zq-002",
+      "query": "نحوه محاسبه تعدیل در شرایط خاص (تأخیرات، کارهای جدید، و اشتباه در شاخص) و وضعیت آن در پیمان‌های فاقد تعدیل (بخشنامه ارز) چگونه است؟",
+      "expected_source_codes": ["4/208014030406-2", "17307314020813-6", "13558514030212-5", "54/84214020115-6", "17307314030210-44", "56653914030209-9"],
+      "expected_answer_keywords": ["تعدیل", "تاخیر", "شاخص", "بخشنامه ارز"],
+      "answer_type": "multi_source_explanation",
+      "difficulty": "hard"
+    },
+    {
+      "id": "zq-003",
+      "query": "ضوابط دقیق کارهای جدید (قیمت جدید) و اقلام ستاره‌دار از نظر آنالیز قیمت، ضرایب بالاسری و محدودیت‌های تغییر مقادیر چیست؟",
+      "expected_source_codes": ["00001114020704-18", "03400114020813-9", "54/84214020115-4", "54/84214020715-5", "54/84214020115-5", "54/84214011213-6"],
+      "expected_answer_keywords": ["قیمت جدید", "ستاره‌دار", "آنالیز", "بالاسری"],
+      "answer_type": "multi_source_explanation",
+      "difficulty": "hard"
+    },
+    {
+      "id": "zq-004",
+      "query": "ضوابط حقوقی و مالی تامین مصالح توسط کارفرما (مانند قیر و سیمان) و تاثیر آن بر محاسبات تاخیرات و صورت‌وضعیت‌ها چیست؟",
+      "expected_source_codes": ["004147-1176", "4-509014020813-7", "6309هـ14030210-23", "0-713514020717-5"],
+      "expected_answer_keywords": ["مصالح", "کارفرما", "قیر", "سیمان", "تاخیر"],
+      "answer_type": "multi_source_explanation",
+      "difficulty": "hard"
+    },
+    {
+      "id": "zq-005",
+      "query": "ضوابط تضمین پیش پرداخت در معاملات دولتی",
+      "expected_answer_keywords": ["تضمین", "پیش پرداخت", "معاملات"],
+      "answer_type": "explanation",
+      "difficulty": "medium"
+    },
+    {
+      "id": "zq-006",
+      "query": "ضوابط فسخ پیمان و شرایط آن",
+      "expected_answer_keywords": ["فسخ", "پیمان", "شرایط"],
+      "answer_type": "explanation",
+      "difficulty": "medium"
+    },
+    {
+      "id": "zq-007",
+      "query": "نحوه محاسبه خسارت تاخیر در قراردادهای پیمانکاری",
+      "expected_answer_keywords": ["خسارت", "تاخیر", "پیمانکاری"],
+      "answer_type": "explanation",
+      "difficulty": "medium"
+    }
+  ]
+}

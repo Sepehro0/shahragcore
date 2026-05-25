@@ -1,0 +1,503 @@
+[
+  {
+    "query": "آموزش‌های ضمن خدمت چیه؟",
+    "category": "ساده (Simple)",
+    "description": "سوال ساده - پرسش مستقیم درباره آموزش‌های ضمن خدمت",
+    "complexity": "پایین",
+    "full_answer": "آموزش‌های ضمن خدمت، فرآیندی انعطاف‌پذیر نسبت به آموزش‌های مصوب اداره کل منابع انسانی است که به دلیل بومی‌سازی و انتخاب سرفصل‌ها بر اساس نیازهای شرکت‌های متقاضی، امکان برگزاری دوره‌های تخصصی تجمیعی درون سازمانی را فراهم می‌کند و با توجه به کیفیت آموزشی و دعوت از اساتید متخصص، به بهبود عملکرد و توانمندسازی نیروی انسانی کمک می‌کند.",
+    "full_text": "آموزش‌های ضمن خدمت، فرآیندی انعطاف‌پذیر نسبت به آموزش‌های مصوب اداره کل منابع انسانی است که به دلیل بومی‌سازی و انتخاب سرفصل‌ها بر اساس نیازهای شرکت‌های متقاضی، امکان برگزاری دوره‌های تخصصی تجمیعی درون سازمانی را فراهم می‌کند و با توجه به کیفیت آموزشی و دعوت از اساتید متخصص، به بهبود عملکرد و توانمندسازی نیروی انسانی کمک می‌کند.",
+    "full_answer_length": 330,
+    "full_text_length": 330,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "هدف از آموزش‌های ضمن خدمت چیه؟",
+    "category": "ساده (Simple)",
+    "description": "سوال ساده - پرسش درباره هدف",
+    "complexity": "پایین",
+    "full_answer": "هدف از آموزش‌های ضمن خدمت، ایجاد انسجام و مدیریت مؤثر فعالیت‌ها و هزینه‌ها با جهت‌گیری به سمت حداکثر بازدهی است. این آموزش‌ها به توانمندسازی نیروی انسانی شرکت‌ها بر اساس شاخص‌های بین‌المللی کمک می‌کنند و به توسعه ظرفیت مدیریت فناوری و نوآوری در مجموعه بنیاد می‌پردازند. همچنین، این واحد با تقویت جایگاه موسسه دانشمند در زیست‌بوم نوآوری، پاسخگویی به نیازهای فناورانه مجموعه بنیاد برای ارتقای تولید و نرخ بهره‌وری، و ایجاد ارتباط موثر با مراکز تحقیقاتی ملی و بین‌المللی، نقش کلیدی ایفا می‌کند.  \n\nبرگزاری دوره‌های هدفمند و موثر که قابل ارزیابی بوده و اثربخشی آن‌ها در بهبود بهره‌وری و تولید شرکت‌ها قابل مشاهده باشد، از دیگر اهداف اصلی است. همچنین، دارا بودن یک چارچوب معتبر علمی و کاربردی برای سنجش اثربخشی آموزشی سایر دوره‌ها، ارتقای اثربخشی آموزش‌های تخصصی، و انجام نیازسنجی و عارضه‌یابی دقیق با تدوین عنوان و سرفصل‌های متناسب با نیازها، از جمله اهداف مهم این واحد محسوب می‌شود.",
+    "full_text": "هدف از آموزش‌های ضمن خدمت، ایجاد انسجام و مدیریت مؤثر فعالیت‌ها و هزینه‌ها با جهت‌گیری به سمت حداکثر بازدهی است. این آموزش‌ها به توانمندسازی نیروی انسانی شرکت‌ها بر اساس شاخص‌های بین‌المللی کمک می‌کنند و به توسعه ظرفیت مدیریت فناوری و نوآوری در مجموعه بنیاد می‌پردازند. همچنین، این واحد با تقویت جایگاه موسسه دانشمند در زیست‌بوم نوآوری، پاسخگویی به نیازهای فناورانه مجموعه بنیاد برای ارتقای تولید و نرخ بهره‌وری، و ایجاد ارتباط موثر با مراکز تحقیقاتی ملی و بین‌المللی، نقش کلیدی ایفا می‌کند.  \n\nبرگزاری دوره‌های هدفمند و موثر که قابل ارزیابی بوده و اثربخشی آن‌ها در بهبود بهره‌وری و تولید شرکت‌ها قابل مشاهده باشد، از دیگر اهداف اصلی است. همچنین، دارا بودن یک چارچوب معتبر علمی و کاربردی برای سنجش اثربخشی آموزشی سایر دوره‌ها، ارتقای اثربخشی آموزش‌های تخصصی، و انجام نیازسنجی و عارضه‌یابی دقیق با تدوین عنوان و سرفصل‌های متناسب با نیازها، از جمله اهداف مهم این واحد محسوب می‌شود.",
+    "full_answer_length": 879,
+    "full_text_length": 879,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": true,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [
+      "full_answer فقط لیست است",
+      "full_text فقط لیست است"
+    ],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "direct",
+      "preferred_answer_source": "direct_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "آیا شرکت در دوره‌های ضمن خدمت الزامی است؟",
+    "category": "ساده (Simple)",
+    "description": "سوال ساده - پرسش بله/خیر",
+    "complexity": "پایین",
+    "full_answer": "شرکت در دوره‌های آموزشی ضمن خدمت اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.",
+    "full_text": "شرکت در دوره‌های آموزشی ضمن خدمت اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.",
+    "full_answer_length": 139,
+    "full_text_length": 139,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "چه نوع آموزش‌هایی در ضمن خدمت ارائه می‌شه و چه مدت طول می‌کشه؟",
+    "category": "متوسط (Medium)",
+    "description": "سوال متوسط - دو بخشی درباره نوع و مدت زمان",
+    "complexity": "متوسط",
+    "full_answer": "از نظر مدت دوره‌های آموزشی، کوتاه مدت و بلندمدت و از نظر نوع آموزش‌ها، دوره، کارگاه، نشست یا سمینار برگزار می‌شود.",
+    "full_text": "از نظر مدت دوره‌های آموزشی، کوتاه مدت و بلندمدت و از نظر نوع آموزش‌ها، دوره، کارگاه، نشست یا سمینار برگزار می‌شود.",
+    "full_answer_length": 114,
+    "full_text_length": 114,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "فرآیند ثبت‌نام در آموزش‌های ضمن خدمت چطوریه و چه مدارکی لازمه؟",
+    "category": "متوسط (Medium)",
+    "description": "سوال متوسط - دو بخشی درباره فرآیند و مدارک",
+    "complexity": "متوسط",
+    "full_answer": "در صورت بروز مشکل در ثبت نام یا ارزیابی، با واحد آموزش های تخصصی تماس بگیرید. شماره تماس: 02188883913 داخلی 155 یا شماره همراه 09045349106.",
+    "full_text": "در صورت بروز مشکل در ثبت نام یا ارزیابی، با واحد آموزش های تخصصی تماس بگیرید. شماره تماس: 02188883913 داخلی 155 یا شماره همراه 09045349106.",
+    "full_answer_length": 139,
+    "full_text_length": 139,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "مزیت‌های شرکت در آموزش‌های ضمن خدمت چیه و چطور می‌تونم ثبت‌نام کنم؟",
+    "category": "متوسط (Medium)",
+    "description": "سوال متوسط - دو بخشی درباره مزیت و ثبت‌نام",
+    "complexity": "متوسط",
+    "full_answer": "**مزیت‌های شرکت در آموزش‌های ضمن خدمت و نحوه ثبت‌نام:**\n\n- **مزیت شرکت در آموزش‌های ضمن خدمت:**  \nشرکت در دوره‌های آموزشی اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.\n\n- **نحوه ثبت‌نام در دوره‌های آموزشی:**  \nثبت‌نام از طریق مکاتبه شرکت یا هلدینگ با موسسه دانشمند، سپس ثبت‌نام از طریق لینک پیامکی ارسالی و در نهایت ورود به «سامانه آموزش موسسه دانشمند» انجام می‌شود.",
+    "full_text": "**مزیت‌های شرکت در آموزش‌های ضمن خدمت و نحوه ثبت‌نام:**\n\n- **مزیت شرکت در آموزش‌های ضمن خدمت:**  \nشرکت در دوره‌های آموزشی اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.\n\n- **نحوه ثبت‌نام در دوره‌های آموزشی:**  \nثبت‌نام از طریق مکاتبه شرکت یا هلدینگ با موسسه دانشمند، سپس ثبت‌نام از طریق لینک پیامکی ارسالی و در نهایت ورود به «سامانه آموزش موسسه دانشمند» انجام می‌شود.",
+    "full_answer_length": 427,
+    "full_text_length": 427,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": true,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "structured",
+      "preferred_answer_source": "structured_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "اگر من یک کارمند بنیاد باشم، چطور می‌تونم در آموزش‌های ضمن خدمت شرکت کنم و چه مراحلی باید طی کنم و چه مدت طول می‌کشه؟",
+    "category": "پیچیده (Complex)",
+    "description": "سوال پیچیده - سه بخشی با شرط",
+    "complexity": "بالا",
+    "full_answer": "شرکت در دوره‌های آموزشی اختیاری است و در صورت اخذ گواهینامه، معادل مدت ساعت دوره‌ها دارای امتیاز آموزشی ضمن خدمت برای کارکنان است.",
+    "full_text": "شرکت در دوره‌های آموزشی اختیاری است و در صورت اخذ گواهینامه، معادل مدت ساعت دوره‌ها دارای امتیاز آموزشی ضمن خدمت برای کارکنان است.",
+    "full_answer_length": 130,
+    "full_text_length": 130,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "مزیت‌های شرکت در آموزش‌های ضمن خدمت چیه و چه مهارت‌هایی یاد می‌گیریم و چطور می‌تونیم ثبت‌نام کنیم؟",
+    "category": "پیچیده (Complex)",
+    "description": "سوال پیچیده - سه بخشی درباره مزیت، مهارت و ثبت‌نام",
+    "complexity": "بالا",
+    "full_answer": "شرکت در دوره‌های آموزشی ضمن خدمت اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.  \nبرای ثبت نام در دوره‌های آموزشی موسسه دانشمند، باید از طریق شرکت یا هلدینگ با موسسه مکاتبه شود؛ سپس از طریق پنل پیامکی لینک ثبت نام از طریق سایت فرم افزار دریافت خواهد شد و ثبت نام نهایی از طریق «سامانه آموزش موسسه دانشمند» انجام می‌شود.",
+    "full_text": "شرکت در دوره‌های آموزشی ضمن خدمت اختیاری است و در صورت اخذ گواهینامه، مدت ساعت دوره‌ها معادل امتیاز آموزشی ضمن خدمت برای کارکنان خواهد بود.  \nبرای ثبت نام در دوره‌های آموزشی موسسه دانشمند، باید از طریق شرکت یا هلدینگ با موسسه مکاتبه شود؛ سپس از طریق پنل پیامکی لینک ثبت نام از طریق سایت فرم افزار دریافت خواهد شد و ثبت نام نهایی از طریق «سامانه آموزش موسسه دانشمند» انجام می‌شود.",
+    "full_answer_length": 379,
+    "full_text_length": 379,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": true,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "structured",
+      "preferred_answer_source": "structured_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "چه دوره‌هایی در آموزش‌های ضمن خدمت دارید و چه پیش‌نیازهایی لازمه و فرآیند ارزیابی چطوریه؟",
+    "category": "پیچیده (Complex)",
+    "description": "سوال پیچیده - سه بخشی درباره دوره‌ها، پیش‌نیاز و ارزیابی",
+    "complexity": "بالا",
+    "full_answer": "- **آیا شرکت در دوره های ضمن خدمت برای همه همکاران الزامی است؟**  \nشرکت در دوره های آموزشی اختیاری است و در صورت اخذ گواهینامه معادل مدت ساعت دوره ها دارای امتیاز آموزشی ضمن خدمت برای کارکنان است.\n\n- **فرآیند کلی ارزیابی ایده ها از زمان ثبت تا اعلام نهایی چگونه است؟**  \n۱) ثبت اظهارنامه  \n۲) بررسی اولیه توسط شرکت/ هلدینگ/ واحد مربوط  \n۳) برگزاری پیش رویدادها و غربال اولیه در شرکت/ هلدینگ/ واحد مربوطه  \n۴) ارسال موارد برتر به دبیرخانه  \n۵) ارزیابی تخصصی توسط تیم های ارزیابی  \n۶) تصویب نتایج در شورای سیاست گذاری  \n۷) اعلام نهایی و مراسم",
+    "full_text": "- **آیا شرکت در دوره های ضمن خدمت برای همه همکاران الزامی است؟**  \nشرکت در دوره های آموزشی اختیاری است و در صورت اخذ گواهینامه معادل مدت ساعت دوره ها دارای امتیاز آموزشی ضمن خدمت برای کارکنان است.\n\n- **فرآیند کلی ارزیابی ایده ها از زمان ثبت تا اعلام نهایی چگونه است؟**  \n۱) ثبت اظهارنامه  \n۲) بررسی اولیه توسط شرکت/ هلدینگ/ واحد مربوط  \n۳) برگزاری پیش رویدادها و غربال اولیه در شرکت/ هلدینگ/ واحد مربوطه  \n۴) ارسال موارد برتر به دبیرخانه  \n۵) ارزیابی تخصصی توسط تیم های ارزیابی  \n۶) تصویب نتایج در شورای سیاست گذاری  \n۷) اعلام نهایی و مراسم",
+    "full_answer_length": 540,
+    "full_text_length": 540,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": true,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "structured",
+      "preferred_answer_source": "structured_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "تفاوت آموزش‌های ضمن خدمت با آموزش‌های عادی چیه و مزیت‌های خاص اون چیه؟",
+    "category": "مقایسه‌ای (Comparative)",
+    "description": "سوال مقایسه‌ای - مقایسه با آموزش‌های عادی",
+    "complexity": "متوسط",
+    "full_answer": "تفاوت آموزش‌های ضمن خدمت با آموزش‌های عادی در این است که این آموزش‌ها به دلیل **بومی‌سازی** و انتخاب سرفصل‌ها بر اساس نیازهای واقعی شرکت‌های متقاضی، **منحصربه‌فرد و انعطاف‌پذیر** هستند. این انعطاف باعث می‌شود که دوره‌ها به صورت تجمیعی و درون‌سازمانی برگزار شوند و کیفیت آموزشی بهبود یابد، به‌ویژه با دعوت از **اساتید متخصص** و توجه ویژه به نیازهای عملی شرکت.",
+    "full_text": "تفاوت آموزش‌های ضمن خدمت با آموزش‌های عادی در این است که این آموزش‌ها به دلیل **بومی‌سازی** و انتخاب سرفصل‌ها بر اساس نیازهای واقعی شرکت‌های متقاضی، **منحصربه‌فرد و انعطاف‌پذیر** هستند. این انعطاف باعث می‌شود که دوره‌ها به صورت تجمیعی و درون‌سازمانی برگزار شوند و کیفیت آموزشی بهبود یابد، به‌ویژه با دعوت از **اساتید متخصص** و توجه ویژه به نیازهای عملی شرکت.",
+    "full_answer_length": 358,
+    "full_text_length": 358,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": true,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "comparison",
+        "hops": [
+          {
+            "query": "چیست",
+            "purpose": "find_entity1",
+            "top_k": 5
+          },
+          {
+            "query": "مزیت",
+            "purpose": "find_entity2",
+            "top_k": 5
+          }
+        ],
+        "target_entity": "تفاوت آموزش های ضمن خدمت با آموزش های عادی مزیت های خاص اون",
+        "operation": "تفاوت",
+        "requires_multi_hop": true,
+        "executed_hops": [
+          {
+            "hop_number": 1,
+            "purpose": "find_entity1",
+            "query": "چیست",
+            "results_count": 4,
+            "top_result_score": 0.95
+          },
+          {
+            "hop_number": 2,
+            "purpose": "find_entity2",
+            "query": "مزیت",
+            "results_count": 1,
+            "top_result_score": 0.95
+          }
+        ]
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "اگر من در بخش مالی کار کنم، چه آموزش‌هایی می‌تونم ببینم و چطور می‌تونم اقدام کنم؟",
+    "category": "شرطی (Conditional)",
+    "description": "سوال شرطی - با شرط بخش خاص",
+    "complexity": "متوسط",
+    "full_answer": "حق التدریس استاد یا موسسات آموزشی — صدور گواهینامه — تهیه منابع یا تجهیزات آموزشی — مستندسازی و مکتوب کردن محتوای آموزشی شامل فیلمبرداری و تدوین، پیاده‌سازی صوت، طراحی جلد، صفحه‌بندی، ویراستاری، هزینه‌های جانبی (چاپ و...)، مستند تصویری تهیه کتابچه و...",
+    "full_text": "حق التدریس استاد یا موسسات آموزشی — صدور گواهینامه — تهیه منابع یا تجهیزات آموزشی — مستندسازی و مکتوب کردن محتوای آموزشی شامل فیلمبرداری و تدوین، پیاده‌سازی صوت، طراحی جلد، صفحه‌بندی، ویراستاری، هزینه‌های جانبی (چاپ و...)، مستند تصویری تهیه کتابچه و...",
+    "full_answer_length": 252,
+    "full_text_length": 252,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [
+      "full_answer فقط لیست است",
+      "full_text فقط لیست است"
+    ],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  },
+  {
+    "query": "ساختار آموزش‌های ضمن خدمت چطوریه؟",
+    "category": "ساختاری (Structure)",
+    "description": "سوال ساختاری - درباره ساختار",
+    "complexity": "متوسط",
+    "full_answer": "بله، پس از هماهنگی قبلی از طریق تماس تلفنی می‌توانید به آدرس تهران - بزرگراه شهید سلیمانی - نرسیده به بلوار آفریقا - مجتمع مرکزی بنیاد مستضعفان - ساختمان شهید بصیر - طبقه ۱۵ - معاونت ترویج نوآوری - واحد آموزش‌های تخصصی مراجعه نمایید.",
+    "full_text": "بله، پس از هماهنگی قبلی از طریق تماس تلفنی می‌توانید به آدرس تهران - بزرگراه شهید سلیمانی - نرسیده به بلوار آفریقا - مجتمع مرکزی بنیاد مستضعفان - ساختمان شهید بصیر - طبقه ۱۵ - معاونت ترویج نوآوری - واحد آموزش‌های تخصصی مراجعه نمایید.",
+    "full_answer_length": 233,
+    "full_text_length": 233,
+    "used_features": {
+      "query_understanding": false,
+      "multi_hop": false,
+      "reranking": false,
+      "direct_answer": false,
+      "query_analyzer": true,
+      "structure_detection": false
+    },
+    "issues": [],
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": "user_enabled",
+      "multi_hop_sub_questions": [],
+      "multi_hop_analysis": {
+        "type": "simple",
+        "hops": [],
+        "target_entity": null,
+        "operation": null,
+        "requires_multi_hop": false
+      },
+      "answer_mode": "semantic",
+      "preferred_answer_source": "semantic_metadata",
+      "llm_generated": true,
+      "used_query_analyzer": true,
+      "used_structure_detection": false,
+      "used_table_normalization": false,
+      "used_advanced_retrieval": false
+    },
+    "success": true
+  }
+]

@@ -1,0 +1,2431 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:core.refactored_rag_system:🚀 Initializing Refactored RAG System...
+INFO:ultimate_rag_system:🚀 Initializing Ultimate RAG System...
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:services.qwen_client:QwenClient initialized: http://localhost:8080
+INFO:search.multi_hop_retriever:🚀 Multi-Hop Retriever initialized in ENHANCED mode
+INFO:search.multi_hop_retriever:🧠 Intelligent mode also available
+INFO:services.database_service:✅ PostgreSQL connection successful
+INFO:services.database_service:✅ Database engine initialized successfully
+INFO:services.database_service:✅ Database connection test successful
+INFO:ultimate_rag_system:   - 🗄️ Database Integration: ENABLED
+INFO:ultimate_rag_system:   - 🎯 Intelligent Query Classifier: ENABLED
+INFO:ultimate_rag_system:✅ Database service updated in HybridQueryAnalyzer
+INFO:ultimate_rag_system:✅ Ultimate RAG System initialized (basic components)
+INFO:ultimate_rag_system:   - ChromaDB: Enabled
+INFO:ultimate_rag_system:   - Qwen Client: Enabled
+INFO:ultimate_rag_system:   - Persian Embeddings: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Reranker: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Multi-Hop: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Advanced PDF: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - 🌟 Universal AI Components: Enabled
+INFO:ultimate_rag_system:      ├─ Universal Pattern Detector
+INFO:ultimate_rag_system:      ├─ Universal Sequential Detector
+INFO:ultimate_rag_system:      └─ Universal Metadata Extractor
+INFO:core.refactored_rag_system:   - 🗄️ Database Handler: Initialized
+INFO:core.refactored_rag_system:🎯 Initializing orchestrators...
+INFO:core.refactored_rag_system:✅ Orchestrators initialized successfully
+INFO:core.refactored_rag_system:✅ Orchestrators initialized and ENABLED
+INFO:core.refactored_rag_system:✅ Refactored RAG System initialized successfully
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403' -> 'اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403'
+2025-12-06 09:44:49.952507: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 257, in <module>
+    results = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 155, in main
+    result = await test_query(rag, query, "ارجاع یک سلول خاص", "مصارف")
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 59, in test_query
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 647, in retrieve_and_answer
+    return await self.answer_orchestrator.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/answer_orchestrator.py", line 91, in retrieve_and_answer
+    query_result = await self.query_orchestrator.process_query(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/query_orchestrator.py", line 74, in process_query
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 685, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 251, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 196, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 209, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 96, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 104, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:services.persian_embedding_service:🔄 Retrying with CPU...
+ERROR:services.persian_embedding_service:Failed to load embedding model even on CPU: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 257, in <module>
+    results = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 155, in main
+    result = await test_query(rag, query, "ارجاع یک سلول خاص", "مصارف")
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 59, in test_query
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 647, in retrieve_and_answer
+    return await self.answer_orchestrator.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/answer_orchestrator.py", line 91, in retrieve_and_answer
+    query_result = await self.query_orchestrator.process_query(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/query_orchestrator.py", line 74, in process_query
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 685, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 251, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 196, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 209, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 96, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 104, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 257, in <module>
+    results = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 155, in main
+    result = await test_query(rag, query, "ارجاع یک سلول خاص", "مصارف")
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/comprehensive_test_queries.py", line 59, in test_query
+    result = await rag.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 647, in retrieve_and_answer
+    return await self.answer_orchestrator.retrieve_and_answer(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/answer_orchestrator.py", line 91, in retrieve_and_answer
+    query_result = await self.query_orchestrator.process_query(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/orchestrators/query_orchestrator.py", line 74, in process_query
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 685, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 251, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 196, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 209, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 96, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 104, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+WARNING:services.smart_query_preprocessor:⚠️ CUDA/PyTorch error detected, skipping embedding client initialization
+WARNING:services.smart_query_preprocessor:   Continuing without embedding client - domain relevance will use fallback
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخ در در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%')
+INFO:services.query_analyzer:   ✅ Entity filter created (173 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['ستاد', 'مبارزه', 'مواد'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['ستاد', 'مبارزه', 'مواد'] -> ['ستاد مبارزه مواد']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['ستاد', 'مبارزه', 'مواد'] -> ['ستاد مبارزه مواد']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخ در در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%')
+INFO:services.query_analyzer:   ✅ Entity filter created (173 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['ستاد', 'مبارزه', 'مواد'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخ در در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%')
+INFO:services.query_analyzer:   ✅ Entity filter created (173 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['ستاد', 'مبارزه', 'مواد'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.qwen_client:✅ aiohttp session created in event loop 140414937390752
+
+====================================================================================================
+تست جامع سوالات بودجه مالی
+====================================================================================================
+تاریخ: 2025-12-06 09:44:24
+
+🚀 در حال initialize کردن سیستم...
+✅ سیستم initialize شد
+
+
+====================================================================================================
+دسته 1: ارجاع یک سلول خاص (مصارف)
+====================================================================================================
+
+====================================================================================================
+سوال: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403
+دسته: ارجاع یک سلول خاص > مصارف
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "برآورد_اعتبارات_هزینه_ای_متفرقه" 
+FROM masaref2_sheet1 
+WHERE "عنوان_دستگاه_اجرايي" ILIKE '%ستاد مبارزه با مواد مخدر%' 
+  AND "سال" = '1403'
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403' -> 'اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['بنیاد ایران شناسی'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['بنیاد ایران شناسی'] -> ['بنیاد ایران شناسی']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['بنیاد ایران شناسی'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['بنیاد ایران شناسی'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+⏱️  زمان اجرا: 40.14 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 230 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 1
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- برآورد_اعتبارات_هزینه_ای_متفرقه: **7,045,000**
+
+### نتایج پایگاه داده
+
+| برآورد اعتبارات هزینه ای متفرقه |
+| --- |
+| 7045000.0 |
+
+تعداد ردیف‌ها: **1**
+
+### جمع‌بندی
+- برآورد_اعتبارات_هزینه_ای_متفرقه: **7,045,000**
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+دسته: ارجاع یک سلول خاص > مصارف
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT " braورد_اعتبارات_هزینه_ای_عمومی" 
+FROM masaref2_sheet1 
+WHERE "عنوان_دستگاه_اصلي" ILIKE '%بنیاد ایران شناسی%' 
+  AND "سال" = '1403'
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column " braورد_اعتبارات_هزینه_ای_عمومی" does not exist
+LINE 1: SET statement_timeout = '30s'; SELECT " braورد_اعتبارات_هزین...
+                                              ^
+
+[SQL: SET statement_timeout = '30s'; SELECT " braورد_اعتبارات_هزینه_ای_عمومی" 
+FROM masaref2_sheet1 
+WHERE TRANSLATE("عنوان_دستگاه_اصلي", 'يكيۀة', 'یکیهه') ILIKE '%%بنیاد ایران شناسی%%' 
+  AND "سال" = '1403']
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=True)
+INFO:core.orchestrators.retrieval_orchestrator:🔗 Using multi-hop retrieval...
+WARNING:core.orchestrators.retrieval_orchestrator:⚠️ Multi-hop failed: Multi-hop retriever doesn't have expected methods, falling back to hybrid search
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: 
+دستگاه اجرایی: بنیاد ایران‌شناسی
+کد دستگاه: 101028
+سال: 1400
+
+## اعتبارات هزی...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403' -> 'اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'هیات عالی گزینش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'هیات عالی گزینش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (165 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['هیات عالی گزینش'], 'income_component': None, 'income_type': 'اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['هیات عالی گزینش'] -> ['هیات عالی گزینش']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+⏱️  زمان اجرا: 28.61 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 2533 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 **تحلیل بودجه: اعتبارات هزینه‌ای (جاری) دستگاه اجرایی بنیاد ایران‌شناسی در سال 1403**
+
+> 📌 **نکته مهم**: بر اساس اسناد موجود، **هیچ اطلاعاتی مربوط به سال 1403** برای دستگاه اجرایی **بنیاد ایران‌شناسی** در بخش **اعتبارات هزینه‌ای (جاری)** یافت نشد.
+
+---
+
+### 🔍 **تحلیل اسناد موجود**
+
+- **دستگاه اصلی**: بنیاد ایران‌شناسی  
+- **دستگاه اجرایی**: بنیاد ایران‌شناسی  
+- **کد دستگاه**: `101028`  
+- **سال‌های موجود در اسناد**: 1399 و 1400  
+- **نوع بودجه**: اعتبارات هزینه‌ای (جاری)
+
+---
+
+### 📅 **اطلاعات مربوط به سال‌های 1399 و 1400 (مبنای تحلیل)**
+
+#### ✅ **سال 1400 (مطابق اسناد)**
+
+| بخش | مقدار (میلیون ریال) |
+|------|------------------------|
+| **اعتبارات عمومی** | 154,905 |
+| **اعتبارات متفرقه** | 0 |
+| **اعتبارات اختصاصی** | 8,000 |
+| **جمع اعتبارات هزینه‌ای (جاری)** | **162,905** |
+
+> 📌 **نکته تحلیلی**: در سال 1400، دستگاه اجرایی بنیاد ایران‌شناسی از **162,905 میلیون ریال** اعتبارات هزینه‌ای (جاری) به‌صورت عمومی و اختصاصی دریافت کرده است. از این میزان، **154,905 میلیون ریال** به صورت عمومی و **8,000 میلیون ریال** به صورت اختصاصی تخصیص یافته است.
+
+#### ✅ **سال 1399 (مبنای مقایسه)**
+
+| بخش | مقدار (میلیون ریال) |
+|------|------------------------|
+| **اعتبارات عمومی** | 117,868 |
+| **اعتبارات متفرقه** | 0 |
+| **اعتبارات اختصاصی** | 8,000 |
+| **جمع اعتبارات هزینه‌ای (جاری)** | **125,868** |
+
+> 📌 **نکته تحلیلی**: در سال 1399، میزان اعتبارات هزینه‌ای (جاری) دستگاه اجرایی بنیاد ایران‌شناسی **125,868 میلیون ریال** بوده که نشان‌دهنده **رشد 37,037 میلیون ریال (حدود 29.4%)** نسبت به سال 1400 است.
+
+---
+
+### ⚠️ **نتیجه‌گیری و توضیح اطلاعات ناقص**
+
+- **اطلاعات دقیق در مورد سال 1403** برای دستگاه اجرایی **بنیاد ایران‌شناسی** در اسناد موجود **نیست**.
+- با این حال، بر اساس اطلاعات موجود، می‌توان گفت که:
+  - دستگاه اجرایی بنیاد ایران‌شناسی در سال 1400 **162,905 میلیون ریال** اعتبارات هزینه‌ای (جاری) دریافت کرده است.
+  - این میزان نسبت به سال 1399 (125,868 میلیون ریال) افزایش چشمگیری داشته است.
+- **هیچ اطلاعاتی در مورد سال 1403** در اسناد مرتبط با این دستگاه وجود ندارد.
+
+---
+
+### 📌 **پیشنهاد به کاربر**
+
+> ❗ **متأسفانه اطلاعات دقیق در مورد [اعتبارات هزینه‌ای عمومی دستگاه اجرایی بنیاد ایران‌شناسی در سال 1403] در اسناد موجود نیست.**  
+>  
+> ✅ **پیشنهاد**: لطفاً سوال را با جزئیات بیشتر مطرح کنید، مثلاً:
+> - آیا ممکن است دستگاه اصلی یا اجرایی متفاوت باشد؟
+> - آیا اطلاعات از سال 1400 یا 1399 کافی است؟
+> - آیا می‌خواهید مقایسه بین سال‌های 1399 و 1400 را داشته باشید؟
+
+---
+
+> 📌 **تذکر نهایی**: تمام اعداد در این تحلیل به **میلیون ریال** ارائه شده‌اند و از جداکننده هزارگان فارسی (٬) برای خوانایی بهتر استفاده شده است.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+دسته: ارجاع یک سلول خاص > مصارف
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 1
+🔹 [QwenClient] System prompt: None...
+🔹 [QwenClient] User prompt: تحلیل کن که این سوال چه نوع پاسخی نیاز دارد:
+
+سوال: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+نوع مجموعه: financial
+
+به صورت JSON پاسخ بده:
+{
+    "intent": "aggregation|lookup|comparison|c...
+INFO:services.intelligent_query_classifier:🤖 LLM-based classification: aggregation -> database (confidence: 0.95)
+INFO:integrations.database_handler:🎯 Query classified: intent=aggregation, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'هیات عالی گزینش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'هیات عالی گزینش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (165 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['هیات عالی گزینش'], 'income_component': None, 'income_type': 'اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['هیات عالی گزینش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['هیات عالی گزینش']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'هیات عالی گزینش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'هیات عالی گزینش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%هیات عالی گزینش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (165 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['هیات عالی گزینش'], 'income_component': None, 'income_type': 'اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%هیات عالی گزینش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT " braورد_اعتبارات_هزینه_ای_اختصاصی" 
+FROM masaref2_sheet1 
+WHERE "عنوان_دستگاه_اصلي" ILIKE '%هیات عالی گزینش%' 
+  AND "سال" = '1403'
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column " braورد_اعتبارات_هزینه_ای_اختصاصی" does not exist
+LINE 1: SET statement_timeout = '30s'; SELECT " braورد_اعتبارات_هزین...
+                                              ^
+
+[SQL: SET statement_timeout = '30s'; SELECT " braورد_اعتبارات_هزینه_ای_اختصاصی" 
+FROM masaref2_sheet1 
+WHERE TRANSLATE("عنوان_دستگاه_اصلي", 'يكيۀة', 'یکیهه') ILIKE '%%هیات عالی گزینش%%' 
+  AND "سال" = '1403']
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=True)
+INFO:core.orchestrators.retrieval_orchestrator:🔗 Using multi-hop retrieval...
+WARNING:core.orchestrators.retrieval_orchestrator:⚠️ Multi-hop failed: Multi-hop retriever doesn't have expected methods, falling back to hybrid search
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: 
+دستگاه اجرایی: هیات عالی گزینش - کمک به هیأت‌هاي مرکزي و هسته‌هاي گزینش و محق...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403' -> 'تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['معاونت علمی و فناوری'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['معاونت علمی و فناوری'] -> ['معاونت علمی و فناوری']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['معاونت علمی و فناوری'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['معاونت علمی و فناوری'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+⏱️  زمان اجرا: 35.80 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 2507 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 **تحلیل بودجه: اعتبارات هزینه‌ای اختصاصی هیات عالی گزینش در سال 1403**
+
+> 📌 **نکته مهم**: بر اساس اسناد موجود، **هیچ اطلاعاتی مربوط به سال 1403** برای دستگاه **هیات عالی گزینش** (کد دستگاه: `101020`) یا دستگاه مرتبط (کد: `101071`) **یافت نشد**.
+
+---
+
+### 🔍 **بررسی اسناد موجود**
+
+| سال | دستگاه اجرایی | کد دستگاه | اعتبارات هزینه‌ای اختصاصی | منبع اطلاعات |
+|------|----------------|------------|-----------------------------|----------------|
+| 1399 | هیأت عالی گزینش | `101020` | 0 میلیون ریال | سند 4 |
+| 1400 | هیأت عالی گزینش | `101020` | 0 میلیون ریال | سند 2 |
+| 1399 | هیات اصلی گزینش - کمک به هیأت‌ها و هسته‌های گزینش | `101071` | 0 میلیون ریال | سند 3 |
+| 1400 | هیات اصلی گزینش - کمک به هیأت‌ها و هسته‌های گزینش | `101071` | 0 میلیون ریال | سند 1 |
+
+---
+
+### 📌 **نتیجه‌گیری و تحلیل**
+
+- **اطلاعات مورد نظر در اسناد موجود یافت نشد**.
+- اگرچه دستگاه **هیات عالی گزینش** (کد `101020`) و دستگاه مرتبط (کد `101071`) در سال‌های 1399 و 1400 مورد بررسی قرار گرفته‌اند، **هیچ یک از این اسناد مربوط به سال 1403 نیست**.
+- در تمامی اسناد موجود، **اعتبارات هزینه‌ای اختصاصی** برای هر دو دستگاه **صفر** گزارش شده است.
+- با این حال، **این اطلاعات نمی‌تواند به‌عنوان مبنایی برای سال 1403 مورد استناد قرار گیرد**، زیرا:
+  - سال 1403 در اسناد بازیابی شده **ذکر نشده است**.
+  - هیچ داده‌ای از سال 1403 در مورد **هیات عالی گزینش** یا دستگاه‌های مرتبط **در دسترس نیست**.
+
+---
+
+### ✅ **پیشنهاد به کاربر**
+
+> ❗ **متأسفانه اطلاعات دقیق در مورد [اعتبارات هزینه‌ای اختصاصی هیات عالی گزینش در سال 1403] در اسناد موجود نیست**.  
+> لطفاً اگر امکان دارد، اطلاعات بودجه سال 1403 را از منابع رسمی مانند **سیستم بودجه ملی (BMS)** یا **سایت وزارت امور مالیه** مجدداً بررسی کنید.  
+> همچنین می‌توانید سوال را با جزئیات بیشتر مطرح کنید، مثلاً:
+> - آیا دستگاه اصلی یا اجرایی دقیق‌تری مد نظر است؟
+> - آیا می‌خواهید تحلیل تاریخی (1399 تا 1400) نیز ارائه شود؟
+
+---
+
+### 📌 **نکات تکمیلی (بر اساس اسناد موجود)**
+
+- **هیات عالی گزینش** (کد `101020`) در سال 1400 دارای **70,000 میلیون ریال** اعتبارات هزینه‌ای جاری بود که **کاملاً عمومی** بود (0 میلیون ریال اختصاصی).
+- **دستگاه مرتبط** (کد `101071`) در هر دو سال 1399 و 1400 نیز **0 میلیون ریال** اعتبار اختصاصی داشت.
+- این می‌تواند نشان‌دهنده **تمرکز بودجه بر روی هزینه‌های عمومی** یا **کمک‌های مالی به سطوح پایین‌تر** باشد، اما **هیچ ارتباطی با سال 1403 ندارد**.
+
+---
+
+> 📌 **تذکر نهایی**:  
+> هرگز از اطلاعات اضافی یا حدسی استفاده نمی‌شود.  
+> پاسخ‌ها **فقط بر اساس اسناد موجود** ارائه می‌شوند.  
+> اگر اطلاعات سال 1403 در دسترس نباشد، **متأسفانه امکان پاسخ‌گویی دقیق وجود ندارد**.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+دسته: ارجاع یک سلول خاص > مصارف
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "براورد_تملک_دارایی_های_سرمایه_ای_عمومی" 
+FROM masaref2_sheet1 
+WHERE "عنوان_دستگاه_اصلي" ILIKE '%معاونت علمی و فناوری%' 
+  AND "سال" = '1403' 
+  AND "براورد_تملک_دارایی_های_سرمایه_ای_عمومی" IS
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column "براورد_تملک_دارایی_های_سرمایه_ای_ع" does not exist
+LINE 1: SET statement_timeout = '30s'; SELECT "براورد_تملک_دارایی_ها...
+                                              ^
+HINT:  Perhaps you meant to reference the column "masaref2_sheet1.براورد_تملک_دارایی_های_سرمایه_ای_ی".
+
+[SQL: SET statement_timeout = '30s'; SELECT "براورد_تملک_دارایی_های_سرمایه_ای_عمومی" 
+FROM masaref2_sheet1 
+WHERE TRANSLATE("عنوان_دستگاه_اصلي", 'يكيۀة', 'یکیهه') ILIKE '%%معاونت علمی و فناوری%%' 
+  AND "سال" = '1403' 
+  AND "براورد_تملک_دارایی_های_سرمایه_ای_عمومی" IS NOT NULL 
+LIMIT 1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=False)
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: 
+دستگاه اجرایی: معاونت علمی و فناوری رئیس جمهور - فناوری‌های فوتونیک و لیزر
+کد...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403' -> 'تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['سازمان سنجش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان سنجش']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان سنجش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان سنجش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (157 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان سنجش'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['سازمان سنجش'] -> ['سازمان سنجش']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['سازمان سنجش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان سنجش']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان سنجش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان سنجش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (157 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان سنجش'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['سازمان سنجش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان سنجش']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان سنجش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان سنجش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (157 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان سنجش'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+⏱️  زمان اجرا: 30.66 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 3343 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 تملک دارایی‌های سرمایه‌ای (عمرانی) - معاونت علمی و فناوری رییس جمهور  
+**سال:** 1403  
+**دستگاه اصلی:** معاونت علمی و فناوری رییس جمهور  
+**دستگاه اجرایی:** معاونت علمی و فناوری رییس جمهور - فناوری‌های فوتونیک و لیزر  
+**کد دستگاه:** `101091`  
+
+---
+
+### 📌 تحلیل مالی بر اساس اسناد موجود
+
+**متأسفانه اطلاعات دقیق در مورد "تملک دارایی‌های سرمایه‌ای" در سال 1403 در اسناد موجود یافت نشد.**  
+با این حال، اطلاعات مرتبطی از سال‌های قبل (1399 و 1401) در دسترس است که می‌تواند به عنوان پایه تحلیلی برای تخمین یا مقایسه استفاده شود.
+
+---
+
+### 🔍 اطلاعات مرتبط از سال‌های قبل
+
+#### ✅ سال 1399 (دستگاه اجرایی: فناوری‌های فوتونیک و لیزر)
+- **کد دستگاه:** `101091`
+- **دستگاه اجرایی:** معاونت علمی و فناوری رییس جمهور - فناوری‌های فوتونیک و لیزر
+- **جمع اعتبارات هزینه‌ای (جاری):** 20,540 میلیون ریال
+- **تفکیک هزینه‌ها:**
+  - اعتبارات عمومی: 20,540 میلیون ریال
+  - اعتبارات متفرقه: 0 میلیون ریال
+  - اعتبارات اختصاصی: 0 میلیون ریال
+
+> ⚠️ **نکته:** این سند فقط شامل **اعتبارات هزینه‌ای (جاری)** است و **هیچ اطلاعاتی درباره تملک دارایی‌های سرمایه‌ای (عمرانی)** ارائه نشده است.
+
+---
+
+#### ✅ سال 1401 (دستگاه اجرایی: فناوری‌های فوتونیک و لیزر)
+- **کد دستگاه:** `101091`
+- **دستگاه اجرایی:** معاونت علمی و فناوری رییس جمهور - فناوری‌های فوتونیک و لیزر
+- **جمع اعتبارات هزینه‌ای (جاری):** 75,968 میلیون ریال
+- **تفکیک هزینه‌ها:**
+  - اعتبارات عمومی: 75,968 میلیون ریال
+  - اعتبارات متفرقه: 0 میلیون ریال
+  - اعتبارات اختصاصی: 0 میلیون ریال
+
+> ⚠️ **نکته:** این سند نیز فقط شامل **اعتبارات هزینه‌ای (جاری)** است و **هیچ اطلاعاتی درباره تملک دارایی‌های سرمایه‌ای** در دسترس نیست.
+
+---
+
+#### ✅ سال 1401 (دستگاه اجرایی: معاونت علمی و فناوری رییس جمهور - کارگروه توسعه زیرساخت و خدمات دیجیتال)
+- **کد دستگاه:** `101069`
+- **جمع اعتبارات هزینه‌ای (جاری):** 2,880,900 میلیون ریال
+- **تفکیک:**
+  - اعتبارات عمومی: 2,880,900 میلیون ریال
+  - متفرقه: 0 میلیون ریال
+  - اختصاصی: 0 میلیون ریال
+
+> ⚠️ **نکته:** این سند نیز **فقط هزینه‌های جاری** را نشان می‌دهد و **هیچ اطلاعاتی درباره تملک دارایی سرمایه‌ای** ارائه نشده است.
+
+---
+
+#### ✅ سال 1401 (دستگاه اجرایی: معاونت علمی و فناوری رییس جمهور - ستادهای توسعه فناوری‌های نوین)
+- **کد دستگاه:** `101078`
+- **جمع اعتبارات هزینه‌ای (جاری):** 420,000 میلیون ریال
+- **تفکیک:**
+  - عمومی: 420,000 میلیون ریال
+  - متفرقه: 0 میلیون ریال
+  - اختصاصی: 0 میلیون ریال
+
+> ⚠️ **نکته:** این سند نیز **فقط هزینه‌های جاری** را شامل می‌شود و **هیچ اطلاعاتی درباره تملک دارایی سرمایه‌ای** وجود ندارد.
+
+---
+
+### 📌 نتیجه‌گیری و تحلیل
+
+- **اطلاعات مورد نظر (تملک دارایی‌های سرمایه‌ای در سال 1403) در اسناد موجود یافت نشد.**
+- تمام اسناد موجود (1399 و 1401) فقط شامل **اعتبارات هزینه‌ای (جاری)** هستند و **هیچ یک از آن‌ها بخش "تملک دارایی‌های سرمایه‌ای" را نشان نمی‌دهند.**
+- **هیچ اطلاعاتی در مورد سرمایه‌گذاری، تملک دارایی، یا بودجه عمرانی** در معاونت علمی و فناوری رییس جمهور در سال 1403 در این مجموعه اسناد وجود ندارد.
+
+---
+
+### 📌 پیشنهاد به کاربر
+
+> ❗ **متأسفانه اطلاعات دقیق در مورد "تملک دارایی‌های سرمایه‌ای" در سال 1403 در اسناد موجود یافت نشد.**  
+> برای دریافت اطلاعات دقیق، لطفاً:
+> 1. سوال را با ذکر **نام دقیق بخش یا کد دستگاه** مجدد مطرح کنید.
+> 2. یا از اسناد مربوط به **بودجه عمرانی** یا **بودجه سرمایه‌ای** در سال 1403 استفاده کنید.
+
+---
+
+> 📌 **نکته نهایی:**  
+> اگر اطلاعات مربوط به **تملک دارایی سرمایه‌ای** در سال 1403 مورد نیاز باشد، باید به **سند بودجه سرمایه‌ای (عمرانی)** مراجعه شود که در این مجموعه اسناد وجود ندارد.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+دسته: ارجاع یک سلول خاص > مصارف
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "براورد_تملک_دارایی_های_سرمایه_ای_متفرقه" 
+FROM masaref2_sheet1 
+WHERE "عنوان_دستگاه_اصلي" ILIKE '%سازمان سنجش%' 
+  AND "کد_بند" ILIKE '%ج%' 
+  AND "سال" ILIKE '1403'
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column "براورد_تملک_دارایی_های_سرمایه_ای_م" does not exist
+LINE 1: SET statement_timeout = '30s'; SELECT "براورد_تملک_دارایی_ها...
+                                              ^
+HINT:  Perhaps you meant to reference the column "masaref2_sheet1.براورد_تملک_دارایی_های_سرمایه_ای_ی".
+
+[SQL: SET statement_timeout = '30s'; SELECT "براورد_تملک_دارایی_های_سرمایه_ای_متفرقه" 
+FROM masaref2_sheet1 
+WHERE TRANSLATE("عنوان_دستگاه_اصلي", 'يكيۀة', 'یکیهه') ILIKE '%%سازمان سنجش%%' 
+  AND TRANSLATE("کد_بند", 'يكيۀة', 'یکیهه') ILIKE '%%ج%%' 
+  AND TRANSLATE("سال", 'يكيۀة', 'یکیهه') ILIKE '%%1403%%']
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=True)
+INFO:core.orchestrators.retrieval_orchestrator:🔗 Using multi-hop retrieval...
+WARNING:core.orchestrators.retrieval_orchestrator:⚠️ Multi-hop failed: Multi-hop retriever doesn't have expected methods, falling back to hybrid search
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: وزارت علوم ، تحقيقات و فناوري
+دستگاه اجرایی: سازمان سنجش آموزش كشور موضوع بند"...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: بودجه فرهنگستان هنر در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'بودجه فرهنگستان هنر در سال 1403' -> 'بودجه فرهنگستان هنر در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   Normalized Query: بودجه فرهنگستان هنر در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'فرهنگستان هنر'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'فرهنگستان هنر'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['فرهنگستان هنر'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['فرهنگستان هنر'] -> ['فرهنگستان هنر']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: بودجه فرهنگستان هنر در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   Normalized Query: بودجه فرهنگستان هنر در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'فرهنگستان هنر'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'فرهنگستان هنر'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['فرهنگستان هنر'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   Normalized Query: بودجه فرهنگستان هنر در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'فرهنگستان هنر'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'فرهنگستان هنر'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['فرهنگستان هنر'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+⏱️  زمان اجرا: 25.14 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 2497 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 تملک دارایی‌های سرمایه‌ای متفرقه سازمان سنجش آموزش کشور - بند "ج" تبصره 49 قانون بودجه سال 1364 کل کشور  
+### سال: 1403
+
+> 📌 **نکته مهم**: بر اساس دستورالعمل‌های ارائه‌شده، اطلاعات مربوط به **تملک دارایی‌های سرمایه‌ای متفرقه** در اسناد موجود **موجود نیست**.  
+> با این حال، اطلاعات مرتبط در مورد **اعتبارات هزینه‌ای (جاری)** در سال 1403 در دسترس است.
+
+---
+
+### 🏢 دستگاه اصلی:
+- **وزارت علوم، تحقیقات و فناوری**
+
+### 🏢 دستگاه اجرایی:
+- **سازمان سنجش آموزش کشور**  
+- **موضوع**: بند "ج" تبصره 49 قانون بودجه سال 1364 کل کشور  
+- **کد دستگاه**: `113560`  
+- **سال بودجه**: 1403
+
+---
+
+### 📌 تحلیل مالی: اعتبارات هزینه‌ای (جاری) در سال 1403
+
+| نوع اعتبار | مقدار (میلیون ریال) |
+|------------|---------------------|
+| **اعتبارات عمومی** | 0 |
+| **اعتبارات متفرقه** | 0 |
+| **اعتبارات اختصاصی** | 11,000,000 |
+| **جمع اعتبارات هزینه‌ای (جاری)** | 11,000,000 میلیون ریال |
+
+> ✅ **جمع کل اعتبارات هزینه‌ای (جاری)**: **11,000,000 میلیون ریال**  
+> (معادل: 11,000,000,000,000,000 ریال)
+
+---
+
+### ⚠️ توضیح در مورد بخش مورد نظر: **تملک دارایی‌های سرمایه‌ای متفرقه**
+
+- **اطلاعات دقیق در مورد "تملک دارایی‌های سرمایه‌ای متفرقه" در سند موجود نیست**.
+- در اسناد مربوط به سال 1403، فقط بخش **اعتبارات هزینه‌ای (جاری)** نمایش داده شده است.
+- از آنجا که **تملک دارایی‌های سرمایه‌ای** در این سند به صورت جداگانه ذکر نشده و **هیچ ستون یا ردیفی** مربوط به "تملک دارایی‌های سرمایه‌ای متفرقه" یا "عمرانی" در این اسناد وجود ندارد، **نمی‌توان به صورت قطعی گزارشی ارائه داد**.
+
+---
+
+### 🔍 تحلیل اطلاعات مرتبط
+
+- در سال‌های 1398 تا 1402، سازمان سنجش آموزش کشور **فقط اعتبارات هزینه‌ای (جاری)** را دریافت کرده است.
+- در سال 1403، **تمام اعتبارات (11,000,000 میلیون ریال)** به صورت **اختصاصی** تخصیص یافته است.
+- **هیچ اشاره‌ای به تملک دارایی سرمایه‌ای** یا **مخارج عمرانی** در این سند وجود ندارد.
+
+---
+
+### 📌 نتیجه‌گیری
+
+- **متأسفانه اطلاعات دقیق در مورد "تملک دارایی‌های سرمایه‌ای متفرقه" سازمان سنجش آموزش کشور در سال 1403 در اسناد موجود یافت نشد**.
+- با این حال، **11,000,000 میلیون ریال** به صورت **اعتبارات اختصاصی جاری** در سال 1403 تخصیص یافته است.
+- اگر نیاز به اطلاعات مربوط به **مخارج عمرانی یا تملک دارایی سرمایه‌ای** دارید، توصیه می‌شود اسناد مربوط به **بودجه سال 1403** در بخش **"تملک دارایی‌های سرمایه‌ای"** یا **"مخارج عمرانی"** را بررسی کنید.
+
+---
+
+> 📌 **پیشنهاد**: اگر امکان دارد، سوال را با جزئیات بیشتر مطرح کنید، مثلاً:  
+> - "آیا سازمان سنجش در سال 1403 مخارجی برای تملک دارایی سرمایه‌ای متفرقه داشته است؟"  
+> - یا "آیا این اعتبارات در بخش مالیاتی یا بودجه سال 1403 در بخش سرمایه‌ای گزارش شده است؟"
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+دسته 2: جمع دو یا چند سلول
+====================================================================================================
+
+--- زیردسته 2a: جمع (مصارف) ---
+
+====================================================================================================
+سوال: بودجه فرهنگستان هنر در سال 1403
+دسته: جمع دو یا چند سلول > جمع (مصارف)
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT 
+    m."عنوان_دستگاه_اصلی",
+    m."جمع_كل" AS "بودجه_کل"
+FROM 
+    masaref2_sheet1 m
+WHERE 
+    m."عنوان_دستگاه_اصلی" ILIKE '%فرهنگستان هنر%'
+    AND m."سال" = '1403'
+ORDER BY 
+    m."جمع_كل" D
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column m.عنوان_دستگاه_اصلی does not exist
+LINE 2:     m."عنوان_دستگاه_اصلی",
+            ^
+HINT:  Perhaps you meant to reference the column "m.عنوان_دستگاه_اصلي".
+
+[SQL: SET statement_timeout = '30s'; SELECT 
+    m."عنوان_دستگاه_اصلی",
+    m."جمع_كل" AS "بودجه_کل"
+FROM 
+    masaref2_sheet1 m
+WHERE 
+    TRANSLATE(m."عنوان_دستگاه_اصلی", 'يكيۀة', 'یکیهه') ILIKE '%%فرهنگستان هنر%%'
+    AND m."سال" = '1403'
+ORDER BY 
+    m."جمع_كل" DESC
+LIMIT 1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=True)
+INFO:core.orchestrators.retrieval_orchestrator:🔗 Using multi-hop retrieval...
+WARNING:core.orchestrators.retrieval_orchestrator:⚠️ Multi-hop failed: Multi-hop retriever doesn't have expected methods, falling back to hybrid search
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: دبيرخانه شورايعالي انقلاب فرهنگي
+دستگاه اجرایی: فرهنگستان هنر
+کد دستگاه: 10103...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403' -> 'اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['نهاد ریاست جمهوری'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['نهاد ریاست جمهوری'] -> ['نهاد ریاست جمهوری']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['نهاد ریاست جمهوری'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['نهاد ریاست جمهوری'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+⏱️  زمان اجرا: 24.28 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 1791 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 بودجه فرهنگستان هنر در سال 1403
+
+### 🏢 دستگاه اصلی:
+- **نهاد ریاست جمهوری**
+
+### 🏛️ دستگاه اجرایی:
+- **فرهنگستان هنر**
+- **کد دستگاه**: `101033`
+- **سال بودجه**: 1403
+
+---
+
+## 💰 جمع کل اعتبارات هزینه‌ای (جاری) فرهنگستان هنر در سال 1403:
+> **911,074 میلیون ریال**
+
+### 📊 تفکیک اعتبارات هزینه‌ای (جاری):
+| نوع اعتبار | مبلغ (میلیون ریال) |
+|------------|-------------------|
+| **اعتبارات عمومی** | 796,074 |
+| **اعتبارات متفرقه** | 0 |
+| **اعتبارات اختصاصی** | 115,000 |
+| **جمع اعتبارات هزینه‌ای** | **911,074** |
+
+> ✅ **نکته فنی**: سال 1403 مطابق با قوانین مدیریت بودجه، یارانه‌ای در بودجه این سال وجود ندارد. بنابراین، جمع کل به صورت مستقیم از سه بخش عمومی، اختصاصی و متفرقه محاسبه شده است.
+
+---
+
+## 📈 درآمد حاصل از خدمات پژوهشی و تحقیقاتی (کد: 140107)
+- **منبع درآمد**: درآمد حاصل از خدمات پژوهشی و تحقیقاتی
+- **کد منبع**: `140107`
+- **دستگاه اجرایی**: فرهنگستان هنر
+- **سال**: 1403
+- **نوع درآمد**: درآمد عمومی (در سند ذکر نشده، اما در ساختار بودجه مربوط به فرهنگستان هنر قرار دارد)
+
+> ⚠️ **ملاحظه**: اطلاعات دقیق در مورد **مقدار درآمد** حاصل از این بخش در سند موجود نیست، اما بر اساس ساختار مالی ارائه شده، این درآمد بخشی از **درآمدهای حاصل از خدمات** (کد 140100) و در چارچوب **درآمدهای عمومی** قرار می‌گیرد.
+
+---
+
+## 📌 نتیجه‌گیری نهایی:
+- **فرهنگستان هنر** در سال 1403 با **بودجه جاری 911,074 میلیون ریال** از سوی **نهاد ریاست جمهوری** تأمین می‌شود.
+- بیشترین بخش از این بودجه (796,074 میلیون ریال) به صورت **عمومی** و **اختصاصی** (115,000 میلیون ریال) تخصیص یافته است.
+- **درآمد حاصل از خدمات پژوهشی و تحقیقاتی** به عنوان یکی از منابع درآمدی معتبر فرهنگستان هنر در سال 1403 مورد تأیید قرار گرفته، اما مقدار دقیق آن در اسناد موجود نیست.
+
+> 📌 **توصیه تحلیلی**: برای تحلیل دقیق‌تر، می‌توان به سند‌های مالی جزئیاتی مانند بودجه سال‌های قبل یا گزارش‌های اجرایی فرهنگستان هنر مراجعه کرد.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+دسته: جمع دو یا چند سلول > جمع (مصارف)
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT 
+    "عنوان_دستگاه_اصلي",
+    "جمع_براورد_اعتبارات_هزینه_ای" AS total_expense_budget
+FROM 
+    masaref2_sheet1
+WHERE 
+    "عنوان_دستگاه_اصلي" ILIKE '%ریاست جمهوری%'
+    AND "سال" = '1403'
+ORDER
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: درآمدهای وزارت نفت در سال 1401 چقدر است
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درآمدهای وزارت نفت در سال 1401 چقدر است' -> 'درآمدهای وزارت نفت در سال 1401 چقدر است'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['وزارت', 'نفت']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['وزارت', 'نفت']
+INFO:services.query_analyzer:   Normalized Query: درامدهای وزارت نفت در سال 1401 چق در است
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'وزارت نفت'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'وزارت نفت'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'وزارت نفت'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%')
+INFO:services.query_analyzer:   ✅ Entity filter created (153 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1401'], 'entity_names': ['وزارت', 'نفت'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['وزارت', 'نفت'] -> ['وزارت نفت']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['وزارت', 'نفت'] -> ['وزارت نفت']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: aggregation -> database (confidence: 0.95)
+INFO:integrations.database_handler:🎯 Query classified: intent=aggregation, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1401']
+INFO:services.text_to_sql_agent:📊 Table type: incomes, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: درآمدهای وزارت نفت در سال 1401 چقدر است
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['وزارت', 'نفت']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['وزارت', 'نفت']
+INFO:services.query_analyzer:   Normalized Query: درامدهای وزارت نفت در سال 1401 چق در است
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'وزارت نفت'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'وزارت نفت'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'وزارت نفت'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%')
+INFO:services.query_analyzer:   ✅ Entity filter created (153 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1401'], 'entity_names': ['وزارت', 'نفت'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=incomes for years=['1401']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['وزارت', 'نفت']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['وزارت', 'نفت']
+INFO:services.query_analyzer:   Normalized Query: درامدهای وزارت نفت در سال 1401 چق در است
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'وزارت نفت'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'وزارت نفت'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'وزارت نفت'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%')
+INFO:services.query_analyzer:   ✅ Entity filter created (153 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1401'], 'entity_names': ['وزارت', 'نفت'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+⏱️  زمان اجرا: 8.91 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 234 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 1
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- 1 ردیف مالی مرتبط شناسایی شد.
+
+### نتایج پایگاه داده
+
+| عنوان دستگاه اصلی | total expense budget |
+| --- | --- |
+| نهاد ریاست جمهوری | 955065.0 |
+
+تعداد ردیف‌ها: **1**
+
+### جمع‌بندی
+- total_expense_budget: **955,065**
+----------------------------------------------------------------------------------------------------
+
+--- زیردسته 2b: جمع (منابع) ---
+
+====================================================================================================
+سوال: درآمدهای وزارت نفت در سال 1401 چقدر است
+دسته: جمع دو یا چند سلول > جمع (منابع)
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT SUM("جمع_کل") AS total_amount
+FROM manabe_sheet1
+WHERE "عنوان_دستگاه_اصلی" ILIKE '%وزارت نفت%'
+  AND "سال" = '1401'
+LIMIT 1
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: بودجه دانشگاه تهران
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'بودجه دانشگاه تهران' -> 'بودجه دانشگاه تهران چیست؟'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] No year detected in original query, appending default year 1403
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:   Normalized Query: بودجه دانشگاه تهران
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تهران'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تهران'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تهران'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.63
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.63
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': [], 'entity_names': ['دانشگاه', 'تهران'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.63}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.63
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تهران'] -> ['دانشگاه تهران']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تهران'] -> ['دانشگاه تهران']
+INFO:services.hybrid_query_analyzer:🔄 Falling back to LLM
+INFO:services.hybrid_query_analyzer:📤 Sending query to LLM: بودجه دانشگاه تهران...
+⏱️  زمان اجرا: 9.83 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 224 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 1
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- جمع کل: **5,035,167,797**
+- جمع کل مقادیر در این بازه برابر **5,035,167,797** است.
+
+### نتایج پایگاه داده
+
+| جمع کل |
+| --- |
+| 5,035,167,797 |
+
+تعداد ردیف‌ها: **1**
+
+### جمع‌بندی
+- جمع کل: **5,035,167,797**
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: بودجه دانشگاه تهران
+دسته: جمع دو یا چند سلول > جمع (منابع)
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: تو یک تحلیلگر متخصص سوالات مالی فارسی هستی. باید سوالات را تحلیل کنی و JSON معتبر برگردانی....
+🔹 [QwenClient] User prompt: تحلیل این سوال مالی را انجام بده و خروجی را به صورت JSON معتبر برگردان:
+
+سوال: بودجه دانشگاه تهران
+
+خروجی باید شامل این فیلدها باشد:
+{
+    "entity_names": ["لیست نام سازمان‌ها/دستگاه‌ها به صورت عبارات...
+ERROR:services.hybrid_query_analyzer:❌ LLM analysis failed: 'NoneType' object is not iterable
+Traceback (most recent call last):
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/hybrid_query_analyzer.py", line 882, in _analyze_with_llm
+    result = self._parse_llm_response(response_text, query)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/hybrid_query_analyzer.py", line 934, in _parse_llm_response
+    result = self._normalize_llm_result(result, query)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/hybrid_query_analyzer.py", line 958, in _normalize_llm_result
+    normalized['years'] = [
+TypeError: 'NoneType' object is not iterable
+WARNING:services.hybrid_query_analyzer:⚠️ LLM not available, returning static results despite low confidence
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.80)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=[]
+INFO:services.text_to_sql_agent:📊 Table type: costs, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: بودجه دانشگاه تهران
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:   Normalized Query: بودجه دانشگاه تهران
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تهران'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تهران'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تهران'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.63
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.63
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': [], 'entity_names': ['دانشگاه', 'تهران'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.63}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=costs for years=[]
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:   Normalized Query: بودجه دانشگاه تهران
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تهران'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تهران'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تهران'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.63
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.63
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': [], 'entity_names': ['دانشگاه', 'تهران'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.63}
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT 
+    m.عنوان_دستگاه_اصلی,
+    m.کد_دستگاه_اجرايي,
+    m.عنوان_دستگاه_اجرايي,
+    m.جمع_كل AS "جمع کل بودجه"
+FROM 
+    masaref2_sheet1 m
+WHERE 
+    m.عنوان_دستگاه_اصلی ILIKE '%دانشگاه تهران%'
+OR
+ERROR:services.database_service:SQL query execution failed: (psycopg2.errors.UndefinedColumn) column m.عنوان_دستگاه_اصلی does not exist
+LINE 2:     m.عنوان_دستگاه_اصلی,
+            ^
+HINT:  Perhaps you meant to reference the column "m.عنوان_دستگاه_اصلي".
+
+[SQL: SET statement_timeout = '30s'; SELECT 
+    m.عنوان_دستگاه_اصلی,
+    m.کد_دستگاه_اجرايي,
+    m.عنوان_دستگاه_اجرايي,
+    m.جمع_كل AS "جمع کل بودجه"
+FROM 
+    masaref2_sheet1 m
+WHERE 
+    m.عنوان_دستگاه_اصلی ILIKE '%%دانشگاه تهران%%'
+ORDER BY 
+    m.جمع_كل DESC
+LIMIT 1]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+INFO:core.orchestrators.retrieval_orchestrator:🔍 Retrieving from 'budget_financial' (top_k=5, rerank=True, multi_hop=True)
+INFO:core.orchestrators.retrieval_orchestrator:🔗 Using multi-hop retrieval...
+WARNING:core.orchestrators.retrieval_orchestrator:⚠️ Multi-hop failed: Multi-hop retriever doesn't have expected methods, falling back to hybrid search
+INFO:core.orchestrators.retrieval_orchestrator:📊 Semantic search: 20 results
+INFO:core.orchestrators.retrieval_orchestrator:🔑 Keyword search (BM25): 10 results
+INFO:core.orchestrators.retrieval_orchestrator:🔀 Hybrid merge: 10 final results
+INFO:core.orchestrators.retrieval_orchestrator:📊 Reranking 10 results...
+INFO:core.orchestrators.retrieval_orchestrator:✅ Simple reranking complete
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:core.orchestrators.answer_orchestrator:🤖 Generating answer with LLM...
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: دانشگاه علوم پزشكي و خدمات بهداشتي، درماني تهران - بهداشت و درمان
+دستگاه اجرای...
+🔹 [QwenClient] User prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درامد استانی اختصاصی دانشگاه تبریز در سال 1403' -> 'درامد استانی اختصاصی دانشگاه تبریز در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:   Normalized Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تبریز'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['دانشگاه', 'تبریز'], 'income_component': None, 'income_type': 'استانی_اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تبریز'] -> ['دانشگاه تبریز']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تبریز'] -> ['دانشگاه تبریز']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: incomes, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:   Normalized Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تبریز'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['دانشگاه', 'تبریز'], 'income_component': None, 'income_type': 'استانی_اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=incomes for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:   Normalized Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تبریز'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['دانشگاه', 'تبریز'], 'income_component': None, 'income_type': 'استانی_اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+⏱️  زمان اجرا: 31.51 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 1809 کاراکتر
+🛣️  Route: rag
+🔧 Features استفاده شده: {}
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+## 📊 بودجه دانشگاه علوم پزشکی و خدمات بهداشتی، درمانی تهران – سال 1398
+
+### 📌 اطلاعات دستگاه
+```
+[دستگاه اصلی]:
+- دانشگاه علوم پزشکی و خدمات بهداشتی، درمانی تهران - بهداشت و درمان
+- کد دستگاه: 123703
+- سال: 1398
+```
+
+```
+[دستگاه اجرایی]:
+- دانشگاه علوم پزشکی و خدمات بهداشتی، درمانی تهران - مركز تحقيقات علوم و تكنولوژي در پزشكي
+- کد دستگاه: 123703
+```
+
+---
+
+### 💰 جمع کل اعتبارات هزینه‌ای (جاری) در سال 1398:
+**26,900 میلیون ریال**
+
+#### تفکیک اعتبارات هزینه‌ای (جاری):
+| نوع اعتبار | مبلغ (میلیون ریال) |
+|------------|-------------------|
+| **اعتبارات عمومی** | 26,900 |
+| **اعتبارات متفرقه** | 0 |
+| **جمع اعتبارات هزینه‌ای (جاری)** | **26,900** |
+
+> ⚠️ **نکته فنی**:  
+- این بودجه مربوط به سال 1398 است و در سال 1401 یا 1403 معتبر نیست.  
+- از آنجا که سال 1398 در سیستم یارانه‌های مالی مربوط به سال 1401 نیست، **یارانه در این بودجه لحاظ نشده است**.  
+- همچنین، این بودجه **فقط شامل هزینه‌های جاری** است و هیچ اطلاعاتی در مورد تملک دارایی‌های سرمایه‌ای یا درآمدهای واگذاری دارایی‌های سرمایه‌ای در این سند وجود ندارد.
+
+---
+
+### 📌 توضیحات اضافی:
+- این بودجه مربوط به **دستگاه اجرایی** دانشگاه علوم پزشکی و خدمات بهداشتی، درمانی تهران - مركز تحقيقات علوم و تكنولوژي در پزشكي است.
+- از آنجا که در اسناد موجود **هیچ اطلاعاتی در مورد درآمدها، منابع یا واگذاری دارایی‌های سرمایه‌ای** برای این دستگاه در سال 1398 یافت نشد، فقط اطلاعات مربوط به **هزینه‌های جاری** قابل ارائه است.
+- اطلاعات دقیق در مورد **درآمدهای ملی یا استانی** یا **واگذاری دارایی‌های سرمایه‌ای** در این سند موجود نیست، اما بر اساس اطلاعات موجود می‌توان گفت که **کل اعتبارات هزینه‌ای این دستگاه در سال 1398 برابر با 26,900 میلیون ریال** است.
+
+---
+
+> 📌 **تذکر نهایی**:  
+اگر نیاز به بودجه دانشگاه تهران در سال **1403** یا اطلاعات مربوط به **درآمدها، واگذاری دارایی‌ها یا تملک دارایی‌های سرمایه‌ای** دارید، لطفاً سوال را با جزئیات بیشتر مطرح کنید.
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+دسته 3: درآمدهای استانی/ملی (منابع)
+====================================================================================================
+
+====================================================================================================
+سوال: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+دسته: درآمدهای استانی/ملی > منابع
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "جمع_در_آمد_اختصاصي" 
+FROM manabe_sheet1 
+WHERE "عنوان_دستگاه_اصلی" ILIKE '%دانشگاه تبریز%' 
+  AND "سال" = '1403' 
+  AND "جمع_در_آمد_اختصاصي" IS NOT NULL
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: درامد ملی سازمان تامین اجتماعی در سال 1403
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درامد ملی سازمان تامین اجتماعی در سال 1403' -> 'درامد ملی سازمان تامین اجتماعی در سال 1403'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد ملی سازمان تامین اجتماعی در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'ملی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['سازمان', 'تامین', 'اجتماعی'] -> ['سازمان تامین اجتماعی']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['سازمان', 'تامین', 'اجتماعی'] -> ['سازمان تامین اجتماعی']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: lookup -> database (confidence: 0.90)
+INFO:integrations.database_handler:🎯 Query classified: intent=lookup, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1403']
+INFO:services.text_to_sql_agent:📊 Table type: incomes, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: درامد ملی سازمان تامین اجتماعی در سال 1403
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد ملی سازمان تامین اجتماعی در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'ملی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=incomes for years=['1403']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد ملی سازمان تامین اجتماعی در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'ملی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+⏱️  زمان اجرا: 8.70 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 223 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 4
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- 4 ردیف مالی مرتبط شناسایی شد.
+
+### نتایج پایگاه داده
+
+| جمع در آمد اختصاصی |
+| --- |
+| 1,204,545 |
+| 440,000 |
+| 160,000 |
+| 150,000 |
+
+تعداد ردیف‌ها: **4**
+
+### جمع‌بندی
+- جمع در آمد اختصاصی: **1,954,545**
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: درامد ملی سازمان تامین اجتماعی در سال 1403
+دسته: درآمدهای استانی/ملی > منابع
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "جمع_کل_ملي" 
+FROM manabe_sheet1 
+WHERE "عنوان_دستگاه_اصلی" ILIKE '%سازمان تامین اجتماعی%' 
+  AND "سال" = '1403' 
+LIMIT 1
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+INFO:core.refactored_rag_system:🎯 Using orchestrator-based retrieve_and_answer
+INFO:core.orchestrators.answer_orchestrator:💬 Query: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+INFO:utils.collection_utils:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درامد کل موسسه کار و تامین اجتماعی در سال 1402' -> 'درامد کل موسسه کار و تامین اجتماعی در سال 1402'
+INFO:core.orchestrators.query_orchestrator:📅 [BUDGET] Year detected in original query
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 4 entities: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (185 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.70
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.70
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1402'], 'entity_names': ['موسسه', 'کار', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': True, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.7}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.70
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['موسسه', 'کار', 'تامین', 'اجتماعی'] -> ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:core.orchestrators.query_orchestrator:📊 Query analysis: simple_sum
+INFO:core.orchestrators.answer_orchestrator:🔍 Checking SQL database for collection=budget_financial
+INFO:services.intelligent_query_classifier:🎯 Pattern-based classification: aggregation -> database (confidence: 0.95)
+INFO:integrations.database_handler:🎯 Query classified: intent=aggregation, source=database
+INFO:integrations.database_handler:🚀 Executing Text-to-SQL (is_financial=True)
+INFO:services.text_to_sql_agent:🔧 Executing with pre-analyzed query: category=simple_sum
+INFO:services.text_to_sql_agent:🔄 Building SQL with analysis: category=simple_sum, years=['1402']
+INFO:services.text_to_sql_agent:📊 Table type: incomes, has_incomes=False, has_costs=False, costs_table=None
+INFO:services.text_to_sql_agent:🤖 Generating SQL for query: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 4 entities: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (185 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.70
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.70
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1402'], 'entity_names': ['موسسه', 'کار', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': True, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.7}
+INFO:services.text_to_sql_agent:🎯 Query Category: simple_sum
+INFO:services.text_to_sql_agent:🔄 simple_sum: detected table_type=incomes for years=['1402']
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 4 entities: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['موسسه', 'کار', 'تامین', 'اجتماعی']
+INFO:services.query_analyzer:   Normalized Query: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'موسسه کار و تامین اجتماعی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%موسسه کار و تامین اجتماعی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (185 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.70
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.70
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1402'], 'entity_names': ['موسسه', 'کار', 'تامین', 'اجتماعی'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%موسسه کار و تامین اجتماعی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': True, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.7}
+⏱️  زمان اجرا: 9.84 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 224 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 1
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- جمع_کل_ملي: **67,500,000**
+- جمع کل مقادیر در این بازه برابر **67,500,000** است.
+
+### نتایج پایگاه داده
+
+| جمع کل ملی |
+| --- |
+| 67500000.0 |
+
+تعداد ردیف‌ها: **1**
+
+### جمع‌بندی
+- جمع کل ملی: **67,500,000**
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+سوال: درامد کل موسسه کار و تامین اجتماعی در سال 1402
+دسته: درآمدهای استانی/ملی > منابع
+====================================================================================================
+
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک متخصص SQL هستید که می‌توانید پرسش‌های طبیعی را به SQL query تبدیل کنید.
+باید فقط SQL query را برگردانید، بدون توضیحات اضافی.
+از دستورات SELECT استفاده کنید، نام ستون‌های فارسی یا دارای فاصله را...
+🔹 [QwenClient] User prompt: شما یک متخصص SQL هستید. بر اساس schema زیر، یک SQL query بنویسید که پاسخ سوال کاربر را بدهد.
+
+# Schema پایگاه داده:
+# Schema برای Collection: budget_financial
+
+جدول: manabe_sheet1
+Sheet: Sheet1
+ستون‌ه...
+INFO:services.text_to_sql_agent:✅ Generated SQL: SELECT "جمع_کل" AS درآمد_کل_موسسه
+FROM manabe_sheet1
+WHERE "عنوان_دستگاه_اصلی" ILIKE '%کار و تامین اجتماعی%'
+  AND "سال" = '1402'
+LIMIT 1
+INFO:integrations.database_handler:✅ Direct database query successful
+INFO:core.orchestrators.answer_orchestrator:📊 Database handler returned result: answer=False, database_results=True
+INFO:core.orchestrators.answer_orchestrator:📊 Checking database_results: exists=True, success=True
+INFO:core.orchestrators.answer_orchestrator:✅ Database query successful, generating answer from results
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fb0ec34fdf0>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7fb16052d540>, 5718739.020323073)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7fb0ec34feb0>
+⏱️  زمان اجرا: 7.02 ثانیه
+✅ موفقیت: بله
+📏 طول پاسخ: 168 کاراکتر
+🛣️  Route: database
+🔧 Features استفاده شده: {'database': True, 'intelligent_classifier': True}
+🗄️  Database Results: موجود
+   - تعداد نتایج: 1
+
+📝 پاسخ:
+----------------------------------------------------------------------------------------------------
+### خلاصه پاسخ
+- درآمد_کل_موسسه: **5,000**
+
+### نتایج پایگاه داده
+
+| درآمد کل موسسه |
+| --- |
+| 5000.0 |
+
+تعداد ردیف‌ها: **1**
+
+### جمع‌بندی
+- درآمد_کل_موسسه: **5,000**
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+خلاصه نتایج
+====================================================================================================
+
+📊 آمار کلی:
+  - تعداد کل سوالات: 12
+  - سوالات موفق: 12 (100.0%)
+  - سوالات ناموفق: 0 (0.0%)
+  - زمان کل: 260.46 ثانیه
+  - میانگین زمان: 21.70 ثانیه
+  - استفاده از Database: 6 (50.0%)
+  - استفاده از RAG: 6 (50.0%)
+
+📈 آمار به تفکیک دسته:
+  - ارجاع یک سلول خاص:
+    • کل: 5
+    • موفق: 5 (100.0%)
+    • Database: 1 (20.0%)
+  - جمع دو یا چند سلول:
+    • کل: 4
+    • موفق: 4 (100.0%)
+    • Database: 2 (50.0%)
+  - درآمدهای استانی/ملی:
+    • کل: 3
+    • موفق: 3 (100.0%)
+    • Database: 3 (100.0%)
+
+💾 گزارش کامل در فایل 'comprehensive_test_report_20251206_094857.json' ذخیره شد

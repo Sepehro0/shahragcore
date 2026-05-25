@@ -1,0 +1,1012 @@
+{
+  "timestamp": "2025-12-19T16:59:31.833936",
+  "summary": {
+    "total_tests": 14,
+    "successful_tests": 11,
+    "correct_behavior": 11,
+    "phase3_usage": 8,
+    "phase4_usage": 8
+  },
+  "results": [
+    {
+      "collection": "zabete_qa",
+      "query": "ماده 46 چیست؟",
+      "complexity": "low",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.16000000000000003,
+        "metadata": {
+          "type": "material_comprehensive",
+          "material_number": "46",
+          "total_matches": 4,
+          "returned_matches": 4,
+          "used_llm": true,
+          "processing_time_seconds": 25.333171,
+          "timestamp": "2025-12-19T16:57:22.810935",
+          "sources_count": 4,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false,
+          "advanced_answer_policy": false,
+          "query_complexity_analysis": false,
+          "adaptive_thresholds": false,
+          "pre_generation_guard": false,
+          "semantic_alignment_check": false,
+          "enhanced_keyword_coverage": false,
+          "context_contradiction_check": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "query": "تبصره 2 ماده 46 چه می‌گوید؟",
+      "complexity": "low",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.16000000000000003,
+        "metadata": {
+          "type": "material_comprehensive",
+          "material_number": "46",
+          "total_matches": 4,
+          "returned_matches": 4,
+          "used_llm": true,
+          "processing_time_seconds": 17.272825,
+          "timestamp": "2025-12-19T16:57:41.090494",
+          "sources_count": 4,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false,
+          "advanced_answer_policy": false,
+          "query_complexity_analysis": false,
+          "adaptive_thresholds": false,
+          "pre_generation_guard": false,
+          "semantic_alignment_check": false,
+          "enhanced_keyword_coverage": false,
+          "context_contradiction_check": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "query": "چرا قراردادهای EPC مهم هستند؟",
+      "complexity": "high",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.5960755870514037,
+          "confidence_breakdown": {
+            "retrieval_score": 0.8040412007710513,
+            "answer_quality": 0.4633160621761658,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9943833573776133,
+            "domain_match": 0.5,
+            "query_complexity_adjustment": 0.015000000000000003,
+            "retrieval_weight": 0.23000000000000004,
+            "quality_weight": 0.37
+          },
+          "hallucination_detected": true,
+          "faithfulness_score": 0.4633160621761658,
+          "query_complexity": {
+            "type": "analytical",
+            "complexity_score": 0.8,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.71,
+            "detected_patterns": [
+              "analytical:چرا"
+            ],
+            "word_count": 5,
+            "query_length": 29
+          },
+          "confidence_result": {
+            "confidence": 0.5960755870514037,
+            "breakdown": {
+              "retrieval_score": 0.8040412007710513,
+              "answer_quality": 0.4633160621761658,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9943833573776133,
+              "domain_match": 0.5,
+              "query_complexity_adjustment": 0.015000000000000003,
+              "retrieval_weight": 0.23000000000000004,
+              "quality_weight": 0.37
+            },
+            "suggested_threshold": 0.71
+          },
+          "policy_decision": {
+            "strategy": "warning_light",
+            "reason": "medium_confidence",
+            "confidence": 0.5960755870514037,
+            "explanation": {
+              "decision": "light_warning",
+              "factors": {
+                "confidence": 0.6,
+                "retrieval_avg_score": 0.8,
+                "retrieval_max_score": 0.81,
+                "num_results": 5,
+                "query_type": "analytical",
+                "query_complexity_score": 0.8,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان متوسط ارائه شده است. در صورت نیاز، می‌توانید با متخصص مشورت کنید."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.6834918635927774,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "warning_light",
+          "domain_match_confidence": 0.5,
+          "processing_time_seconds": 21.801531,
+          "timestamp": "2025-12-19T16:58:03.898898",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "query": "تفاوت EPC و BOT چیست؟",
+      "complexity": "high",
+      "should_reject": false,
+      "success": false,
+      "error": "No complete chunk received",
+      "response": {}
+    },
+    {
+      "collection": "zabete_qa",
+      "query": "چگونه قرارداد EPC منعقد می‌شود؟",
+      "complexity": "medium",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.5869680758340438,
+          "confidence_breakdown": {
+            "retrieval_score": 0.8424725733200709,
+            "answer_quality": 0.3522786885245902,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9708539456129074,
+            "domain_match": 0.5,
+            "query_complexity_adjustment": 0.004999999999999999,
+            "retrieval_weight": 0.3,
+            "quality_weight": 0.3
+          },
+          "hallucination_detected": true,
+          "faithfulness_score": 0.3522786885245902,
+          "query_complexity": {
+            "type": "unknown",
+            "complexity_score": 0.6,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.52,
+            "detected_patterns": [],
+            "word_count": 5,
+            "query_length": 31
+          },
+          "confidence_result": {
+            "confidence": 0.5869680758340438,
+            "breakdown": {
+              "retrieval_score": 0.8424725733200709,
+              "answer_quality": 0.3522786885245902,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9708539456129074,
+              "domain_match": 0.5,
+              "query_complexity_adjustment": 0.004999999999999999,
+              "retrieval_weight": 0.3,
+              "quality_weight": 0.3
+            },
+            "suggested_threshold": 0.52
+          },
+          "policy_decision": {
+            "strategy": "warning_light",
+            "reason": "medium_confidence",
+            "confidence": 0.5869680758340438,
+            "explanation": {
+              "decision": "light_warning",
+              "factors": {
+                "confidence": 0.59,
+                "retrieval_avg_score": 0.83,
+                "retrieval_max_score": 0.85,
+                "num_results": 5,
+                "query_type": "unknown",
+                "query_complexity_score": 0.6,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان متوسط ارائه شده است. در صورت نیاز، می‌توانید با متخصص مشورت کنید."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.7759755237234963,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "warning_light",
+          "domain_match_confidence": 0.5,
+          "processing_time_seconds": 30.158377,
+          "timestamp": "2025-12-19T16:58:38.316807",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "query": "هوا چطور است؟",
+      "complexity": "low",
+      "should_reject": true,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": false,
+        "has_answer": true,
+        "confidence": 0.95,
+        "metadata": {
+          "rejected_by": "intent_gate",
+          "reason": "out_of_scope",
+          "intent_type": "out_of_scope",
+          "gate_confidence": 0.95
+        },
+        "used_features": {
+          "intent_gate": true,
+          "rejected": true
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "query": "صندوق باور چیست؟",
+      "complexity": "low",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.6957293032706828,
+          "confidence_breakdown": {
+            "retrieval_score": 0.7012298786640168,
+            "answer_quality": 0.9763157894736842,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9344323317209879,
+            "domain_match": 0.5,
+            "query_complexity_adjustment": -0.009999999999999998,
+            "retrieval_weight": 0.37,
+            "quality_weight": 0.23000000000000004
+          },
+          "hallucination_detected": false,
+          "faithfulness_score": 0.9763157894736842,
+          "query_complexity": {
+            "type": "definitional",
+            "complexity_score": 0.30000000000000004,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.36,
+            "detected_patterns": [
+              "definitional:چیست"
+            ],
+            "word_count": 3,
+            "query_length": 16
+          },
+          "confidence_result": {
+            "confidence": 0.6957293032706828,
+            "breakdown": {
+              "retrieval_score": 0.7012298786640168,
+              "answer_quality": 0.9763157894736842,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9344323317209879,
+              "domain_match": 0.5,
+              "query_complexity_adjustment": -0.009999999999999998,
+              "retrieval_weight": 0.37,
+              "quality_weight": 0.23000000000000004
+            },
+            "suggested_threshold": 0.36
+          },
+          "policy_decision": {
+            "strategy": "direct",
+            "reason": "high_confidence",
+            "confidence": 0.6957293032706828,
+            "explanation": {
+              "decision": "direct",
+              "factors": {
+                "confidence": 0.7,
+                "retrieval_avg_score": 0.66,
+                "retrieval_max_score": 0.72,
+                "num_results": 5,
+                "query_type": "definitional",
+                "query_complexity_score": 0.3,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان بالا ارائه شده است."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.8877906234176071,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "direct",
+          "domain_match_confidence": 0.5,
+          "processing_time_seconds": 6.784282,
+          "timestamp": "2025-12-19T16:58:47.112549",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "query": "چگونه در صندوق باور ثبت نام کنم؟",
+      "complexity": "medium",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.6856263993467602,
+          "confidence_breakdown": {
+            "retrieval_score": 0.5958749168259757,
+            "answer_quality": 0.9054761904761903,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9544213431222098,
+            "domain_match": 0.5,
+            "query_complexity_adjustment": 0.0125,
+            "retrieval_weight": 0.3,
+            "quality_weight": 0.3
+          },
+          "hallucination_detected": false,
+          "faithfulness_score": 0.9054761904761903,
+          "query_complexity": {
+            "type": "unknown",
+            "complexity_score": 0.75,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.55,
+            "detected_patterns": [],
+            "word_count": 7,
+            "query_length": 32
+          },
+          "confidence_result": {
+            "confidence": 0.6856263993467602,
+            "breakdown": {
+              "retrieval_score": 0.5958749168259757,
+              "answer_quality": 0.9054761904761903,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9544213431222098,
+              "domain_match": 0.5,
+              "query_complexity_adjustment": 0.0125,
+              "retrieval_weight": 0.3,
+              "quality_weight": 0.3
+            },
+            "suggested_threshold": 0.55
+          },
+          "policy_decision": {
+            "strategy": "direct",
+            "reason": "high_confidence",
+            "confidence": 0.6856263993467602,
+            "explanation": {
+              "decision": "direct",
+              "factors": {
+                "confidence": 0.69,
+                "retrieval_avg_score": 0.56,
+                "retrieval_max_score": 0.61,
+                "num_results": 5,
+                "query_type": "unknown",
+                "query_complexity_score": 0.75,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان بالا ارائه شده است."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.78641401850988,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "direct",
+          "domain_match_confidence": 0.5,
+          "processing_time_seconds": 3.635342,
+          "timestamp": "2025-12-19T16:58:51.752901",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "query": "چرا صندوق باور برای نوآوری مهم است؟",
+      "complexity": "high",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.5954170963933478,
+          "confidence_breakdown": {
+            "retrieval_score": 0.898346234049116,
+            "answer_quality": 0.38673267326732674,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9141274690628052,
+            "domain_match": 0.5,
+            "query_complexity_adjustment": 0.025,
+            "retrieval_weight": 0.23000000000000004,
+            "quality_weight": 0.37
+          },
+          "hallucination_detected": true,
+          "faithfulness_score": 0.38673267326732674,
+          "query_complexity": {
+            "type": "analytical",
+            "complexity_score": 1.0,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.75,
+            "detected_patterns": [
+              "analytical:چرا"
+            ],
+            "word_count": 7,
+            "query_length": 35
+          },
+          "confidence_result": {
+            "confidence": 0.5954170963933478,
+            "breakdown": {
+              "retrieval_score": 0.898346234049116,
+              "answer_quality": 0.38673267326732674,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9141274690628052,
+              "domain_match": 0.5,
+              "query_complexity_adjustment": 0.025,
+              "retrieval_weight": 0.23000000000000004,
+              "quality_weight": 0.37
+            },
+            "suggested_threshold": 0.75
+          },
+          "policy_decision": {
+            "strategy": "warning_light",
+            "reason": "medium_confidence",
+            "confidence": 0.5954170963933478,
+            "explanation": {
+              "decision": "light_warning",
+              "factors": {
+                "confidence": 0.6,
+                "retrieval_avg_score": 0.85,
+                "retrieval_max_score": 0.92,
+                "num_results": 5,
+                "query_type": "analytical",
+                "query_complexity_score": 1.0,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان متوسط ارائه شده است. در صورت نیاز، می‌توانید با متخصص مشورت کنید."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.8827417672626557,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "warning_light",
+          "domain_match_confidence": 0.5,
+          "processing_time_seconds": 7.210184,
+          "timestamp": "2025-12-19T16:58:59.968131",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "query": "آرد خام چیست؟",
+      "complexity": "low",
+      "should_reject": true,
+      "success": false,
+      "error": "No complete chunk received",
+      "response": {}
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "query": "دوره آموزشی چیست؟",
+      "complexity": "low",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.6555331764311502,
+          "confidence_breakdown": {
+            "retrieval_score": 0.8435321120421091,
+            "answer_quality": 0.508030303030303,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.8715865055720011,
+            "domain_match": 0.6200000000000001,
+            "query_complexity_adjustment": -0.009999999999999998,
+            "retrieval_weight": 0.37,
+            "quality_weight": 0.23000000000000004
+          },
+          "hallucination_detected": true,
+          "faithfulness_score": 0.508030303030303,
+          "query_complexity": {
+            "type": "definitional",
+            "complexity_score": 0.30000000000000004,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.36,
+            "detected_patterns": [
+              "definitional:چیست"
+            ],
+            "word_count": 3,
+            "query_length": 17
+          },
+          "confidence_result": {
+            "confidence": 0.6555331764311502,
+            "breakdown": {
+              "retrieval_score": 0.8435321120421091,
+              "answer_quality": 0.508030303030303,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.8715865055720011,
+              "domain_match": 0.6200000000000001,
+              "query_complexity_adjustment": -0.009999999999999998,
+              "retrieval_weight": 0.37,
+              "quality_weight": 0.23000000000000004
+            },
+            "suggested_threshold": 0.36
+          },
+          "policy_decision": {
+            "strategy": "direct",
+            "reason": "high_confidence",
+            "confidence": 0.6555331764311502,
+            "explanation": {
+              "decision": "direct",
+              "factors": {
+                "confidence": 0.66,
+                "retrieval_avg_score": 0.77,
+                "retrieval_max_score": 0.87,
+                "num_results": 5,
+                "query_type": "definitional",
+                "query_complexity_score": 0.3,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان بالا ارائه شده است."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.9238947201658179,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "direct",
+          "domain_match_confidence": 0.6200000000000001,
+          "processing_time_seconds": 8.879731,
+          "timestamp": "2025-12-19T16:59:12.864381",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "query": "حداقل نمره قبولی چقدر است؟",
+      "complexity": "low",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.5866904292308177,
+          "confidence_breakdown": {
+            "retrieval_score": 0.5855259017944335,
+            "answer_quality": 0.6902061855670103,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.8894160604476928,
+            "domain_match": 0.38,
+            "query_complexity_adjustment": 0.0025000000000000022,
+            "retrieval_weight": 0.3,
+            "quality_weight": 0.3
+          },
+          "hallucination_detected": false,
+          "faithfulness_score": 0.6902061855670103,
+          "query_complexity": {
+            "type": "unknown",
+            "complexity_score": 0.55,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.51,
+            "detected_patterns": [],
+            "word_count": 5,
+            "query_length": 26
+          },
+          "confidence_result": {
+            "confidence": 0.5866904292308177,
+            "breakdown": {
+              "retrieval_score": 0.5855259017944335,
+              "answer_quality": 0.6902061855670103,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.8894160604476928,
+              "domain_match": 0.38,
+              "query_complexity_adjustment": 0.0025000000000000022,
+              "retrieval_weight": 0.3,
+              "quality_weight": 0.3
+            },
+            "suggested_threshold": 0.51
+          },
+          "policy_decision": {
+            "strategy": "direct",
+            "reason": "high_confidence",
+            "confidence": 0.5866904292308177,
+            "explanation": {
+              "decision": "direct",
+              "factors": {
+                "confidence": 0.59,
+                "retrieval_avg_score": 0.53,
+                "retrieval_max_score": 0.61,
+                "num_results": 5,
+                "query_type": "unknown",
+                "query_complexity_score": 0.55,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان بالا ارائه شده است."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.8441016398535833,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "direct",
+          "domain_match_confidence": 0.38,
+          "processing_time_seconds": 7.036242,
+          "timestamp": "2025-12-19T16:59:20.904882",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "query": "چگونه در دوره ثبت نام کنم؟",
+      "complexity": "medium",
+      "should_reject": false,
+      "success": true,
+      "error": null,
+      "response": {
+        "api_success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "confidence": 0.7917105366030769,
+          "confidence_breakdown": {
+            "retrieval_score": 0.8611847484111784,
+            "answer_quality": 0.9464788732394367,
+            "num_sources": 5,
+            "sources_score": 1.0,
+            "consistency_score": 0.9282290021578472,
+            "domain_match": 0.6200000000000001,
+            "query_complexity_adjustment": 0.009999999999999998,
+            "retrieval_weight": 0.3,
+            "quality_weight": 0.3
+          },
+          "hallucination_detected": false,
+          "faithfulness_score": 0.9464788732394367,
+          "query_complexity": {
+            "type": "unknown",
+            "complexity_score": 0.7,
+            "is_multi_part": false,
+            "confidence_threshold_suggestion": 0.54,
+            "detected_patterns": [],
+            "word_count": 6,
+            "query_length": 26
+          },
+          "confidence_result": {
+            "confidence": 0.7917105366030769,
+            "breakdown": {
+              "retrieval_score": 0.8611847484111784,
+              "answer_quality": 0.9464788732394367,
+              "num_sources": 5,
+              "sources_score": 1.0,
+              "consistency_score": 0.9282290021578472,
+              "domain_match": 0.6200000000000001,
+              "query_complexity_adjustment": 0.009999999999999998,
+              "retrieval_weight": 0.3,
+              "quality_weight": 0.3
+            },
+            "suggested_threshold": 0.54
+          },
+          "policy_decision": {
+            "strategy": "direct",
+            "reason": "high_confidence",
+            "confidence": 0.7917105366030769,
+            "explanation": {
+              "decision": "direct",
+              "factors": {
+                "confidence": 0.79,
+                "retrieval_avg_score": 0.82,
+                "retrieval_max_score": 0.88,
+                "num_results": 5,
+                "query_type": "unknown",
+                "query_complexity_score": 0.7,
+                "is_multi_part": false
+              },
+              "recommendation": "پاسخ با اطمینان بالا ارائه شده است."
+            }
+          },
+          "guard_result": {
+            "retrieval_quality": "pass",
+            "semantic_alignment": "skip",
+            "keyword_coverage": "pass",
+            "context_sufficiency": "pass"
+          },
+          "pre_generation_guard": {
+            "passed": true,
+            "quality_score": 0.939664794339074,
+            "gate_results": {
+              "retrieval_quality": "pass",
+              "semantic_alignment": "skip",
+              "keyword_coverage": "pass",
+              "context_sufficiency": "pass"
+            }
+          },
+          "policy_strategy": "direct",
+          "domain_match_confidence": 0.6200000000000001,
+          "processing_time_seconds": 5.917843,
+          "timestamp": "2025-12-19T16:59:27.827181",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "hybrid_with_reranking"
+        },
+        "used_features": {
+          "intent_gate": true,
+          "relevance_gate": true,
+          "answer_policy": true,
+          "advanced_answer_policy": true,
+          "query_complexity_analysis": true,
+          "adaptive_thresholds": true,
+          "pre_generation_guard": true,
+          "semantic_alignment_check": true,
+          "enhanced_keyword_coverage": true,
+          "context_contradiction_check": true
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "query": "صندوق نوآور چیست؟",
+      "complexity": "low",
+      "should_reject": true,
+      "success": false,
+      "error": "No complete chunk received",
+      "response": {}
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "timestamp": "2025-12-12T13:12:23.883228",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "results": [
+    {
+      "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+      "success": true,
+      "answer": "هیات تحویل کارها در پیمان‌های طرح و ساخت متشکل از نمایندگان طرفین پیمان و مهندس مشاور است و نماینده سازمان برنامه و بودجه کشور در آن شرکت ندارد. در صورت عدم حل مسئله طبق فصل 10، از ماده حل اختلاف در شرایط عمومی پیمان استفاده می‌شود. اطلاعات مربوط به مبلغ یا هرگونه عددی در متن موجود نیست.",
+      "confidence": 0.5941711057304278,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": true,
+      "faithfulness_score": 0.2542372881355932,
+      "confidence_breakdown": {
+        "retrieval_score": 0.7657142857142856,
+        "answer_quality": 0.2542372881355932,
+        "num_sources": 2,
+        "sources_score": 0.9,
+        "consistency_score": 0.961904761904762
+      },
+      "top_results_count": 5,
+      "query_info": {
+        "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است و پیام مناسب بدهد",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+      "success": true,
+      "answer": "در قراردادهای طرح و ساخت، هر قسط از صورت وضعیت به‌عنوان مجزا در نظر گرفته می‌شود و تاخیر در پرداخت هر قسط به‌عنوان مدت تمدید محسوب می‌گردد. روش‌های بخشنامه‌های 5090/54/11082-1 و 1300/54/5188-1 برای محاسبه تاخیر در پرداخت صورت وضعیت‌های تعدیل مورد استفاده قرار می‌گیرد، و در صورت عدم امکان استفاده از حق خاتمه، خسارت تاخیر بدون محدودیت سه ماهه محاسبه می‌شود.",
+      "confidence": 0.8455213675213675,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 0.8743589743589745,
+      "confidence_breakdown": {
+        "retrieval_score": 0.7681481481481479,
+        "answer_quality": 0.8743589743589745,
+        "num_sources": 2,
+        "sources_score": 0.9,
+        "consistency_score": 0.9851851851851853
+      },
+      "top_results_count": 5,
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+        "expected_behavior": "باید از چند منبع استنتاج کند و پاسخ جامع بدهد",
+        "issue": "قبلاً فقط از منبع دوم استفاده می‌کرد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+      "success": true,
+      "answer": "در پیمان‌های EPC مطابق بخشنامه 54/7105-105/18929، در صورت تاخیر در پرداخت صورت وضعیت‌ها، پیمانکار حق دریافت جبران هزینه‌های اضافی را دارد که میزان آن در شرایط خصوصی تعیین می‌شود. استفاده از بخشنامه 5090/54/11082-1 برای محاسبه تاخیر در پرداخت مجاز نیست.",
+      "confidence": 0.8744444444444445,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 0.9377777777777777,
+      "confidence_breakdown": {
+        "retrieval_score": 0.7780952380952381,
+        "answer_quality": 0.9377777777777777,
+        "num_sources": 2,
+        "sources_score": 0.9,
+        "consistency_score": 0.9809523809523809
+      },
+      "top_results_count": 5,
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+        "expected_behavior": "باید نتایج مرتبط‌تر پیدا کند",
+        "issue": "قبلاً نتایج نامرتبط پیدا می‌کرد"
+      }
+    },
+    {
+      "query": "توضیح ماده 46 شرایط عمومی پیمان",
+      "success": true,
+      "answer": "اطلاعات کافی برای توضیح ماده ۴۶ شرایط عمومی پیمان در متن موجود نیست. هیچ سندی مرتبط با این ماده در اسناد ارائه‌شده وجود ندارد.",
+      "confidence": 0.7711965811965811,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 0.6974358974358974,
+      "confidence_breakdown": {
+        "retrieval_score": 0.7555555555555555,
+        "answer_quality": 0.6974358974358974,
+        "num_sources": 2,
+        "sources_score": 0.9,
+        "consistency_score": 1.0
+      },
+      "top_results_count": 5,
+      "query_info": {
+        "query": "توضیح ماده 46 شرایط عمومی پیمان",
+        "expected_behavior": "باید از محتوای متن استفاده کند و از maddeh_id استفاده نکند",
+        "issue": "قبلاً از maddeh_id استفاده می‌کرد و اعداد اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": true,
+      "answer": "در صورت پرداخت صورت‌حساب با اسناد خزانه اسلامی و تاخیر کارفرما در بررسی و پرداخت بیش از 15 روز، این مدت تأخیر نیز در محاسبه بازه زمانی حفظ قدرت خرید اسناد منظور می‌شود. این مقررات فقط در قراردادهای خدمات مشاوره و با رعایت بخشنامه شماره 2460/54-842/105 اعمال می‌گردد.",
+      "confidence": 0.8637142857142857,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 0.9309523809523809,
+      "confidence_breakdown": {
+        "retrieval_score": 0.7616666666666666,
+        "answer_quality": 0.9309523809523809,
+        "num_sources": 2,
+        "sources_score": 0.9,
+        "consistency_score": 0.9666666666666668
+      },
+      "top_results_count": 5,
+      "query_info": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    }
+  ]
+}

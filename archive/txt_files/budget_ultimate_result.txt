@@ -1,0 +1,2365 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:ultimate_rag_system:🚀 Initializing Ultimate RAG System...
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:services.qwen_client:QwenClient initialized: http://localhost:8080
+INFO:search.multi_hop_retriever:🚀 Multi-Hop Retriever initialized in ENHANCED mode
+INFO:search.multi_hop_retriever:🧠 Intelligent mode also available
+INFO:services.database_service:✅ PostgreSQL connection successful
+INFO:services.database_service:✅ Database engine initialized successfully
+INFO:services.database_service:✅ Database connection test successful
+INFO:ultimate_rag_system:   - 🗄️ Database Integration: ENABLED
+INFO:ultimate_rag_system:   - 🎯 Intelligent Query Classifier: ENABLED
+INFO:ultimate_rag_system:✅ Database service updated in HybridQueryAnalyzer
+INFO:ultimate_rag_system:✅ Ultimate RAG System initialized (basic components)
+INFO:ultimate_rag_system:   - ChromaDB: Enabled
+INFO:ultimate_rag_system:   - Qwen Client: Enabled
+INFO:ultimate_rag_system:   - Persian Embeddings: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Reranker: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Multi-Hop: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Advanced PDF: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - 🌟 Universal AI Components: Enabled
+INFO:ultimate_rag_system:      ├─ Universal Pattern Detector
+INFO:ultimate_rag_system:      ├─ Universal Sequential Detector
+INFO:ultimate_rag_system:      └─ Universal Metadata Extractor
+INFO:ultimate_rag_system:💬 Query: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403' -> 'اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403'
+2025-12-05 22:00:19.293489: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+ERROR:services.persian_embedding_service:Failed to load embedding model: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+WARNING:services.smart_query_preprocessor:Could not initialize embedding client: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'هزینه'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: هزینه, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:⚠️ [NON-STREAM][FAST] comparison query detected, skipping fast path for multi-hop processing
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 3 entities: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['ستاد', 'مبارزه', 'مواد']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخ در در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'ستاد مبارزه با مواد'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد%')
+INFO:services.query_analyzer:   ✅ Entity filter created (173 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['ستاد', 'مبارزه', 'مواد'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%ستاد مبارزه با مواد%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['ستاد', 'مبارزه', 'مواد'] -> ['ستاد مبارزه مواد']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['ستاد', 'مبارزه', 'مواد'] -> ['ستاد مبارزه مواد']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=comparison, complexity=moderate, rows=3, confidence=0.50
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=comparison, confidence=0.50, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=comparison, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.qwen_client:✅ aiohttp session created in event loop 139643304444400
+
+==========================================================================================
+تست بودجه - UltimateRAGSystem
+==========================================================================================
+
+✓ RAG Initialized
+
+
+##########################################################################################
+# Cell Reference
+##########################################################################################
+
+1. اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403' -> 'اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'هزینه'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: هزینه, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['بنیاد ایران شناسی']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'بنیاد ایران شناسی'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['بنیاد ایران شناسی'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%بنیاد ایران شناسی%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['بنیاد ایران شناسی'] -> ['بنیاد ایران شناسی']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (54.0s, 2734 chars)
+
+پاسخ:
+> ⚠️ **هشدار مهم**: هیچ عدد، مبلغ یا اطلاعاتی از خودتان اضافه نکرده‌ام. تمام اطلاعات بر اساس اسناد موجود استخراج شده‌اند.
+
+---
+
+## ✅ پاسخ به سوال:  
+**اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403**
+
+### 📌 اطلاعات کلی:
+- **دستگاه اصلی**: نهاد ریاست جمهوری  
+- **دستگاه اجرایی**: ستاد ویژه مبارزه با مواد مخدر (نام اصلی: *ستاد ویژه مبارزه با مواد مخدر*)  
+- **کد دستگاه**: `101000` (در سند 1)  
+- **سال**: 1403  
+- **نوع بودجه**: اعتبارات هزینه‌ای (جاری)  
+- **واحد پولی**: میلیون ریال
+... (+2234 chars)
+
+2. اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403' -> 'تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['معاونت علمی و فناوری']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'معاونت علمی و فناوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (175 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['معاونت علمی و فناوری'], 'income_component': None, 'income_type': 'عمومی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%معاونت علمی و فناوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['معاونت علمی و فناوری'] -> ['معاونت علمی و فناوری']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=multi_entity, complexity=moderate, rows=2, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=multi_entity, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=multi_entity, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (6.9s, 1447 chars)
+
+پاسخ:
+📝 **پاسخ به سوال کاربر:**
+
+**اعتبارات هزینه‌ای عمومی بنیاد ایران‌شناسی در سال 1403**
+
+با توجه به اسناد موجود، **اطلاعات دقیق در مورد "بنیاد ایران‌شناسی" و اعتبارات هزینه‌ای عمومی آن در سال 1403 در اسناد مرتبط یافت نشد**.
+
+با این حال، اطلاعات مرتبطی در مورد دستگاه‌های مشابه و ساختار بودجه‌ای در سال 1403 در دسترس است. به عنوان مثال:
+
+- دستگاه اجرایی **"مركز همكاري‌هاي تحول و پيشرفت(كمك)1"** با کد دستگاه `101002` و دستگاه اصلی **"نهاد ریاست جمهوری"**، در سال 1403، اعتبارات هزینه‌ای عمومی به میزان *
+... (+947 chars)
+
+3. تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403' -> 'تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'معیار'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: معیار, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:⚠️ [NON-STREAM][FAST] comparison query detected, skipping fast path for multi-hop processing
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['سازمان سنجش']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['سازمان سنجش']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['سازمان سنجش']
+INFO:services.query_analyzer:   Normalized Query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'سازمان سنجش'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'سازمان سنجش'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%سازمان سنجش%')
+INFO:services.query_analyzer:   ✅ Entity filter created (157 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['سازمان سنجش'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%سازمان سنجش%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['سازمان سنجش'] -> ['سازمان سنجش']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=comparison, complexity=moderate, rows=3, confidence=0.50
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=comparison, confidence=0.50, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=comparison, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (10.2s, 2200 chars)
+
+پاسخ:
+## تملک دارایی‌های سرمایه‌ای عمومی معاونت علمی و فناوری رییس جمهور در سال 1403
+
+> 📌 **دستورالعمل اجرا شده:** بر اساس سوال کاربر، به دنبال اطلاعات مربوط به **"تملک دارایی‌های سرمایه‌ای عمومی"** در **"معاونت علمی و فناوری رییس جمهور"** در سال **1403** بودیم.
+
+---
+
+### 📄 اطلاعات مرتبط از اسناد:
+
+- **دستگاه اصلی:** معاونت علمی و فناوری رییس جمهور  
+- **دستگاه اجرایی:** ستاد ویژه توسعه فناوری نانو و میکرو  
+- **کد دستگاه:** `101005`  
+- **سال:** 1403  
+
+در سند مربوط به این دستگاه (سند 5)، بخش **"تملک
+... (+1700 chars)
+
+4. تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: بودجه فرهنگستان هنر در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'بودجه فرهنگستان هنر در سال 1403' -> 'بودجه فرهنگستان هنر در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: بودجه فرهنگستان هنر در سال 1403...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['فرهنگستان هنر']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['فرهنگستان هنر']
+INFO:services.query_analyzer:   Normalized Query: بودجه فرهنگستان هنر در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'فرهنگستان هنر'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'فرهنگستان هنر'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%فرهنگستان هنر%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['فرهنگستان هنر'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%فرهنگستان هنر%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['فرهنگستان هنر'] -> ['فرهنگستان هنر']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: بودجه فرهنگستان هنر در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: بودجه فرهنگستان هنر در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: بودجه فرهنگستان هنر در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (6.2s, 1269 chars)
+
+پاسخ:
+> 📌 **توجه مهم:**  
+> بر اساس دستورالعمل‌های ارائه‌شده، فقط از اطلاعات موجود در اسناد بالا استفاده می‌شود.  
+> هیچ اطلاعاتی از خود اضافه نمی‌شود و هیچ عددی اختراع نمی‌گردد.
+
+---
+
+## ✅ تملک دارایی سرمایه‌ای متفرقه سازمان سنجش بند ج در سال 1403
+
+اطلاعات دقیق در مورد **"سازمان سنجش بند ج"** و **"تملک دارایی سرمایه‌ای متفرقه"** در اسناد موجود **یافت نشد**.
+
+با این حال، بر اساس اطلاعات موجود در اسناد، می‌توان به برخی اطلاعات مرتبط اشاره کرد:
+
+- در سند ۳، دستگاه اجرایی **موسسه عالي آموزش و پژوهش مديري
+... (+769 chars)
+
+
+##########################################################################################
+# Aggregation
+##########################################################################################
+
+1. بودجه فرهنگستان هنر در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: بودجه فرهنگستان هنر در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: بودجه فرهنگستان هنر در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403' -> 'اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'هزینه'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: هزینه, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:🔍 Found special case entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Extracted Entity Phrases: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   ✅ Extracted 1 entities: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['نهاد ریاست جمهوری']
+INFO:services.query_analyzer:   Normalized Query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'نهاد ریاست جمهوری'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%نهاد ریاست جمهوری%')
+INFO:services.query_analyzer:   ✅ Entity filter created (169 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 1.00
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 1.00
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['نهاد ریاست جمهوری'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%نهاد ریاست جمهوری%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': True, 'calculation_type': None}, 'comparison_info': None, 'confidence': 1.0}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 1.00
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['نهاد ریاست جمهوری'] -> ['نهاد ریاست جمهوری']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (6.5s, 1399 chars)
+
+پاسخ:
+📝 **پاسخ به سوال کاربر: بودجه فرهنگستان هنر در سال 1403**
+
+با توجه به عدم ذکر **فرهنگستان هنر** به عنوان دستگاه اصلی یا اجرایی در هیچ یک از اسناد موجود، **اطلاعات دقیق در مورد بودجه فرهنگستان هنر در سال 1403 در این مجموعه اسناد موجود نیست**.
+
+با این حال، بر اساس اطلاعات مرتبط موجود در اسناد، می‌توان به این نتیجه رسید که:
+
+- **فرهنگستان هنر** در لیست دستگاه‌های ذکر شده در اسناد (از جمله نهاد ریاست جمهوری، سازمان برنامه و بودجه کشور، شورای عالی امنیت ملی، معاونت علمی و فناوری رییس جمهور و غیره) **
+... (+899 chars)
+
+2. اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: درآمدهای وزارت نفت در سال 1401 چقدر است
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درآمدهای وزارت نفت در سال 1401 چقدر است' -> 'درآمدهای وزارت نفت در سال 1401 چقدر است'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'هزینه'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: هزینه, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: درآمدهای وزارت نفت در سال 1401 چقدر است...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['وزارت', 'نفت']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['وزارت', 'نفت']
+INFO:services.query_analyzer:   Normalized Query: درامدهای وزارت نفت در سال 1401 چق در است
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'وزارت نفت'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'وزارت نفت'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'وزارت نفت'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%وزارت نفت%')
+INFO:services.query_analyzer:   ✅ Entity filter created (153 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1401'], 'entity_names': ['وزارت', 'نفت'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%وزارت نفت%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['وزارت', 'نفت'] -> ['وزارت نفت']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['وزارت', 'نفت'] -> ['وزارت نفت']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: درآمدهای وزارت نفت در سال 1401 چقدر است...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1401
+INFO:ultimate_rag_system:✅ Found 1 documents with classification 1401
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 1 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 1 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: درآمدهای وزارت نفت در سال 1401 چقدر است...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: درآمدهای وزارت نفت در سال 1401 چقدر است...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 282, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=1
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 1 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (7.5s, 1643 chars)
+
+پاسخ:
+## ✅ **اعتبارات هزینه‌ای نهاد ریاست جمهوری در سال 1403**
+
+با توجه به اطلاعات موجود در اسناد، **نهاد ریاست جمهوری** به عنوان دستگاه اصلی و اجرایی در سال 1403، بودجه‌ای مربوط به **اعتبارات هزینه‌ای (جاری)** دارد که به صورت دقیق در سند 1 ذکر شده است.
+
+---
+
+### 📌 **اطلاعات کلی دستگاه:**
+- **دستگاه اصلی:** نهاد ریاست جمهوری  
+- **دستگاه اجرایی:** نهاد ریاست جمهوری  
+- **کد دستگاه:** `101000`  
+- **سال:** 1403  
+
+---
+
+### 📊 **تفکیک اعتبارات هزینه‌ای (جاری):**
+
+| بخش | مبلغ (میلیون ریال) |
+|------|----
+... (+1143 chars)
+
+3. درآمدهای وزارت نفت در سال 1401 چقدر است
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 1 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: درآمدهای وزارت نفت در سال 1401 چقدر است...
+🔍 [DIRECT_ANSWER] Normalized query: درآمدهای وزارت نفت در سال 1401 چقدر است...
+🔍 [DIRECT_ANSWER] Result 1: Row 282, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: شوراي هماهنگي تبليغات اسلامي
+دستگاه اجرایی: شوراي هماهنگي تبليغات اسلامي
+کد دس...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: بودجه دانشگاه تهران
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'بودجه دانشگاه تهران' -> 'بودجه دانشگاه تهران چیست؟'
+INFO:ultimate_rag_system:📅 [BUDGET] No year detected in query, appending default year 1403
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'detected_intent_type': 'تعریف'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+WARNING:ultimate_rag_system:🎯 [INTENT] Detected intent: تعریف, context: N/A
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using expanded query for matching: بودجه دانشگاه تهران چیست؟...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تهران']
+INFO:services.query_analyzer:   Normalized Query: بودجه دانشگاه تهران چیست؟ در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تهران'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تهران'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تهران'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تهران%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['دانشگاه', 'تهران'], 'income_component': None, 'income_type': 'کل', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تهران%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': False, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': False, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تهران'] -> ['دانشگاه تهران']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تهران'] -> ['دانشگاه تهران']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: بودجه دانشگاه تهران چیست؟ در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: بودجه دانشگاه تهران چیست؟...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: بودجه دانشگاه تهران چیست؟...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (9.0s, 2030 chars)
+
+پاسخ:
+> ⚠️ **هشدار مهم:** هیچ اطلاعاتی از خودتان اضافه نکنید. فقط از اطلاعات موجود در اسناد استفاده کنید.
+
+---
+
+## 📌 تحلیل سوال:  
+**"درآمدهای وزارت نفت در سال 1401 چقدر است"**
+
+- **دستگاه مورد نظر:** وزارت نفت  
+- **سال مورد نظر:** 1401  
+- **نوع اطلاعات:** درآمد (منابع، عواید، واگذاری)
+
+---
+
+### 🔍 بررسی اسناد موجود:
+
+در اسناد ارائه‌شده، تنها یک دستگاه ذکر شده است:
+
+- **دستگاه اصلی:** شورای هماهنگی تبلیغات اسلامی  
+- **دستگاه اجرایی:** شورای هماهنگی تبلیغات اسلامی  
+- **کد دستگاه:** 114012  
+- **سال:
+... (+1530 chars)
+
+4. بودجه دانشگاه تهران
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: بودجه دانشگاه تهران چیست؟...
+🔍 [DIRECT_ANSWER] Normalized query: بودجه دانشگاه تهران چیست؟...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+INFO:ultimate_rag_system:💬 Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'درامد استانی اختصاصی دانشگاه تبریز در سال 1403' -> 'درامد استانی اختصاصی دانشگاه تبریز در سال 1403'
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Domain: financial, Financial patterns: True
+WARNING:services.hybrid_query_analyzer:Failed to load entities from database: 'DatabaseService' object has no attribute 'execute_query'
+INFO:services.query_analyzer:🔍 Starting entity extraction...
+INFO:services.query_analyzer:   ✅ Extracted 2 entities: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:🔍 Building SQL filters...
+INFO:services.query_analyzer:🔍 Entity Filter Generation:
+INFO:services.query_analyzer:   Entity Names: ['دانشگاه', 'تبریز']
+INFO:services.query_analyzer:   Normalized Query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+INFO:services.query_analyzer:   ✅ Extracted phrase with middle words: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   Multi-word entity - Joined Phrase: 'دانشگاه تبریز'
+INFO:services.query_analyzer:   ✅ Using EXACT PHRASE for 'دانشگاه تبریز'
+INFO:services.query_analyzer:   📝 Final Entity Filter:
+INFO:services.query_analyzer:      Number of conditions: 1
+INFO:services.query_analyzer:      Filter (first 300 chars): (TRANSLATE("عنوان_دستگاه", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE("عنوان_دستگاه_اصلی", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')
+INFO:services.query_analyzer:   ✅ Entity filter created (161 chars)
+INFO:services.query_analyzer:   📊 Final Confidence Score: 0.90
+INFO:services.query_analyzer:📊 Query Analysis - Confidence: 0.90
+INFO:services.query_analyzer:📊 Query Analysis: {'query_type': 'amount', 'query_category': 'simple_sum', 'years': ['1403'], 'entity_names': ['دانشگاه', 'تبریز'], 'income_component': None, 'income_type': 'استانی_اختصاصی', 'filters': {'entity_filter': '(TRANSLATE("عنوان_دستگاه", \'يكيۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\' OR TRANSLATE("عنوان_دستگاه_اصلی", \'يكiۀةأإٱآ\', \'یکیهههااا\') ILIKE \'%دانشگاه تبریز%\')', 'component_filter': None}, 'aggregation': {'needs_groupby': False, 'group_fields': [], 'needs_sort': False, 'sort_direction': None, 'limit': None}, 'dimensions': {'asks_total': False, 'asks_national_provincial': True, 'asks_sources': False, 'asks_share': False}, 'cross_table': {'needs_income': True, 'needs_cost': False, 'calculation_type': None}, 'comparison_info': None, 'confidence': 0.9}
+INFO:services.hybrid_query_analyzer:📊 Static Analysis - Confidence: 0.90
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تبریز'] -> ['دانشگاه تبریز']
+INFO:services.hybrid_query_analyzer:🔗 Merged entities: ['دانشگاه', 'تبریز'] -> ['دانشگاه تبریز']
+INFO:services.hybrid_query_analyzer:✅ Using static/enhanced results
+INFO:ultimate_rag_system:📊 Query Analyzer: simple_sum
+INFO:search.multi_hop_retriever:🚀 Using ENHANCED multi-hop analysis
+INFO:search.multi_hop_retriever:🧠 Using INTELLIGENT multi-hop analysis
+INFO:services.intelligent_multihop_analyzer:🧠 Analyzing query for multi-hop: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+INFO:services.intelligent_multihop_analyzer:📊 Decision: multi-hop=False, type=factual, complexity=simple, rows=1, confidence=0.60
+INFO:search.multi_hop_retriever:✅ INTELLIGENT analysis: type=factual, confidence=0.60, hops=0
+INFO:search.multi_hop_retriever:🔍 Initial analysis: type=factual, requires_multi_hop=False
+INFO:ultimate_rag_system:🔍 Searching for classification number: 1403
+INFO:ultimate_rag_system:✅ Found 673 documents with classification 1403
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 5 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=5
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 5 results
+INFO:ultimate_rag_system:🔍 [SINGLE_MATCH-FALLBACK] Searching entire collection 'budget_financial' for metadata match
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+WARNING:ultimate_rag_system:⚠️ Failed to initialize reranker: CUDA call failed lazily at initialization with error: device >= 0 && device < num_gpus INTERNAL ASSERT FAILED at "/pytorch/aten/src/ATen/cuda/CUDAContext.cpp":52, please report a bug to PyTorch. device=7, num_gpus=7
+
+CUDA call was originally invoked at:
+
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 115, in <module>
+    success = asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 636, in run_until_complete
+    self.run_forever()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 603, in run_forever
+    self._run_once()
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 1909, in _run_once
+    handle._run()
+  File "/usr/lib/python3.10/asyncio/events.py", line 80, in _run
+    self._context.run(self._callback, *self._args)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_ultimate.py", line 51, in main
+    r = await rag.retrieve_and_answer(q, 'budget_financial', top_k=5)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./ultimate_rag_system.py", line 4046, in retrieve_and_answer
+    preprocess_result = await self.smart_preprocessor.preprocess(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 656, in preprocess
+    domain_relevance = await self.check_domain_relevance(
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 230, in check_domain_relevance
+    await self._ensure_initialized()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/smart_query_preprocessor.py", line 184, in _ensure_initialized
+    self.embedding_client = PersianEmbeddingClient()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 171, in __init__
+    self.service = PersianEmbeddingService(model_path)
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 58, in __init__
+    self._load_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 66, in _load_model
+    self.model = _get_cached_model()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./services/persian_embedding_service.py", line 30, in _get_cached_model
+    from sentence_transformers import SentenceTransformer
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/__init__.py", line 10, in <module>
+    from sentence_transformers.backend import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/__init__.py", line 3, in <module>
+    from .load import load_onnx_model, load_openvino_model
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/sentence_transformers/backend/load.py", line 7, in <module>
+    from transformers.configuration_utils import PretrainedConfig
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/__init__.py", line 27, in <module>
+    from . import dependency_versions_check
+  File "<frozen importlib._bootstrap>", line 1078, in _handle_fromlist
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/dependency_versions_check.py", line 16, in <module>
+    from .utils.versions import require_version, require_version_core
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 992, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/__init__.py", line 24, in <module>
+    from .auto_docstring import (
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/auto_docstring.py", line 30, in <module>
+    from .generic import ModelOutput
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/transformers/utils/generic.py", line 51, in <module>
+    import torch  # noqa: F401
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/__init__.py", line 2088, in <module>
+    _C._initExtension(_manager_path())
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1006, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 688, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 356, in <module>
+    _lazy_call(_check_capability)
+  File "/home/user01/.local/lib/python3.10/site-packages/torch/cuda/__init__.py", line 353, in _lazy_call
+    _queued_calls.append((callable, traceback.format_stack()))
+
+INFO:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No deterministic answer (or non-QA), generating with LLM...
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+INFO:ultimate_rag_system:📂 Collection domain: financial (confidence: 0.90)
+✅ SUCCESS (7.4s, 1611 chars)
+
+پاسخ:
+📝 **پاسخ به سوال کاربر: بودجه دانشگاه تهران چیست؟ در سال 1403**
+
+با توجه به عدم ذکر **دانشگاه تهران** به عنوان دستگاه اصلی یا اجرایی در اسناد موجود، **اطلاعات دقیق در مورد بودجه دانشگاه تهران در سال 1403 در این مجموعه اسناد موجود نیست**.
+
+با این حال، اطلاعات مرتبطی از دستگاه‌های مشابه و مرتبط با بخش آموزش و پژوهش در سال 1403 در دسترس است که می‌تواند به عنوان یک مرجع مقایسه‌ای مفید باشد. به عنوان مثال:
+
+- **موسسه عالی آموزش و پژوهش مدیریت و برنامه‌ریزی** (کد دستگاه: 101003) که تحت نظارت **سازمان 
+... (+1111 chars)
+
+
+##########################################################################################
+# Income
+##########################################################################################
+
+1. درامد استانی اختصاصی دانشگاه تبریز در سال 1403
+------------------------------------------------------------------------------------------
+🔍 [DIRECT_ANSWER] Checking for exact question match in 5 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+🔍 [DIRECT_ANSWER] Normalized query: درامد استانی اختصاصی دانشگاه تبریز در سال 1403...
+🔍 [DIRECT_ANSWER] Result 1: Row 0, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 2: Row 1, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 3: Row 2, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 4: Row 3, has_question=False, has_answer=False
+🔍 [DIRECT_ANSWER] Result 5: Row 4, has_question=False, has_answer=False
+🔹 [QwenClient] Messages count: 2
+🔹 [QwenClient] System prompt: شما یک دستیار هوشمند مالی هستید که به سوالات مربوط به اسناد مالی و بودجه پاسخ می‌دهید.
+
+شما یک دستیار تحلیل مالی متخصص در بودجه کشور ایران هستید که بر اساس اطلاعات دقیق بودجه پاسخ می‌دهید.
+
+## قوانین ...
+🔹 [QwenClient] User prompt: ⚠️ یادآوری مهم: هرگز عدد، مبلغ یا اطلاعاتی که در اسناد زیر نیست اختراع نکنید!
+
+اسناد مرتبط:
+سند 1:
+   محتوا: دستگاه اصلی: نهاد رياست جمهوري
+دستگاه اجرایی: نهاد رياست جمهوري
+کد دستگاه: 101000
+سال: 1403...
+INFO:ultimate_rag_system:✅ Applied RTL fix to final answer
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7efd43333640>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7efd43376740>, 5676306.792973851)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7efd43333700>
+✅ SUCCESS (7.2s, 1534 chars)
+
+پاسخ:
+📝 **پاسخ به سوال کاربر: درآمد استانی اختصاصی دانشگاه تبریز در سال 1403**
+
+با توجه به عدم ذکر **دانشگاه تبریز** یا هرگونه اطلاعات مرتبط با آن در اسناد موجود، **اطلاعات دقیق در مورد درآمد استانی اختصاصی دانشگاه تبریز در سال 1403 در این مجموعه اسناد موجود نیست**.
+
+با این حال، اطلاعات مرتبطی از دستگاه‌های مشابه و مرتبط با بودجه دانشگاهی در سال 1403 در دسترس است که می‌تواند به عنوان یک مرجع تقریبی مفید باشد. به عنوان مثال:
+
+- **موسسه عالی آموزش و پژوهش مدیریت و برنامه‌ریزی** (کد دستگاه: 101003) که تح
+... (+1034 chars)
+
+
+==========================================================================================
+📊 خلاصه نتایج
+==========================================================================================
+
+کل تست‌ها: 9
+✅ موفق: 9
+❌ ناموفق: 0
+نرخ موفقیت: 100.0%
+
+به تفکیک دسته:
+  Cell Reference: 4/4 (100%)
+  Aggregation: 4/4 (100%)
+  Income: 1/1 (100%)
+
+==========================================================================================
+

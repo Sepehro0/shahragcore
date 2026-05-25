@@ -1,0 +1,23 @@
+{
+  "collection_name": "col_6_1772793606435",
+  "display_name": "smart-e2e-1772793606",
+  "collection_type": "general",
+  "processing_mode": "rag_only",
+  "description": "config-system-prompt-impact-test",
+  "system_prompt": "",
+  "created_at": "2026-03-14T15:45:08.799151",
+  "updated_at": "2026-03-14T15:59:30.483532",
+  "documents_count": 465,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {}
+}

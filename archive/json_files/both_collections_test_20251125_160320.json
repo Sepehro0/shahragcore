@@ -1,0 +1,111 @@
+{
+  "karbaran_omomi": [
+    {
+      "id": "K01",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 2.289508819580078,
+      "answer_len": 345
+    },
+    {
+      "id": "K02",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.2970356941223145,
+      "answer_len": 260
+    },
+    {
+      "id": "K03",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 0.806915283203125,
+      "answer_len": 162
+    },
+    {
+      "id": "K04",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.1556310653686523,
+      "answer_len": 201
+    },
+    {
+      "id": "K05",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.0265631675720215,
+      "answer_len": 223
+    },
+    {
+      "id": "K06",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 0.9032444953918457,
+      "answer_len": 200
+    },
+    {
+      "id": "K07",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 1.4175033569335938,
+      "answer_len": 297
+    },
+    {
+      "id": "K08",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.55405592918396,
+      "answer_len": 390
+    },
+    {
+      "id": "K09",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 0.6974148750305176,
+      "answer_len": 90
+    },
+    {
+      "id": "K10",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 0.9417128562927246,
+      "answer_len": 157
+    }
+  ],
+  "zinaf_dakheli": [
+    {
+      "id": "Z01",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 2.096817970275879,
+      "answer_len": 422
+    },
+    {
+      "id": "Z02",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.4487171173095703,
+      "answer_len": 292
+    },
+    {
+      "id": "Z03",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 0.6660163402557373,
+      "answer_len": 130
+    },
+    {
+      "id": "Z04",
+      "mode": "direct",
+      "content_ok": false,
+      "time": 1.0194833278656006,
+      "answer_len": 221
+    },
+    {
+      "id": "Z05",
+      "mode": "direct",
+      "content_ok": true,
+      "time": 1.6803741455078125,
+      "answer_len": 380
+    }
+  ]
+}

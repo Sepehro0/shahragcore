@@ -1,0 +1,78 @@
+{
+  "analysis": {
+    "error": "No successful tests"
+  },
+  "results": [
+    {
+      "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+        "category": "answer_field_search",
+        "expected_behavior": "باید در فیلد answer جستجو کند و پاسخ دقیق بدهد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+        "category": "specific_contract_type",
+        "expected_behavior": "باید نتایج مرتبط با EPC پیدا کند و پاسخ دقیق بدهد"
+      }
+    },
+    {
+      "query": "وضعیت قراردادهای تجاری مربوط به پاساژها مطابق پیمان ها چگونه است ؟",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "وضعیت قراردادهای تجاری مربوط به پاساژها مطابق پیمان ها چگونه است ؟",
+        "category": "specific_topic",
+        "expected_behavior": "باید اطلاعات مربوط به قراردادهای تجاری پاساژها را پیدا کند"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+        "category": "multi_source_inference",
+        "expected_behavior": "باید از چند منبع استنتاج کند و پاسخ جامع بدهد"
+      }
+    },
+    {
+      "query": "تضامین پیش پرداخت رد قراردادهای پیمانکاری",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "تضامین پیش پرداخت رد قراردادهای پیمانکاری",
+        "category": "keyword_based",
+        "expected_behavior": "باید از keyword matching استفاده کند و اطلاعات مربوط به تضامین را پیدا کند"
+      }
+    },
+    {
+      "query": "قراردادهای qbc چی هستن؟",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "قراردادهای qbc چی هستن؟",
+        "category": "irrelevant_query",
+        "expected_behavior": "باید تشخیص دهد که اطلاعات کافی وجود ندارد یا پاسخ مناسب بدهد"
+      }
+    },
+    {
+      "query": "اگه مشاور لایح تاخیرات رو برای کارفرما بفرسته ولی کارفرما هیچ کاری نکنه چطوری میشه پیگیری کرد؟",
+      "success": false,
+      "error": "'HallucinationDetector' object has no attribute '_self_verification_check'",
+      "test_case": {
+        "query": "اگه مشاور لایح تاخیرات رو برای کارفرما بفرسته ولی کارفرما هیچ کاری نکنه چطوری میشه پیگیری کرد؟",
+        "category": "complex_procedural",
+        "expected_behavior": "باید مراحل پیگیری را توضیح دهد"
+      }
+    }
+  ],
+  "timestamp": "20251212_173644"
+}

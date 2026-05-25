@@ -1,0 +1,29 @@
+{
+  "test_info": {
+    "date": "2025-12-07T10:02:07.982709",
+    "venv": "shared",
+    "total_tests": 3,
+    "successful_db": 0,
+    "success_rate": "0.0%"
+  },
+  "results": [
+    {
+      "test_id": "1a-1",
+      "query": "اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /query (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3481140e50>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    {
+      "test_id": "1a-2",
+      "query": "اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /query (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3481330eb0>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    },
+    {
+      "test_id": "1a-3",
+      "query": "تملک دارایی عمومی دانشگاه تهران در سال 1403",
+      "success": false,
+      "error": "HTTPConnectionPool(host='localhost', port=8001): Max retries exceeded with url: /query (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f3481141720>: Failed to establish a new connection: [Errno 111] Connection refused'))"
+    }
+  ]
+}

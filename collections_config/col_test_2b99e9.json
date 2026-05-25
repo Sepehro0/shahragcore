@@ -1,0 +1,27 @@
+{
+  "collection_name": "col_test_2b99e9",
+  "display_name": "تست",
+  "collection_type": "general",
+  "processing_mode": "rag_only",
+  "description": "",
+  "system_prompt": "شما دستیار تست هستید. از اطلاعات داده شده پاسخ دهید.",
+  "created_at": "2026-05-12T08:17:48.969443",
+  "updated_at": "2026-05-12T08:17:50.986451",
+  "documents_count": 3,
+  "retrieval_config": {
+    "top_k": 10,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 4096,
+    "top_p": 0.9
+  },
+  "metadata": {
+    "embedding_model": "heydariAI/persian-embeddings",
+    "embedding_dim": 1024,
+    "distance_metric": "cosine"
+  }
+}

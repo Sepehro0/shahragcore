@@ -1,0 +1,21 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:core.refactored_rag_system:🚀 Initializing Refactored RAG System...
+
+🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯
+COMPREHENSIVE BUDGET TEST - Detailed Report
+🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯🎯
+
+1️⃣ Initializing RefactoredRAGSystem...
+Traceback (most recent call last):
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_detailed_report.py", line 197, in <module>
+    success = asyncio.run(run_comprehensive_test())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/test_budget_detailed_report.py", line 135, in run_comprehensive_test
+    rag = RefactoredRAGSystem()
+  File "/home/user01/qwen-api/enhanced_rag_system_dev/./core/refactored_rag_system.py", line 103, in __init__
+    super().__init__(
+TypeError: object.__init__() takes exactly one argument (the instance to initialize)

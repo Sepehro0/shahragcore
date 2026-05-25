@@ -1,0 +1,2308 @@
+{
+  "collection_name": "budget_tables",
+  "total_documents": 376,
+  "total_unique_nodes": 59,
+  "nodes": [
+    {
+      "node_uid": "manabe:i1",
+      "node_name": "درآمدهای اختصاصی دولت",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 2,
+      "parent_uid": "manabe:t2",
+      "parent_name": "منابع بودجه عمومی دولت",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 714272498.0,
+          "computed_value": 714272498.0
+        },
+        "1399": {
+          "raw_amount": 792324983.0,
+          "computed_value": 792324983.0
+        },
+        "1400": {
+          "raw_amount": 958489912.0,
+          "computed_value": 958489912.0
+        },
+        "1401": {
+          "raw_amount": 1332396113.0,
+          "computed_value": 1332396113.0
+        },
+        "1402": {
+          "raw_amount": 1800000000.0,
+          "computed_value": 1800000000.0
+        },
+        "1403": {
+          "raw_amount": 2751000000.0,
+          "computed_value": 2751000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i10",
+      "node_name": "بند اول : منبع حاصل از نفت و فرآورده های نفتی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t5",
+      "parent_name": "واگذاری دارایی های سرمایه ای",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1530732001.0,
+          "computed_value": 1530732001.0
+        },
+        "1399": {
+          "raw_amount": 482986001.0,
+          "computed_value": 482986001.0
+        },
+        "1400": {
+          "raw_amount": 3492720000.0,
+          "computed_value": 3492720000.0
+        },
+        "1401": {
+          "raw_amount": 3818450002.0,
+          "computed_value": 3818450002.0
+        },
+        "1402": {
+          "raw_amount": 6038075000.0,
+          "computed_value": 6038075000.0
+        },
+        "1403": {
+          "raw_amount": 5827430000.0,
+          "computed_value": 5827430000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i11",
+      "node_name": "بند دوم : منابع حاصل از فروش و واگذاری اموال منقول و غیر منقول",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t5",
+      "parent_name": "واگذاری دارایی های سرمایه ای",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 44500000.0,
+          "computed_value": 44500000.0
+        },
+        "1399": {
+          "raw_amount": 495458999.0,
+          "computed_value": 495458999.0
+        },
+        "1400": {
+          "raw_amount": 452750050.0,
+          "computed_value": 452750050.0
+        },
+        "1401": {
+          "raw_amount": 261000002.0,
+          "computed_value": 261000002.0
+        },
+        "1402": {
+          "raw_amount": 1079999000.0,
+          "computed_value": 1079999000.0
+        },
+        "1403": {
+          "raw_amount": 618199000.0,
+          "computed_value": 618199000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i12",
+      "node_name": "بند سوم : منابع حاصل از واگذاذی طرح تملک دارایی های سرمایه ای",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t5",
+      "parent_name": "واگذاری دارایی های سرمایه ای",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 10000000.0,
+          "computed_value": 10000000.0
+        },
+        "1399": {
+          "raw_amount": 10000000.0,
+          "computed_value": 10000000.0
+        },
+        "1400": {
+          "raw_amount": 10000000.0,
+          "computed_value": 10000000.0
+        },
+        "1401": {
+          "raw_amount": 5000000.0,
+          "computed_value": 5000000.0
+        },
+        "1402": {
+          "raw_amount": 1000.0,
+          "computed_value": 1000.0
+        },
+        "1403": {
+          "raw_amount": 1000.0,
+          "computed_value": 1000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i13",
+      "node_name": "بند اول : منابع حاصل از فروش و واگذاری انواع اوراق مالی و اسلامی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 430000002.0,
+          "computed_value": 430000002.0
+        },
+        "1399": {
+          "raw_amount": 800000001.0,
+          "computed_value": 800000001.0
+        },
+        "1400": {
+          "raw_amount": 1325000001.0,
+          "computed_value": 1325000001.0
+        },
+        "1401": {
+          "raw_amount": 880000001.0,
+          "computed_value": 880000001.0
+        },
+        "1402": {
+          "raw_amount": 1850000000.0,
+          "computed_value": 1850000000.0
+        },
+        "1403": {
+          "raw_amount": 2546002000.0,
+          "computed_value": 2546002000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i14",
+      "node_name": "بند دوم : منابع حاصل از استفاده از تسهیلات خارجی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 500000.0,
+          "computed_value": 500000.0
+        },
+        "1399": {
+          "raw_amount": 500000.0,
+          "computed_value": 500000.0
+        },
+        "1400": {
+          "raw_amount": 500000.0,
+          "computed_value": 500000.0
+        },
+        "1401": {
+          "raw_amount": 500000.0,
+          "computed_value": 500000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 1000.0,
+          "computed_value": 1000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i15",
+      "node_name": "بند سوم : منابع حاصل از استفاده ار موجودی حساب ذخیره ارزی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i16",
+      "node_name": "بند چهارم : منابع حاصل از دریافت اصل وامها",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 21328877.0,
+          "computed_value": 21328877.0
+        },
+        "1399": {
+          "raw_amount": 13072740.0,
+          "computed_value": 13072740.0
+        },
+        "1400": {
+          "raw_amount": 12242782.0,
+          "computed_value": 12242782.0
+        },
+        "1401": {
+          "raw_amount": 15614725.0,
+          "computed_value": 15614725.0
+        },
+        "1402": {
+          "raw_amount": 18514727.0,
+          "computed_value": 18514727.0
+        },
+        "1403": {
+          "raw_amount": 14763000.0,
+          "computed_value": 14763000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i17",
+      "node_name": "بند پنجم : منایع حاصل از واگذاری شرکت های دولتی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 46750001.0,
+          "computed_value": 46750001.0
+        },
+        "1399": {
+          "raw_amount": 114871257.0,
+          "computed_value": 114871257.0
+        },
+        "1400": {
+          "raw_amount": 2559000000.0,
+          "computed_value": 2559000000.0
+        },
+        "1401": {
+          "raw_amount": 710000000.0,
+          "computed_value": 710000000.0
+        },
+        "1402": {
+          "raw_amount": 1060000000.0,
+          "computed_value": 1060000000.0
+        },
+        "1403": {
+          "raw_amount": 600000000.0,
+          "computed_value": 600000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i18",
+      "node_name": "بند ششم : منابع حاصل از برگشتی سالهای قبل",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 8171120.0,
+          "computed_value": 8171120.0
+        },
+        "1399": {
+          "raw_amount": 12500001.0,
+          "computed_value": 12500001.0
+        },
+        "1400": {
+          "raw_amount": 16006802.0,
+          "computed_value": 16006802.0
+        },
+        "1401": {
+          "raw_amount": 10785272.0,
+          "computed_value": 10785272.0
+        },
+        "1402": {
+          "raw_amount": 11485273.0,
+          "computed_value": 11485273.0
+        },
+        "1403": {
+          "raw_amount": 31004000.0,
+          "computed_value": 31004000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i19",
+      "node_name": "بند هفتم : منابع حاصل از استفاده از صندوق توسعه ملی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1.0,
+          "computed_value": 1.0
+        },
+        "1399": {
+          "raw_amount": 302056000.0,
+          "computed_value": 302056000.0
+        },
+        "1400": {
+          "raw_amount": 362000000.0,
+          "computed_value": 362000000.0
+        },
+        "1401": {
+          "raw_amount": 1373560000.0,
+          "computed_value": 1373560000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i2",
+      "node_name": "منابع شرکت های دولتی، موسسات انتفاعی وابسته به دولت و بانکها",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 1,
+      "parent_uid": "manabe:t1",
+      "parent_name": "منابع بودجه کل کشور",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 12771433156.0,
+          "computed_value": 12771433156.0
+        },
+        "1399": {
+          "raw_amount": 14839457689.0,
+          "computed_value": 14839457689.0
+        },
+        "1400": {
+          "raw_amount": 15713217843.0,
+          "computed_value": 15713217843.0
+        },
+        "1401": {
+          "raw_amount": 22314079318.0,
+          "computed_value": 22314079318.0
+        },
+        "1402": {
+          "raw_amount": 30976965000.0,
+          "computed_value": 30976965000.0
+        },
+        "1403": {
+          "raw_amount": 37415723997.0,
+          "computed_value": 37415723997.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i20",
+      "node_name": "بند هشتم : منابع حاصل از سایر واگذاری ها",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 4000000.0,
+          "computed_value": 4000000.0
+        },
+        "1399": {
+          "raw_amount": 4000000.0,
+          "computed_value": 4000000.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 1000000.0,
+          "computed_value": 1000000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i21",
+      "node_name": "بند نهم : انتشار اوراق صکوک اجاره به منظور تسویه مطالبات قطعی اشخاص حقیقی و حقوقی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t6",
+      "parent_name": "واگذاری دارایی های مالی",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1.0,
+          "computed_value": 1.0
+        },
+        "1399": {
+          "raw_amount": 1.0,
+          "computed_value": 1.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 1.0,
+          "computed_value": 1.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i3",
+      "node_name": "کسر می شود ارقامی که دوبار منظور شده است - منابع",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 1,
+      "parent_uid": "manabe:t1",
+      "parent_name": "منابع بودجه کل کشور",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": true,
+      "years": {
+        "1398": {
+          "raw_amount": 528356578.0,
+          "computed_value": -528356578.0
+        },
+        "1399": {
+          "raw_amount": 590379828.0,
+          "computed_value": -590379828.0
+        },
+        "1400": {
+          "raw_amount": 627518654.0,
+          "computed_value": -627518654.0
+        },
+        "1401": {
+          "raw_amount": 1055770803.0,
+          "computed_value": -1055770803.0
+        },
+        "1402": {
+          "raw_amount": 1526881289.0,
+          "computed_value": -1526881289.0
+        },
+        "1403": {
+          "raw_amount": 1200000000.0,
+          "computed_value": -1200000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i4",
+      "node_name": "بخش اول : درآمد های مالیاتی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1725367502.0,
+          "computed_value": 1725367502.0
+        },
+        "1399": {
+          "raw_amount": 1950000006.0,
+          "computed_value": 1950000006.0
+        },
+        "1400": {
+          "raw_amount": 3252372014.0,
+          "computed_value": 3252372014.0
+        },
+        "1401": {
+          "raw_amount": 5267663000.0,
+          "computed_value": 5267663000.0
+        },
+        "1402": {
+          "raw_amount": 8262920000.0,
+          "computed_value": 8262920000.0
+        },
+        "1403": {
+          "raw_amount": 13645000000.0,
+          "computed_value": 13645000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i5",
+      "node_name": "بخش دوم : درآمد های ناشی از کمک های اختصاصی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i6",
+      "node_name": "بحش سوم : درآمد های حاصل از مالکیت دولت",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 275235500.0,
+          "computed_value": 275235500.0
+        },
+        "1399": {
+          "raw_amount": 305086451.0,
+          "computed_value": 305086451.0
+        },
+        "1400": {
+          "raw_amount": 484987882.0,
+          "computed_value": 484987882.0
+        },
+        "1401": {
+          "raw_amount": 866423000.0,
+          "computed_value": 866423000.0
+        },
+        "1402": {
+          "raw_amount": 960229000.0,
+          "computed_value": 960229000.0
+        },
+        "1403": {
+          "raw_amount": 1349310070.0,
+          "computed_value": 1349310070.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i7",
+      "node_name": "بخش چهارم : درآمد های حاصل از فروش کالا و خدمات",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 102128870.0,
+          "computed_value": 102128870.0
+        },
+        "1399": {
+          "raw_amount": 112749506.0,
+          "computed_value": 112749506.0
+        },
+        "1400": {
+          "raw_amount": 148068750.0,
+          "computed_value": 148068750.0
+        },
+        "1401": {
+          "raw_amount": 182622950.0,
+          "computed_value": 182622950.0
+        },
+        "1402": {
+          "raw_amount": 265771100.0,
+          "computed_value": 265771100.0
+        },
+        "1403": {
+          "raw_amount": 461450000.0,
+          "computed_value": 461450000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i8",
+      "node_name": "بحش پنجم : درآمد های حاصل از جرایم و خسارات",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 82245650.0,
+          "computed_value": 82245650.0
+        },
+        "1399": {
+          "raw_amount": 56456000.0,
+          "computed_value": 56456000.0
+        },
+        "1400": {
+          "raw_amount": 108220000.0,
+          "computed_value": 108220000.0
+        },
+        "1401": {
+          "raw_amount": 103209000.0,
+          "computed_value": 103209000.0
+        },
+        "1402": {
+          "raw_amount": 80361000.0,
+          "computed_value": 80361000.0
+        },
+        "1403": {
+          "raw_amount": 179631500.0,
+          "computed_value": 179631500.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:i9",
+      "node_name": "بخش ششم : درآمدهای متفرقه",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "manabe:t4",
+      "parent_name": "درآمد ها",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 204851629.0,
+          "computed_value": 204851629.0
+        },
+        "1399": {
+          "raw_amount": 186231103.0,
+          "computed_value": 186231103.0
+        },
+        "1400": {
+          "raw_amount": 555341075.0,
+          "computed_value": 555341075.0
+        },
+        "1401": {
+          "raw_amount": 224172047.0,
+          "computed_value": 224172047.0
+        },
+        "1402": {
+          "raw_amount": 212643900.0,
+          "computed_value": 212643900.0
+        },
+        "1403": {
+          "raw_amount": 347608430.0,
+          "computed_value": 347608430.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t1",
+      "node_name": "منابع بودجه کل کشور",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 0,
+      "parent_uid": "",
+      "parent_name": "",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": null,
+          "computed_value": 17443160230.0
+        },
+        "1399": {
+          "raw_amount": null,
+          "computed_value": 19887370910.0
+        },
+        "1400": {
+          "raw_amount": null,
+          "computed_value": 28823398457.0
+        },
+        "1401": {
+          "raw_amount": null,
+          "computed_value": 36310704628.0
+        },
+        "1402": {
+          "raw_amount": null,
+          "computed_value": 51090083711.0
+        },
+        "1403": {
+          "raw_amount": null,
+          "computed_value": 64587123997.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t2",
+      "node_name": "منابع بودجه عمومی دولت",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 1,
+      "parent_uid": "manabe:t1",
+      "parent_name": "منابع بودجه کل کشور",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 5200083652.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 5638293049.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 13737699268.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 15052396113.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 21640000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 28371400000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t3",
+      "node_name": "جمع منابع عمومی دولت",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 2,
+      "parent_uid": "manabe:t2",
+      "parent_name": "منابع بودجه عمومی دولت",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 4485811154.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 4845968066.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 12779209356.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 13720000000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 19840000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 25620400000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t4",
+      "node_name": "درآمد ها",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "manabe:t3",
+      "parent_name": "جمع منابع عمومی دولت",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 2389829151.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 2610523066.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 4548989721.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 6644089997.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 9781925000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 15983000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t5",
+      "node_name": "واگذاری دارایی های سرمایه ای",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "manabe:t3",
+      "parent_name": "جمع منابع عمومی دولت",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 1585232001.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 988445000.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 3955470050.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 4084450004.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 7118075000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 6445630000.0
+        }
+      }
+    },
+    {
+      "node_uid": "manabe:t6",
+      "node_name": "واگذاری دارایی های مالی",
+      "category": "manabe",
+      "category_fa": "منابع",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "manabe:t3",
+      "parent_name": "جمع منابع عمومی دولت",
+      "root": "منابع بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 510750002.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 1247000000.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 4274749585.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 2991459999.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 2940000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 3191770000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i1",
+      "node_name": "از محل درآمد های اختصاصی دولت - هزینه ای",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 3,
+      "parent_uid": "masaref:t4",
+      "parent_name": "مصارف از محل درآمد های اختصاصی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 577805640.0,
+          "computed_value": 577805640.0
+        },
+        "1399": {
+          "raw_amount": 640827906.0,
+          "computed_value": 640827906.0
+        },
+        "1400": {
+          "raw_amount": 895092698.0,
+          "computed_value": 895092698.0
+        },
+        "1401": {
+          "raw_amount": 1143145073.0,
+          "computed_value": 1143145073.0
+        },
+        "1402": {
+          "raw_amount": 1631445375.0,
+          "computed_value": 1631445375.0
+        },
+        "1403": {
+          "raw_amount": 2544190017.0,
+          "computed_value": 2544190017.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i10",
+      "node_name": "فصل ششم : رفاه احتماعی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1279280970.0,
+          "computed_value": 1279280970.0
+        },
+        "1399": {
+          "raw_amount": 1306401087.0,
+          "computed_value": 1306401087.0
+        },
+        "1400": {
+          "raw_amount": 3291947328.0,
+          "computed_value": 3291947328.0
+        },
+        "1401": {
+          "raw_amount": 3291835543.0,
+          "computed_value": 3291835543.0
+        },
+        "1402": {
+          "raw_amount": 5860153407.0,
+          "computed_value": 5860153407.0
+        },
+        "1403": {
+          "raw_amount": 7228139112.0,
+          "computed_value": 7228139112.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i11",
+      "node_name": "فصل هفتم : سایر هزینه ها",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 825117457.0,
+          "computed_value": 825117457.0
+        },
+        "1399": {
+          "raw_amount": 877284125.0,
+          "computed_value": 877284125.0
+        },
+        "1400": {
+          "raw_amount": 2624475833.0,
+          "computed_value": 2624475833.0
+        },
+        "1401": {
+          "raw_amount": 2179088962.0,
+          "computed_value": 2179088962.0
+        },
+        "1402": {
+          "raw_amount": 3360099349.0,
+          "computed_value": 3360099349.0
+        },
+        "1403": {
+          "raw_amount": 3489309755.0,
+          "computed_value": 3489309755.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i12",
+      "node_name": "فصل اول : ساختمان و سایر مستحدثات",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 488019944.0,
+          "computed_value": 488019944.0
+        },
+        "1399": {
+          "raw_amount": 504456946.0,
+          "computed_value": 504456946.0
+        },
+        "1400": {
+          "raw_amount": 1297156101.0,
+          "computed_value": 1297156101.0
+        },
+        "1401": {
+          "raw_amount": 2003652459.0,
+          "computed_value": 2003652459.0
+        },
+        "1402": {
+          "raw_amount": 2069789736.0,
+          "computed_value": 2069789736.0
+        },
+        "1403": {
+          "raw_amount": 2975598814.0,
+          "computed_value": 2975598814.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i13",
+      "node_name": "فصل دوم : ماشین آلات و تجهیزات",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 87325931.0,
+          "computed_value": 87325931.0
+        },
+        "1399": {
+          "raw_amount": 100298860.0,
+          "computed_value": 100298860.0
+        },
+        "1400": {
+          "raw_amount": 369590448.0,
+          "computed_value": 369590448.0
+        },
+        "1401": {
+          "raw_amount": 337487902.0,
+          "computed_value": 337487902.0
+        },
+        "1402": {
+          "raw_amount": 636536620.0,
+          "computed_value": 636536620.0
+        },
+        "1403": {
+          "raw_amount": 618507672.0,
+          "computed_value": 618507672.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i14",
+      "node_name": "فصل سوم : سایر داراییهای ثابت",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 965075.0,
+          "computed_value": 965075.0
+        },
+        "1399": {
+          "raw_amount": 1597638.0,
+          "computed_value": 1597638.0
+        },
+        "1400": {
+          "raw_amount": 2679516.0,
+          "computed_value": 2679516.0
+        },
+        "1401": {
+          "raw_amount": 1877617.0,
+          "computed_value": 1877617.0
+        },
+        "1402": {
+          "raw_amount": 3167097.0,
+          "computed_value": 3167097.0
+        },
+        "1403": {
+          "raw_amount": 32090799.0,
+          "computed_value": 32090799.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i15",
+      "node_name": "فصل چهارم : استفاده از موجودی انبار",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1399": {
+          "raw_amount": 72463.0,
+          "computed_value": 72463.0
+        },
+        "1400": {
+          "raw_amount": 38773.0,
+          "computed_value": 38773.0
+        },
+        "1401": {
+          "raw_amount": 51857.0,
+          "computed_value": 51857.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i16",
+      "node_name": "فصل پنجم : اقلام گرانبها",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 648438.0,
+          "computed_value": 648438.0
+        },
+        "1399": {
+          "raw_amount": 136719.0,
+          "computed_value": 136719.0
+        },
+        "1400": {
+          "raw_amount": 8533.0,
+          "computed_value": 8533.0
+        },
+        "1401": {
+          "raw_amount": 90800.0,
+          "computed_value": 90800.0
+        },
+        "1402": {
+          "raw_amount": 200418.0,
+          "computed_value": 200418.0
+        },
+        "1403": {
+          "raw_amount": 1034073.0,
+          "computed_value": 1034073.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i17",
+      "node_name": "فصل ششم : زمین",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 2665305.0,
+          "computed_value": 2665305.0
+        },
+        "1399": {
+          "raw_amount": 6670017.0,
+          "computed_value": 6670017.0
+        },
+        "1400": {
+          "raw_amount": 5687789.0,
+          "computed_value": 5687789.0
+        },
+        "1401": {
+          "raw_amount": 8627919.0,
+          "computed_value": 8627919.0
+        },
+        "1402": {
+          "raw_amount": 94589059.0,
+          "computed_value": 94589059.0
+        },
+        "1403": {
+          "raw_amount": 4323548.0,
+          "computed_value": 4323548.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i18",
+      "node_name": "فصل هفتم : سایر دارائیهای تولید نشده",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t6",
+      "parent_name": "تملک دارایی های سرمایه ای",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 88947963.0,
+          "computed_value": 88947963.0
+        },
+        "1399": {
+          "raw_amount": 90416174.0,
+          "computed_value": 90416174.0
+        },
+        "1400": {
+          "raw_amount": 87484350.0,
+          "computed_value": 87484350.0
+        },
+        "1401": {
+          "raw_amount": 166361446.0,
+          "computed_value": 166361446.0
+        },
+        "1402": {
+          "raw_amount": 474917070.0,
+          "computed_value": 474917070.0
+        },
+        "1403": {
+          "raw_amount": 368445094.0,
+          "computed_value": 368445094.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i19",
+      "node_name": "اعتبارات موضوع واگذاری سهام",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 43450002.0,
+          "computed_value": 43450002.0
+        },
+        "1399": {
+          "raw_amount": 27750002.0,
+          "computed_value": 27750002.0
+        },
+        "1400": {
+          "raw_amount": 35750000.0,
+          "computed_value": 35750000.0
+        },
+        "1401": {
+          "raw_amount": 48930000.0,
+          "computed_value": 48930000.0
+        },
+        "1402": {
+          "raw_amount": 37831000.0,
+          "computed_value": 37831000.0
+        },
+        "1403": {
+          "raw_amount": 47832000.0,
+          "computed_value": 47832000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i2",
+      "node_name": "از محل درآمد های اختصاصی دولت - سرمایه ای",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 3,
+      "parent_uid": "masaref:t4",
+      "parent_name": "مصارف از محل درآمد های اختصاصی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 136466858.0,
+          "computed_value": 136466858.0
+        },
+        "1399": {
+          "raw_amount": 151497077.0,
+          "computed_value": 151497077.0
+        },
+        "1400": {
+          "raw_amount": 63397214.0,
+          "computed_value": 63397214.0
+        },
+        "1401": {
+          "raw_amount": 189251040.0,
+          "computed_value": 189251040.0
+        },
+        "1402": {
+          "raw_amount": 168554625.0,
+          "computed_value": 168554625.0
+        },
+        "1403": {
+          "raw_amount": 206809983.0,
+          "computed_value": 206809983.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i20",
+      "node_name": "بازپرداخت اصل اوراق بدی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 219041713.0,
+          "computed_value": 219041713.0
+        },
+        "1399": {
+          "raw_amount": 400100002.0,
+          "computed_value": 400100002.0
+        },
+        "1400": {
+          "raw_amount": 701500000.0,
+          "computed_value": 701500000.0
+        },
+        "1401": {
+          "raw_amount": 1282969000.0,
+          "computed_value": 1282969000.0
+        },
+        "1402": {
+          "raw_amount": 1735096000.0,
+          "computed_value": 1735096000.0
+        },
+        "1403": {
+          "raw_amount": 2491096000.0,
+          "computed_value": 2491096000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i21",
+      "node_name": "بازپرداخت اصل تسهیلات بانکی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1580000.0,
+          "computed_value": 1580000.0
+        },
+        "1399": {
+          "raw_amount": 1580000.0,
+          "computed_value": 1580000.0
+        },
+        "1400": {
+          "raw_amount": 33547000.0,
+          "computed_value": 33547000.0
+        },
+        "1401": {
+          "raw_amount": 3411000.0,
+          "computed_value": 3411000.0
+        },
+        "1402": {
+          "raw_amount": 13240450.0,
+          "computed_value": 13240450.0
+        },
+        "1403": {
+          "raw_amount": 56224500.0,
+          "computed_value": 56224500.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i22",
+      "node_name": "تعهدات پرداخت نشده سالهای قبل",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1060000.0,
+          "computed_value": 1060000.0
+        },
+        "1399": {
+          "raw_amount": 1060000.0,
+          "computed_value": 1060000.0
+        },
+        "1400": {
+          "raw_amount": 905060000.0,
+          "computed_value": 905060000.0
+        },
+        "1401": {
+          "raw_amount": 5060000.0,
+          "computed_value": 5060000.0
+        },
+        "1402": {
+          "raw_amount": 50057000.0,
+          "computed_value": 50057000.0
+        },
+        "1403": {
+          "raw_amount": 80760000.0,
+          "computed_value": 80760000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i23",
+      "node_name": "بازپرداخت اصل وامهای خارجی و تعهدات",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 28347680.0,
+          "computed_value": 28347680.0
+        },
+        "1399": {
+          "raw_amount": 39509996.0,
+          "computed_value": 39509996.0
+        },
+        "1400": {
+          "raw_amount": 151543000.0,
+          "computed_value": 151543000.0
+        },
+        "1401": {
+          "raw_amount": 209630000.0,
+          "computed_value": 209630000.0
+        },
+        "1402": {
+          "raw_amount": 181575550.0,
+          "computed_value": 181575550.0
+        },
+        "1403": {
+          "raw_amount": 137087500.0,
+          "computed_value": 137087500.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i24",
+      "node_name": "واگذاری طرح های تملک دارایی های سرمایه ای",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i25",
+      "node_name": "سرمایه گذاری ، کمک های فرهنگی و اقتصادی بین المللی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t7",
+      "parent_name": "تملک دارایی های مالی",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 0.0
+        },
+        "1403": {
+          "raw_amount": 20000000.0,
+          "computed_value": 20000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i3",
+      "node_name": "مصارف شرکت های دولتی، موسسات انتفاعی وابسته به دولت و بانکها",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 1,
+      "parent_uid": "masaref:t1",
+      "parent_name": "مصارف بودجه کل کشور",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 12771433156.0,
+          "computed_value": 12771433156.0
+        },
+        "1399": {
+          "raw_amount": 14839457689.0,
+          "computed_value": 14839457689.0
+        },
+        "1400": {
+          "raw_amount": 15713217843.0,
+          "computed_value": 15713217843.0
+        },
+        "1401": {
+          "raw_amount": 22314079318.0,
+          "computed_value": 22314079318.0
+        },
+        "1402": {
+          "raw_amount": 30976965000.0,
+          "computed_value": 30976965000.0
+        },
+        "1403": {
+          "raw_amount": 37415723997.0,
+          "computed_value": 37415723997.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i4",
+      "node_name": "کسر می شود ارقامی که دوبار منظور شده است - مصارف",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 1,
+      "parent_uid": "masaref:t1",
+      "parent_name": "مصارف بودجه کل کشور",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": true,
+      "years": {
+        "1398": {
+          "raw_amount": 528356578.0,
+          "computed_value": -528356578.0
+        },
+        "1399": {
+          "raw_amount": 590379828.0,
+          "computed_value": -590379828.0
+        },
+        "1400": {
+          "raw_amount": 627518654.0,
+          "computed_value": -627518654.0
+        },
+        "1401": {
+          "raw_amount": 1055770803.0,
+          "computed_value": -1055770803.0
+        },
+        "1402": {
+          "raw_amount": 1526881289.0,
+          "computed_value": -1526881289.0
+        },
+        "1403": {
+          "raw_amount": 1200000000.0,
+          "computed_value": -1200000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i5",
+      "node_name": "فصل اول : جبران خدمت کارکنان",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 975462599.0,
+          "computed_value": 975462599.0
+        },
+        "1399": {
+          "raw_amount": 1134366283.0,
+          "computed_value": 1134366283.0
+        },
+        "1400": {
+          "raw_amount": 2035093873.0,
+          "computed_value": 2035093873.0
+        },
+        "1401": {
+          "raw_amount": 2794466273.0,
+          "computed_value": 2794466273.0
+        },
+        "1402": {
+          "raw_amount": 4050631414.0,
+          "computed_value": 4050631414.0
+        },
+        "1403": {
+          "raw_amount": 5052602775.0,
+          "computed_value": 5052602775.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i6",
+      "node_name": "فصل دوم : استفاده از کالاها و خدمات",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 253706310.0,
+          "computed_value": 253706310.0
+        },
+        "1399": {
+          "raw_amount": 262778337.0,
+          "computed_value": 262778337.0
+        },
+        "1400": {
+          "raw_amount": 738155296.0,
+          "computed_value": 738155296.0
+        },
+        "1401": {
+          "raw_amount": 601133889.0,
+          "computed_value": 601133889.0
+        },
+        "1402": {
+          "raw_amount": 817459902.0,
+          "computed_value": 817459902.0
+        },
+        "1403": {
+          "raw_amount": 1712707733.0,
+          "computed_value": 1712707733.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i7",
+      "node_name": "فصل سوم : هزینه های اموال و دارایی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 1139888.0,
+          "computed_value": 1139888.0
+        },
+        "1399": {
+          "raw_amount": 82104.0,
+          "computed_value": 82104.0
+        },
+        "1400": {
+          "raw_amount": 67201.0,
+          "computed_value": 67201.0
+        },
+        "1401": {
+          "raw_amount": 493023076.0,
+          "computed_value": 493023076.0
+        },
+        "1402": {
+          "raw_amount": 333383.0,
+          "computed_value": 333383.0
+        },
+        "1403": {
+          "raw_amount": 510000000.0,
+          "computed_value": 510000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i8",
+      "node_name": "فصل چهارم : یارانه ها",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 116684061.0,
+          "computed_value": 116684061.0
+        },
+        "1399": {
+          "raw_amount": 31063844.0,
+          "computed_value": 31063844.0
+        },
+        "1400": {
+          "raw_amount": 307572798.0,
+          "computed_value": 307572798.0
+        },
+        "1401": {
+          "raw_amount": 75127420.0,
+          "computed_value": 75127420.0
+        },
+        "1402": {
+          "raw_amount": 212827800.0,
+          "computed_value": 212827800.0
+        },
+        "1403": {
+          "raw_amount": 385332866.0,
+          "computed_value": 385332866.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:i9",
+      "node_name": "فصل پنجم : کمک های بلاعوض",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "item",
+      "depth": 4,
+      "parent_uid": "masaref:t5",
+      "parent_name": "هزینه ها",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": true,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 72367818.0,
+          "computed_value": 72367818.0
+        },
+        "1399": {
+          "raw_amount": 60343469.0,
+          "computed_value": 60343469.0
+        },
+        "1400": {
+          "raw_amount": 191851517.0,
+          "computed_value": 191851517.0
+        },
+        "1401": {
+          "raw_amount": 217174837.0,
+          "computed_value": 217174837.0
+        },
+        "1402": {
+          "raw_amount": 241494745.0,
+          "computed_value": 241494745.0
+        },
+        "1403": {
+          "raw_amount": 409307759.0,
+          "computed_value": 409307759.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t1",
+      "node_name": "مصارف بودجه کل کشور",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 0,
+      "parent_uid": "",
+      "parent_name": "",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": null,
+          "computed_value": 17443160230.0
+        },
+        "1399": {
+          "raw_amount": null,
+          "computed_value": 19887370910.0
+        },
+        "1400": {
+          "raw_amount": null,
+          "computed_value": 28823398457.0
+        },
+        "1401": {
+          "raw_amount": null,
+          "computed_value": 36310704628.0
+        },
+        "1402": {
+          "raw_amount": null,
+          "computed_value": 51090083711.0
+        },
+        "1403": {
+          "raw_amount": null,
+          "computed_value": 64587123997.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t2",
+      "node_name": "مصارف بودجه عمومی دولت",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 1,
+      "parent_uid": "masaref:t1",
+      "parent_name": "مصارف بودجه کل کشور",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 5200083652.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 5638293049.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 13737699268.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 15052396113.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 21640000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 28371400000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t3",
+      "node_name": "جمع مصارف عمومی دولت",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 2,
+      "parent_uid": "masaref:t2",
+      "parent_name": "مصارف بودجه عمومی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 4485811154.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 4845968066.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 12779209356.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 13720000000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 19840000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 25620400000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t4",
+      "node_name": "مصارف از محل درآمد های اختصاصی دولت",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 2,
+      "parent_uid": "masaref:t2",
+      "parent_name": "مصارف بودجه عمومی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 714272498.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 792324983.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 958489912.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 1332396113.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 1800000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 2751000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t5",
+      "node_name": "هزینه ها",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "masaref:t3",
+      "parent_name": "جمع مصارف عمومی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 3523759103.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 3672319249.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 9189163846.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 9651850000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 14543000000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 18787400000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t6",
+      "node_name": "تملک دارایی های سرمایه ای",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "masaref:t3",
+      "parent_name": "جمع مصارف عمومی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 668572656.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 703648817.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 1762645510.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 2518150000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 3279200000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 4000000000.0
+        }
+      }
+    },
+    {
+      "node_uid": "masaref:t7",
+      "node_name": "تملک دارایی های مالی",
+      "category": "masaref",
+      "category_fa": "مصارف",
+      "node_type": "title",
+      "depth": 3,
+      "parent_uid": "masaref:t3",
+      "parent_name": "جمع مصارف عمومی دولت",
+      "root": "مصارف بودجه کل کشور",
+      "is_leaf": false,
+      "is_deduction": false,
+      "years": {
+        "1398": {
+          "raw_amount": 0.0,
+          "computed_value": 293479395.0
+        },
+        "1399": {
+          "raw_amount": 0.0,
+          "computed_value": 470000000.0
+        },
+        "1400": {
+          "raw_amount": 0.0,
+          "computed_value": 1827400000.0
+        },
+        "1401": {
+          "raw_amount": 0.0,
+          "computed_value": 1550000000.0
+        },
+        "1402": {
+          "raw_amount": 0.0,
+          "computed_value": 2017800000.0
+        },
+        "1403": {
+          "raw_amount": 0.0,
+          "computed_value": 2833000000.0
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === Virtual environments ===
+venv
+venv/
+.venv/
+env/
+.env/
+
+# === Environment & secrets ===
+.env
+.env.local
+.env.*.local
+*.env
+
+# === ChromaDB / vector DB & SQLite ===
+chroma_db/
+chroma_db_*/
+chroma_data/
+chroma_storage/
+chroma_persistent_storage/
+chroma_db_test/
+*.db
+rag_database.db
+
+# === Logs & runtime ===
+*.log
+logs/
+api_server.pid
+*.pid
+
+# === Cache & temp ===
+.entity_cache/
+.entity_learning/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.cache
+
+# === IDE / OS ===
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Backups (optional: remove if you want to track backups) ===
+*.backup
+*.bak
+
+# === Large/generated data ===
+archive/logs/
+qovve-ketab-sample-ocr*.txt
+ocr_qovve*.log
+ocr_qovve*.json
+process_qovve*.log
+process_qovve*.txt
+process_qovve_output.log
+
+# === Test outputs (optional) ===
+test_reports/
+test_results/
+*.log
+
+# === Downloaded models (HuggingFace / sentence-transformers) ===
+models/.locks
+models/models--*/
+models/multimodal/document_understanding/
+models/multimodal/vision_language/
+
+# === Symlinks to parent project (tracked as file; ignore if broken) ===
+# config/settings.py is symlink - consider copying for standalone repo
+
+# Public repo exclusions
+.env.auth
+.env
+.env.*
+collections_config/col_web_*
+collections_config/col_file_*
+collections_config/col_md_*
+collections_config/col_qa_*
+archive/data_files/
+data/conversation_memory.db*
+data/chroma.sqlite3
+data/audit_logs/
+setup_qovve_new.log

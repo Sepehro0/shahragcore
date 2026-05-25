@@ -1,0 +1,468 @@
+{
+  "test_info": {
+    "date": "2025-12-07T08:08:24.610475",
+    "collection": "budget_financial",
+    "api_url": "http://localhost:8010",
+    "total_tests": 12,
+    "successful": 12,
+    "failed": 0,
+    "success_rate": "100.0%",
+    "total_time_seconds": 131.6
+  },
+  "category_statistics": {
+    "1a. ارجاع یک سلول خاص - مصارف": {
+      "total": 5,
+      "successful": 5,
+      "failed": 0
+    },
+    "2a. جمع": {
+      "total": 4,
+      "successful": 4,
+      "failed": 0
+    },
+    "2b. درآمدها": {
+      "total": 3,
+      "successful": 3,
+      "failed": 0
+    }
+  },
+  "test_results": [
+    {
+      "test_id": "1a-1",
+      "category": "1a. ارجاع یک سلول خاص - مصارف",
+      "query": "اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403",
+      "success": true,
+      "answer": "اعتبارات هزینه‌ای متفرقه: **225,000 میلیون ریال**",
+      "answer_length": 49,
+      "confidence": 0.1827956989247312,
+      "processing_time": 13.088181,
+      "metadata": {
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "rag"
+      },
+      "sources_count": 5,
+      "used_features": {
+        "reranking": true,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "ستاد مبارزه با مواد مخدر",
+        "year": "1403",
+        "column": "برآورد_اعتبارات_هزینه_ای_متفرقه",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "1a-2",
+      "category": "1a. ارجاع یک سلول خاص - مصارف",
+      "query": "اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **533,661**\n- جمع کل مقادیر در این بازه برابر **533,661** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 533,661 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **533,661**",
+      "answer_length": 200,
+      "confidence": 1.0,
+      "processing_time": 5.599871,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "بنیاد ایران شناسی",
+        "year": "1403",
+        "column": "براورد_اعتبارات_هزینه_ای_عمومی",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "1a-3",
+      "category": "1a. ارجاع یک سلول خاص - مصارف",
+      "query": "اعتبارات هزینه ای اختصاصی هیات عالی گزینش در سال 1403",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **0**\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 0 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **0**",
+      "answer_length": 131,
+      "confidence": 1.0,
+      "processing_time": 17.627321,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "هیات عالی گزینش",
+        "year": "1403",
+        "column": "براورد_اعتبارات_هزینه_ای_اختصاصی",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "1a-4",
+      "category": "1a. ارجاع یک سلول خاص - مصارف",
+      "query": "تملک دارایی سرمایه ای عمومی معاونت علمی و فناوری در سال 1403",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **2,069,111**\n- جمع کل مقادیر در این بازه برابر **2,069,111** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 2,069,111 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **2,069,111**",
+      "answer_length": 208,
+      "confidence": 1.0,
+      "processing_time": 4.286912,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": true,
+        "sub_queries": [
+          "تملک دارایی سرمایه ای عمومی معاونت علمی",
+          "فناوری در سال 1403"
+        ],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "معاونت علمي ، فناوري  و اقتصاد دانش بنيان رييس جمهور",
+        "year": "1403",
+        "column": "براورد_تملك_دارايي_هاي_سرمايه_اي_ع",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "1a-5",
+      "category": "1a. ارجاع یک سلول خاص - مصارف",
+      "query": "تملک دارایی سرمایه ای متفرقه سازمان سنجش بند ج در سال 1403",
+      "success": true,
+      "answer": "متأسفانه داده‌ای برای این سوال یافت نشد. ممکن است فیلترهای اعمال شده خیلی محدود باشند.",
+      "answer_length": 86,
+      "confidence": 1.0,
+      "processing_time": 4.442358,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database_no_data"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "سازمان سنجش آموزش كشور موضوع بند\"ج\" تبصره 49 قانون بودجه سال 1364 كل كشور",
+        "year": "1403",
+        "column": "براورد_تملك_دارايي_هاي_سرمايه_اي_م",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "2a-1",
+      "category": "2a. جمع",
+      "query": "بودجه فرهنگستان هنر در سال 1403",
+      "success": true,
+      "answer": "### بودجه فرهنگستان هنر در سال 1403\n- **جمع کل**: 911,074 میلیون ریال\n\n| بخش | مقدار (میلیون ریال) |\n|-----|---------------------|\n| اعتبارات عمومی | 796,074 |\n| اعتبارات متفرقه | 0 |\n| اعتبارات اختصاصی | 115,000 |\n| **جمع اعتبارات هزینه‌ای (جاری)** | **911,074** |",
+      "answer_length": 265,
+      "confidence": 0.14972677595628414,
+      "processing_time": 20.155782,
+      "metadata": {
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "rag"
+      },
+      "sources_count": 5,
+      "used_features": {
+        "reranking": true,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "فرهنگستان هنر",
+        "year": "1403",
+        "column": "جمع_كل",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "2a-2",
+      "category": "2a. جمع",
+      "query": "اعتبارات هزینه ای نهاد ریاست جمهوری در سال 1403",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **148,306,345**\n- جمع کل مقادیر در این بازه برابر **148,306,345** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 148,306,345 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **148,306,345**",
+      "answer_length": 216,
+      "confidence": 1.0,
+      "processing_time": 5.876126,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "نهاد ریاست جمهوری",
+        "year": "1403",
+        "column": "جمع_براورد_اعتبارات_هزینه_ای",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "2a-3",
+      "category": "2a. جمع",
+      "query": "درآمدهای وزارت نفت در سال 1401 چقدر است",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **9,747,976**\n- جمع کل مقادیر در این بازه برابر **9,747,976** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 9,747,976 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **9,747,976**",
+      "answer_length": 208,
+      "confidence": 1.0,
+      "processing_time": 5.729152,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "وزارت نفت",
+        "year": "1401",
+        "column": null,
+        "table": "incomes_sheet1",
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "2a-4",
+      "category": "2a. جمع",
+      "query": "بودجه دانشگاه تهران",
+      "success": true,
+      "answer": "```\nاعتبارات هزینه‌ای (جاری): **26,900 میلیون ریال**\n```",
+      "answer_length": 56,
+      "confidence": 0.1306791569086651,
+      "processing_time": 19.399249,
+      "metadata": {
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "rag"
+      },
+      "sources_count": 5,
+      "used_features": {
+        "reranking": true,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "دانشگاه تهران",
+        "year": "1403",
+        "column": "جمع_كل",
+        "table": null,
+        "income_type": null
+      }
+    },
+    {
+      "test_id": "2b-1",
+      "category": "2b. درآمدها",
+      "query": "درامد استانی اختصاصی دانشگاه تبریز در سال 1403",
+      "success": true,
+      "answer": "قسمت: قسمت اول: درآمدها\nبخش: بخش ششم: درآمدهاي متفرقه (کد: 160000)\nبند: بند اول: درآمدهاي متفرقه (کد: 160100)\nجزء: درامد حاصل از برداشت آب از آب خوان ها (کد: 160112)\nدستگاه اصلی: وزارت نيرو\nدستگاه اجرایی: شركت مادر تخصصي مديريت منابع آب ايران\nکد دستگاه: 219700\nسال: 1403\n\n## درآمد عمومی:\n- درآمد عمومی ملی: 0 میلیون ریال\n- درآمد عمومی استانی: 5,000,000 میلیون ریال\n- جمع درآمد عمومی: 5,000,000 میلیون ریال\n\n## درآمد اختصاصی:\n- درآمد اختصاصی ملی: 0 میلیون ریال\n- درآمد اختصاصی استانی: 0 میلیون ریال\n- ",
+      "answer_length": 500,
+      "confidence": 0.1413934426229508,
+      "processing_time": 8.584571,
+      "metadata": {
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "rag"
+      },
+      "sources_count": 5,
+      "used_features": {
+        "reranking": true,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "دانشگاه تبریز",
+        "year": "1403",
+        "column": null,
+        "table": "incomes_sheet1",
+        "income_type": "استانی اختصاصی"
+      }
+    },
+    {
+      "test_id": "2b-2",
+      "category": "2b. درآمدها",
+      "query": "درامد ملی سازمان تامین اجتماعی در سال 1403",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **1,508,806,149**\n- جمع کل مقادیر در این بازه برابر **1,508,806,149** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 1,508,806,149 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **1,508,806,149**",
+      "answer_length": 224,
+      "confidence": 1.0,
+      "processing_time": 5.708149,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": false,
+        "sub_queries": [],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "سازمان تامین اجتماعی",
+        "year": "1403",
+        "column": null,
+        "table": "incomes_sheet1",
+        "income_type": "ملی"
+      }
+    },
+    {
+      "test_id": "2b-3",
+      "category": "2b. درآمدها",
+      "query": "درامد کل موسسه کار و تامین اجتماعی در سال 1402",
+      "success": true,
+      "answer": "### خلاصه پاسخ\n- جمع کل: **505,000**\n- جمع کل مقادیر در این بازه برابر **505,000** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 505,000 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **505,000**",
+      "answer_length": 200,
+      "confidence": 1.0,
+      "processing_time": 4.043181,
+      "metadata": {
+        "query_type": "unknown",
+        "is_multi_part": true,
+        "sub_queries": [
+          "درامد کل موسسه کار",
+          "تامین اجتماعی در سال 1402"
+        ],
+        "route_path": "database",
+        "type": "database",
+        "retrieval_route": "database_override"
+      },
+      "sources_count": 0,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "error": null,
+      "has_database_results": false,
+      "database_rows": 0,
+      "sql_query": null,
+      "expected": {
+        "entity": "موسسه کار و تامین اجتماعی",
+        "year": "1402",
+        "column": null,
+        "table": "incomes_sheet1",
+        "income_type": "کل"
+      }
+    }
+  ]
+}

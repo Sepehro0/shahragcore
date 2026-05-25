@@ -1,0 +1,23 @@
+{
+  "collection_name": "wallex_crypto",
+  "display_name": "والکس - قیمت رمزارزها",
+  "collection_type": "qa",
+  "processing_mode": "rag_only",
+  "description": "کالکشن قیمت لحظه‌ای رمزارزها با استفاده از API والکس",
+  "system_prompt": "شما یک دستیار هوشمند برای پاسخ به سوالات هستید. \nبر اساس اطلاعات داده شده، پاسخ دقیق و کامل به سوال کاربر بدهید.",
+  "created_at": "2026-05-07T13:05:32.278692",
+  "updated_at": "2026-05-07T13:05:44.976586",
+  "documents_count": 3,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {}
+}

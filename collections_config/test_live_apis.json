@@ -1,0 +1,23 @@
+{
+  "collection_name": "test_live_apis",
+  "display_name": "Test Live APIs - ابزارهای API زنده",
+  "collection_type": "qa",
+  "processing_mode": "rag_only",
+  "description": "",
+  "system_prompt": "شما یک دستیار هوشمند هستید که به کاربران کمک می‌کند تا اطلاعات لحظه‌ای آب‌وهوا، نرخ ارز و اطلاعات IP را دریافت کنند. هر بار که کاربر سوال می‌کند، از ابزارهای API استفاده کنید تا اطلاعات به‌روز ارائه دهید.",
+  "created_at": "2026-05-07T11:45:43.623902",
+  "updated_at": "2026-05-07T11:48:38.867518",
+  "documents_count": 3,
+  "retrieval_config": {
+    "top_k": 5,
+    "use_reranking": true,
+    "semantic_weight": 0.7,
+    "keyword_weight": 0.3
+  },
+  "generation_config": {
+    "temperature": 0.3,
+    "max_tokens": 1024,
+    "top_p": 0.9
+  },
+  "metadata": {}
+}

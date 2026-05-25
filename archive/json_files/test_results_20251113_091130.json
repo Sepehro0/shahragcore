@@ -1,0 +1,330 @@
+[
+  {
+    "question_id": 1,
+    "question": "انستیتو پاستور ایران در سال های 401 تا 403 مجموعا چقدر درامد اختصاصی داشته است ؟",
+    "question_type": "aggregation_multi_year",
+    "success": true,
+    "timestamp": "2025-11-13T09:08:53.408875",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 13.000602722167969
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 2,
+    "question": "تمامی هزینه های اورژانس استان تهران در سال 1403 چقدر بوده است ؟",
+    "question_type": "aggregation_single_year",
+    "success": true,
+    "timestamp": "2025-11-13T09:09:01.714127",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 6.302718877792358
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 3,
+    "question": "درامد حاصل از واگذاری دارایی های سرمایه ای در سال 99 چقدر بوده است ؟",
+    "question_type": "specific_income_type",
+    "success": true,
+    "timestamp": "2025-11-13T09:09:18.521136",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 14.804706811904907
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 4,
+    "question": "درامد های مالیاتی در سال 1401 چقدر بوده است ؟",
+    "question_type": "income_category",
+    "success": true,
+    "timestamp": "2025-11-13T09:09:45.195490",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 24.672051429748535
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 5,
+    "question": "درامد های ملی حاصل از اجاره در سال 1398 چقدر بوده است و توسط چه دستگاهی وصول شده است ؟",
+    "question_type": "complex_multi_part",
+    "success": true,
+    "timestamp": "2025-11-13T09:10:03.070226",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 15.872407913208008
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 6,
+    "question": "وزارت کشور در سال 1398 مجموعا چقدر درامد داشته است ؟ چه بخشی از ان ملی و چه بخشی استانی بوده است ؟ و از چه راه هایی کسی شده است ؟ هرکدام چقدر سهم دارند ؟",
+    "question_type": "complex_breakdown",
+    "success": true,
+    "timestamp": "2025-11-13T09:10:51.319749",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 46.24728202819824
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 7,
+    "question": "پر هزینه ترین دستگاه اجرایی سال 1403 کدام دستگاه بوده است ؟",
+    "question_type": "ranking_max",
+    "success": true,
+    "timestamp": "2025-11-13T09:11:03.693252",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 10.371180295944214
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  },
+  {
+    "question_id": 8,
+    "question": "پر هزینه ترین دستگاه های اجرایی منتصب به نهاد ریاست جمهوری کدام دستگاه ها هستند ؟",
+    "question_type": "ranking_filtered",
+    "success": true,
+    "timestamp": "2025-11-13T09:11:28.865662",
+    "retrieval_analysis": {
+      "total_docs_retrieved": 0,
+      "avg_relevance_score": 0,
+      "top_5_scores": [],
+      "sources": [],
+      "year_coverage": []
+    },
+    "answer_analysis": {
+      "answer": "",
+      "answer_length": 0,
+      "has_numbers": false,
+      "has_sources": false,
+      "query_time": 23.170179843902588
+    },
+    "process_flow": [
+      {
+        "type": "start",
+        "order": 1
+      },
+      {
+        "type": "context",
+        "order": 2
+      },
+      {
+        "type": "token",
+        "order": 3
+      },
+      {
+        "type": "complete",
+        "order": 4
+      }
+    ],
+    "status": "SUCCESS",
+    "quality_score": 0
+  }
+]

@@ -1,0 +1,84 @@
+{
+  "entity_matching": [
+    {
+      "query": "معاونت علمی و فناوری",
+      "expected_match": "معاونت علمی و فناوری رییس جمهور",
+      "wrong_match": "پارک علم و فناوری قم",
+      "similarity_correct": 0.7843137254901961,
+      "word_overlap_correct": 1.0,
+      "combined_correct": 0.9137254901960784,
+      "similarity_wrong": 0.7,
+      "word_overlap_wrong": 0.3333333333333333,
+      "combined_wrong": 0.48,
+      "should_reject": true,
+      "pass": true
+    },
+    {
+      "query": "وزارت نفت",
+      "expected_match": "وزارت نفت",
+      "similarity": 1.0,
+      "word_overlap": 1.0,
+      "combined": 1.0,
+      "pass": true
+    },
+    {
+      "query": "بانک ملی",
+      "expected_match": "بانک ملی ایران",
+      "similarity": 0.7272727272727273,
+      "word_overlap": 1.0,
+      "combined": 0.8909090909090909,
+      "pass": true
+    },
+    {
+      "query": "سازمان امور مالیاتی",
+      "expected_match": "سازمان امور مالیاتی کشور",
+      "similarity": 0.8837209302325582,
+      "word_overlap": 1.0,
+      "combined": 0.9534883720930233,
+      "pass": true
+    },
+    {
+      "query": "فرهنگستان علوم ایران",
+      "expected_match": "فرهنگستان علوم جمهوری اسلامی ایران",
+      "similarity": 0.7407407407407407,
+      "word_overlap": 1.0,
+      "combined": 0.8962962962962963,
+      "pass": true
+    },
+    {
+      "query": "ستاد توسعه زیست فناوری",
+      "expected_match": "ستاد توسعه فناوری نانو",
+      "similarity": 0.7727272727272727,
+      "word_overlap": 0.75,
+      "combined": 0.759090909090909,
+      "pass": true
+    }
+  ],
+  "income_queries": [],
+  "supplementary_income_queries": [],
+  "expense_queries": [],
+  "summary": {
+    "entity_matching": {
+      "passed": 6,
+      "total": 6
+    },
+    "income_queries": {
+      "success": 0,
+      "total": 0
+    },
+    "supplementary_income": {
+      "success": 0,
+      "total": 0
+    },
+    "expense_queries": {
+      "success": 0,
+      "total": 0
+    },
+    "total_api": {
+      "success": 0,
+      "total": 0
+    },
+    "route_paths": {},
+    "timestamp": "2025-12-22T15:26:21.583861"
+  }
+}

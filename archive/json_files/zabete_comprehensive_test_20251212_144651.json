@@ -1,0 +1,217 @@
+{
+  "timestamp": "2025-12-12T14:46:51.483455",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "total_tests": 8,
+  "successful": 8,
+  "results": [
+    {
+      "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+      "success": true,
+      "answer": "متأسفانه اطلاعات مرتبطی برای این سوال یافت نشد: No results found",
+      "confidence": 0.0,
+      "sources_count": 0,
+      "dynamic_top_k": "N/A",
+      "ragas_metrics": {},
+      "test_case": {
+        "query": "ماده 46 شرایط عمومی پیمان چیه؟",
+        "expected": "باید در فیلد answer جستجو کند و پاسخ بدهد",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "توضیح ماده 48 شرایط عمومی پیمان",
+      "success": true,
+      "answer": "متأسفانه اطلاعات مرتبطی برای این سوال یافت نشد: No results found",
+      "confidence": 0.0,
+      "sources_count": 0,
+      "dynamic_top_k": "N/A",
+      "ragas_metrics": {},
+      "test_case": {
+        "query": "توضیح ماده 48 شرایط عمومی پیمان",
+        "expected": "باید در فیلد answer جستجو کند",
+        "category": "answer_field_search"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": true,
+      "answer": "قراردادهای QBC مطابق شرایط عمومی قراردادهای خدمات مشاوره است و کارفرما باید ظرف 15 روز پس از دریافت صورت‌حساب، حق‌الزحمه را پس از کسر کسور قانونی و قراردادی پرداخت کند. در صورت تاخیر بیش از 15 روز، این مدت در محاسبه بازه زمانی حفظ قدرت خرید اسناد خزانه اسلامی لحاظ می‌شود.",
+      "confidence": 0.8363188405797102,
+      "sources_count": 5,
+      "dynamic_top_k": 4,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.8666666666666667,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8363188405797102,
+          "user_satisfaction": 3.90895652173913
+        }
+      },
+      "test_case": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected": "باید تشخیص دهد نامرتبط است یا پاسخ مناسب بدهد",
+        "category": "irrelevant_query"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC",
+      "success": true,
+      "answer": "در پیمان‌های EPC صنعتی مطابق بخشنامه 1380، استفاده از بخشنامه 5090/54/11082-1 برای محاسبه تاخیر در پرداخت مجاز نیست و کارفرما باید جبران هزینه‌های اضافی پیمانکار را طبق شرایط خصوصی پرداخت کند. این مقررات فقط برای پیمان‌های مبتنی بر بخشنامه 1380 اعمال می‌شود و برای سایر پیمان‌ها متفاوت است.",
+      "confidence": 0.8683483483483483,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.8683483483483483,
+          "user_satisfaction": 4.005045045045045
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای EPC",
+        "expected": "باید نتایج مرتبط با EPC پیدا کند",
+        "category": "specific_contract_type"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+      "success": true,
+      "answer": "بخشنامه شماره 5090‏/54‏/11082‏-1 مورخ 1360/09/02 دیگر در قراردادهای طرح و ساخت و نظایر آن اعمال نمی‌شود. برای محاسبه تاخیر در پرداخت، باید از بخشنامه شماره 54/7105-105/18929 مورخ 14/11/1380 استفاده شود. اطلاعات کافی برای محاسبه مبلغ تاخیر به صورت میلیون ریال وجود ندارد.",
+      "confidence": 0.7477777777777779,
+      "sources_count": 1,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 1.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7477777777777779,
+          "user_satisfaction": 3.6433333333333335
+        }
+      },
+      "test_case": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت",
+        "expected": "باید از چند منبع استنتاج کند",
+        "category": "multi_source_inference"
+      }
+    },
+    {
+      "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+      "success": true,
+      "answer": "در قرارداد EPC، پیمانکار مسئولیت کامل طراحی، تهیه و ساخت پروژه دارد، در حالی که در قرارداد طرح و ساخت، پیمانکار فقط مسئولیت اجرای طرح تعریف‌شده توسط کارفرما را دارد. محدودیت‌هایی در تغییرات اسناد پیمان وجود دارد که باید مطابق ضوابط سازمان برنامه و بودجه کشور اعمال شود.",
+      "confidence": 0.7773976342129207,
+      "sources_count": 5,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7773976342129207,
+          "user_satisfaction": 3.7321929026387624
+        }
+      },
+      "test_case": {
+        "query": "تفاوت بین قراردادهای EPC و طرح و ساخت",
+        "expected": "باید مقایسه کند و dynamic_top_k بالاتر باشد",
+        "category": "comparison"
+      }
+    },
+    {
+      "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+      "success": true,
+      "answer": "در قراردادهای مشمول بخشنامه 101/173073، تعدیل مصالح پای‌کار و کار انجام‌شده بر اساس شاخص‌های قطعی فصول ۷ و ۹ سه ماهه سوم سال ۱۳۸۷ انجام می‌شود. مبالغ مربوط به آهن‌آلات خریداری‌شده در صورت‌وضعیت مهرماه و آبان ماه سال ۱۳۸۷، بر اساس این شاخص‌ها تعدیل می‌گردند و تغییرات شاخص‌های فصلی بین دوم و سوم سال ۱۳۸۷ تأثیری در محاسبه تعدیل ندارد.",
+      "confidence": 0.7800432900432901,
+      "sources_count": 1,
+      "dynamic_top_k": 5,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.0,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 1.0,
+          "answer_relevancy": 1.0,
+          "hallucination_rate": 0.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7800432900432901,
+          "user_satisfaction": 3.74012987012987
+        }
+      },
+      "test_case": {
+        "query": "نحوه محاسبه تعدیل در پیمان‌ها",
+        "expected": "باید از keyword matching استفاده کند",
+        "category": "keyword_based"
+      }
+    },
+    {
+      "query": "چگونگی اجرای بخشنامه 54/842",
+      "success": true,
+      "answer": "در پیمان‌های مبتنی بر نشریه 4311 و بخشنامه 54/842، درخواست تمدید مدت پیمان باید به مهندس مشاور ارائه شود و در صورت عدم توافق، نظر کارفرما حاکم است؛ پیمانکار نیز می‌تواند بر اساس ماده 53 شرایط عمومی پیمان، برای حل اختلاف اقدام کند.",
+      "confidence": 0.7334879227053139,
+      "sources_count": 5,
+      "dynamic_top_k": 4,
+      "ragas_metrics": {
+        "retrieval": {
+          "context_precision": 0.6666666666666666,
+          "context_recall": 0.5,
+          "mrr": 1.0
+        },
+        "generation": {
+          "faithfulness": 0.0,
+          "answer_relevancy": 0.9,
+          "hallucination_rate": 1.0
+        },
+        "end_to_end": {
+          "correctness": 0.7,
+          "confidence": 0.7334879227053139,
+          "user_satisfaction": 3.600463768115941
+        }
+      },
+      "test_case": {
+        "query": "چگونگی اجرای بخشنامه 54/842",
+        "expected": "باید بخشنامه را شناسایی و پاسخ بدهد",
+        "category": "bokshname_code"
+      }
+    }
+  ]
+}

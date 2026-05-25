@@ -1,0 +1,136 @@
+{
+  "zabete_qa": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "queries": [
+      {
+        "query": "ضابطه چیست؟",
+        "result": {
+          "success": true,
+          "answer_length": 2421,
+          "confidence": 0.8924338698387146,
+          "response_time": 18.419762
+        }
+      },
+      {
+        "query": "شرایط عضویت",
+        "result": {
+          "success": true,
+          "answer_length": 293,
+          "confidence": 0.781110942363739,
+          "response_time": 3.158728
+        }
+      },
+      {
+        "query": "نحوه ثبت نام",
+        "result": {
+          "success": true,
+          "answer_length": 293,
+          "confidence": 0.7599075317382813,
+          "response_time": 2.862025
+        }
+      }
+    ]
+  },
+  "karbaran_omomi": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "queries": [
+      {
+        "query": "خدمات کاربران عمومی",
+        "result": {
+          "success": true,
+          "answer_length": 193,
+          "confidence": 0.906659996509552,
+          "response_time": 6.360054
+        }
+      },
+      {
+        "query": "نحوه دسترسی",
+        "result": {
+          "success": true,
+          "answer_length": 290,
+          "confidence": 0.805392716328303,
+          "response_time": 2.94292
+        }
+      },
+      {
+        "query": "امکانات",
+        "result": {
+          "success": true,
+          "answer_length": 290,
+          "confidence": 0.8449328303337097,
+          "response_time": 3.385926
+        }
+      }
+    ]
+  },
+  "budget_financial": {
+    "total": 3,
+    "successful": 2,
+    "failed": 1,
+    "queries": [
+      {
+        "query": "بودجه سال",
+        "result": {
+          "success": true,
+          "answer_length": 3704,
+          "confidence": 1.0,
+          "response_time": 28.941005
+        }
+      },
+      {
+        "query": "هزینه ها",
+        "result": {
+          "success": true,
+          "answer_length": 3312,
+          "confidence": 1.0,
+          "response_time": 29.434259
+        }
+      },
+      {
+        "query": "درآمد",
+        "result": {
+          "success": false,
+          "error": "HTTP 500"
+        }
+      }
+    ]
+  },
+  "zinaf_dakheli": {
+    "total": 3,
+    "successful": 3,
+    "failed": 0,
+    "queries": [
+      {
+        "query": "زینف داخلی",
+        "result": {
+          "success": true,
+          "answer_length": 249,
+          "confidence": 0.6557964086532593,
+          "response_time": 4.627702
+        }
+      },
+      {
+        "query": "مقررات",
+        "result": {
+          "success": true,
+          "answer_length": 249,
+          "confidence": 0.7470809817314148,
+          "response_time": 3.162427
+        }
+      },
+      {
+        "query": "ضوابط",
+        "result": {
+          "success": true,
+          "answer_length": 249,
+          "confidence": 0.7616345882415771,
+          "response_time": 2.979448
+        }
+      }
+    ]
+  }
+}

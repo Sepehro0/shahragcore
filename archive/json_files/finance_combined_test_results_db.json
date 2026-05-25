@@ -1,0 +1,306 @@
+[
+  {
+    "query": "تملک دارایی های سرمایه ای پارک فناوری پردیس در سال 1399",
+    "result": {
+      "success": true,
+      "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1399. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database",
+        "database_rows_count": 1,
+        "database_columns_count": 3,
+        "sources_count": 0
+      },
+      "top_results": [],
+      "top_score": 1.0,
+      "used_reranking": false,
+      "used_multi_hop": false,
+      "used_query_understanding": false,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%پارک فناوری پردیس%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%پارک فناوری پردیس%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1399')",
+        "results": [
+          {
+            "total_amount": null,
+            "total_current_cost": null,
+            "total_capital_cost": null
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount",
+          "total_current_cost",
+          "total_capital_cost"
+        ],
+        "warnings": []
+      },
+      "route_path": "database"
+    }
+  },
+  {
+    "query": "اعتبارات هزینه ای ستاد مبارزه با مواد مخدر سال 98",
+    "result": {
+      "success": true,
+      "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database",
+        "database_rows_count": 1,
+        "database_columns_count": 3,
+        "sources_count": 0
+      },
+      "top_results": [],
+      "top_score": 1.0,
+      "used_reranking": false,
+      "used_multi_hop": false,
+      "used_query_understanding": false,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد مخدر%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد مخدر%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398')",
+        "results": [
+          {
+            "total_amount": null,
+            "total_current_cost": null,
+            "total_capital_cost": null
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount",
+          "total_current_cost",
+          "total_capital_cost"
+        ],
+        "warnings": []
+      },
+      "route_path": "database"
+    }
+  },
+  {
+    "query": "اعتبارات هزینه ای متفرقه بنیاد ایران شناسی در سال 98",
+    "result": {
+      "success": true,
+      "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database",
+        "database_rows_count": 1,
+        "database_columns_count": 3,
+        "sources_count": 0
+      },
+      "top_results": [],
+      "top_score": 1.0,
+      "used_reranking": false,
+      "used_multi_hop": false,
+      "used_query_understanding": false,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398')",
+        "results": [
+          {
+            "total_amount": null,
+            "total_current_cost": null,
+            "total_capital_cost": null
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount",
+          "total_current_cost",
+          "total_capital_cost"
+        ],
+        "warnings": []
+      },
+      "route_path": "database"
+    }
+  },
+  {
+    "query": "مجموع تمامی مصارف معاونت علمی و فناوری رییس جمهور سال 1402",
+    "result": {
+      "success": true,
+      "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1402. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database",
+        "database_rows_count": 1,
+        "database_columns_count": 3,
+        "sources_count": 0
+      },
+      "top_results": [],
+      "top_score": 1.0,
+      "used_reranking": false,
+      "used_multi_hop": false,
+      "used_query_understanding": false,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری رییس%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری رییس%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1402')",
+        "results": [
+          {
+            "total_amount": null,
+            "total_current_cost": null,
+            "total_capital_cost": null
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount",
+          "total_current_cost",
+          "total_capital_cost"
+        ],
+        "warnings": []
+      },
+      "route_path": "database"
+    }
+  },
+  {
+    "query": "تملک دارایی های سرمایه ای متفرقه مرکز ملی فضای مجازی کشور سال های 98 تا 1402",
+    "result": {
+      "success": true,
+      "answer": "شماره طبقه‌بندی **114028** مربوط به **سازمان فرهنگ و ارتباطات اسلامی** است که در سند 4 ذکر شده است. این سازمان بخشی از **وزارت فرهنگ و ارشاد اسلامی** است و در سال 1403، براورد تملک دارایی‌های سرمایه‌ای - متفرقه آن **149,701 میلیون ریال** (یعنی 149,701,000,000 ریال) ثبت شده است.\n\nبا این حال، **اطلاعات دقیق در مورد \"مرکز ملی فضای مجازی کشور\"** در اسناد ارائه‌شده وجود ندارد. همچنین، **هیچ اطلاعاتی در مورد سال‌های 98 تا 1402** (به‌ویژه برای بخش \"تملک دارایی‌های سرمایه‌ای متفرقه\") در این اسناد موجود نیست.  \n\nبا این حال، بر اساس اطلاعات موجود در سند 4، **سازمان فرهنگ و ارتباطات اسلامی** (که ممکن است به‌عنوان یکی از نهادهای مرتبط با فضای مجازی فعالیت داشته باشد) در سال 1403، بودجه تملک دارایی‌های سرمایه‌ای - متفرقه خود را در میزان **149,701 میلیون ریال** (یعنی **149,701,000,000 ریال**) برنامه‌ریزی کرده است.  \n\n✅ **نتیجه‌گیری:**  \n- اطلاعات دقیق در مورد **مرکز ملی فضای مجازی کشور** در سال‌های 98 تا 1402 در اسناد موجود نیست.  \n- اما بر اساس اطلاعات موجود، **سازمان فرهنگ و ارتباطات اسلامی** (که ممکن است مرتبط با فضای مجازی باشد) در سال 1403، بودجه تملک دارایی‌های سرمایه‌ای - متفرقه خود را در میزان **149,701 میلیون ریال (149,701,000,000 ریال)** تعیین کرده است.  \n- هیچ داده‌ای برای سال‌های 98 تا 1402 (به‌ویژه برای بخش مورد نظر) در این اسناد وجود ندارد.  \n\n📌 **نکته نهایی:** از آنجا که هیچ اطلاعاتی در مورد \"مرکز ملی فضای مجازی کشور\" در اسناد موجود نیست، نمی‌توان به‌صورت دقیق پاسخ داد. اما با توجه به ارتباط سازمان فرهنگ و ارتباطات اسلامی با فضای مجازی، ممکن است این سازمان مرتبط با فعالیت‌های مربوط به مرکز ملی فضای مجازی باشد.",
+      "top_results": [
+        {
+          "id": "chunk_219",
+          "text": "Sheet: Sheet1\nHeaders: عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال\nRow 220: وزارت علوم ، تحقیقات و فناوری | 113531 | پارک علم و فناوری خوزستان | 258924 | 0 | 314026 | 572950 | 120102 | 0 | 0 | 120102 | 693052 | 1403",
+          "metadata": {
+            "row_index": 220,
+            "type": "excel_row",
+            "headers": "عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال",
+            "file_type": "excel",
+            "code": "113531",
+            "sheet_name": "Sheet1",
+            "cells": "وزارت علوم ، تحقیقات و فناوری | 113531 | پارک علم و فناوری خوزستان | 258924 | 0 | 314026 | 572950 | 120102 | 0 | 0 | 120102 | 693052 | 1403"
+          },
+          "dense_score": 0.95,
+          "bm25_score": 10.0,
+          "hybrid_score": 0.95,
+          "rerank_score": 6.504494667053223,
+          "original_score": 0.95,
+          "final_score": 0.985,
+          "normalized_rerank": 1.0
+        },
+        {
+          "id": "chunk_283",
+          "text": "Sheet: Sheet1\nHeaders: عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال\nRow 284: شورای عالی حوزه های علمیه | 114020 | شورای عالی حوزه های علمیه | 45968711 | 0 | 10000000 | 55968711 | 12358851 | 0 | 0 | 12358851 | 68327562 | 1403",
+          "metadata": {
+            "sheet_name": "Sheet1",
+            "file_type": "excel",
+            "row_index": 284,
+            "cells": "شورای عالی حوزه های علمیه | 114020 | شورای عالی حوزه های علمیه | 45968711 | 0 | 10000000 | 55968711 | 12358851 | 0 | 0 | 12358851 | 68327562 | 1403",
+            "type": "excel_row",
+            "headers": "عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال",
+            "code": "114020"
+          },
+          "dense_score": 0.95,
+          "bm25_score": 10.0,
+          "hybrid_score": 0.95,
+          "rerank_score": 6.497575759887695,
+          "original_score": 0.95,
+          "final_score": 0.9636076546558944,
+          "normalized_rerank": 0.9694395066512776
+        },
+        {
+          "id": "chunk_284",
+          "text": "Sheet: Sheet1\nHeaders: عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال\nRow 285: شورای برنامه ریزی مدیریت حوزه های علمیه خراسان | 114025 | شورای عالی حوزه علمیه خراسان | 5939498 | 0 | 3000000 | 8939498 | 61636 | 0 | 0 | 61636 | 9001134 | 1403",
+          "metadata": {
+            "type": "excel_row",
+            "file_type": "excel",
+            "code": "114025",
+            "headers": "عنوان دستگاه اصلی / دستگاه اجرایی | کد دستگاه اجرایی | عنوان دستگاه اجرایی | براورد اعتبارات هزینه ای - عمومی | برآورد اعتبارات هزینه ای - متفرقه | براورد اعتبارات هزینه ای - اختصاصی | جمع براورد اعتبارات هزینه ای | براورد تملک دارایی های سرمایه ای - عمومی | براورد تملک دارایی های سرمایه ای - متفرقه | براورد تملک دارایی های سرمایه ای - اختصاصی | جمع تملک دارایی های سرمایه ای | جمع کل | سال",
+            "cells": "شورای برنامه ریزی مدیریت حوزه های علمیه خراسان | 114025 | شورای عالی حوزه علمیه خراسان | 5939498 | 0 | 3000000 | 8939498 | 61636 | 0 | 0 | 61636 | 9001134 | 1403",
+            "row_index": 285,
+            "sheet_name": "Sheet1"
+          },
+          "dense_score": 0.95,
+          "bm25_score": 10.0,
+          "hybrid_score": 0.95,
+          "rerank_score": 6.475545883178711,
+          "original_score": 0.95,
+          "final_score": 0.8954941911894793,
+          "normalized_rerank": 0.8721345588421132
+        }
+      ],
+      "top_score": 0.985,
+      "used_reranking": true,
+      "used_multi_hop": false,
+      "used_query_understanding": false,
+      "used_self_rag": false,
+      "used_corrective_rag": false,
+      "answer_provider": "Qwen/Qwen3-30B-A3B-Instruct-2507",
+      "is_llm_generated": true,
+      "chat_history": [
+        {
+          "user": "اعتبارات هزینه ای متفرقه بنیاد ایران شناسی در سال 98",
+          "assistant": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+          "timestamp": 1764241540.3253925
+        },
+        {
+          "user": "مجموع تمامی مصارف معاونت علمی و فناوری رییس جمهور سال 1402",
+          "assistant": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1402. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+          "timestamp": 1764241541.3483057
+        },
+        {
+          "user": "تملک دارایی های سرمایه ای متفرقه مرکز ملی فضای مجازی کشور سال های 98 تا 1402",
+          "assistant": "شماره طبقه‌بندی **114028** مربوط به **سازمان فرهنگ و ارتباطات اسلامی** است که در سند 4 ذکر شده است. این سازمان بخشی از **وزارت فرهنگ و ارشاد اسلامی** است و در سال 1403، براورد تملک دارایی‌های سرمایه‌ای - متفرقه آن **149,701 میلیون ریال** (یعنی 149,701,000,000 ریال) ثبت شده است.\n\nبا این حال، **اطلاعات دقیق در مورد \"مرکز ملی فضای مجازی کشور\"** در اسناد ارائه‌شده وجود ندارد. همچنین، **هیچ اطلاعاتی در مورد سال‌های 98 تا 1402** (به‌ویژه برای بخش \"تملک دارایی‌های سرمایه‌ای متفرقه\") در این اسناد موجود نیست.  \n\nبا این حال، بر اساس اطلاعات موجود در سند 4، **سازمان فرهنگ و ارتباطات اسلامی** (که ممکن است به‌عنوان یکی از نهادهای مرتبط با فضای مجازی فعالیت داشته باشد) در سال 1403، بودجه تملک دارایی‌های سرمایه‌ای - متفرقه خود را در میزان **149,701 میلیون ریال** (یعنی **149,701,000,000 ریال**) برنامه‌ریزی کرده است.  \n\n✅ **نتیجه‌گیری:**  \n- اطلاعات دقیق در مورد **مرکز ملی فضای مجازی کشور** در سال‌های 98 تا 1402 در اسناد موجود نیست.  \n- اما بر اساس اطلاعات موجود، **سازمان فرهنگ و ارتباطات اسلامی** (که ممکن است مرتبط با فضای مجازی باشد) در سال 1403، بودجه تملک دارایی‌های سرمایه‌ای - متفرقه خود را در میزان **149,701 میلیون ریال (149,701,000,000 ریال)** تعیین کرده است.  \n- هیچ داده‌ای برای سال‌های 98 تا 1402 (به‌ویژه برای بخش مورد نظر) در این اسناد وجود ندارد.  \n\n📌 **نکته نهایی:** از آنجا که هیچ اطلاعاتی در مورد \"مرکز ملی فضای مجازی کشور\" در اسناد موجود نیست، نمی‌توان به‌صورت دقیق پاسخ داد. اما با توجه به ارتباط سازمان فرهنگ و ارتباطات اسلامی با فضای مجازی، ممکن است این سازمان مرتبط با فعالیت‌های مربوط به مرکز ملی فضای مجازی باشد.",
+          "timestamp": 1764241549.0211608
+        }
+      ],
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "route_path": "rag",
+      "database_results": null,
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": "user_enabled",
+        "multi_hop_sub_questions": [],
+        "multi_hop_analysis": {
+          "type": "simple",
+          "hops": [],
+          "target_entity": null,
+          "operation": null,
+          "requires_multi_hop": false
+        },
+        "answer_mode": "llm",
+        "llm_generated": true,
+        "used_query_analyzer": true,
+        "used_structure_detection": false,
+        "used_table_normalization": false,
+        "used_advanced_retrieval": false
+      }
+    }
+  }
+]

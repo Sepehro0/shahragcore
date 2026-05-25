@@ -1,0 +1,809 @@
+[
+  {
+    "query": "تملک دارایی اختصاصی کد دستگاه اجرایی 111400 در سال 1400",
+    "query_num": 1,
+    "status": "success",
+    "http_code": 200,
+    "route": "DATABASE",
+    "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **58,364,714** - جمع کل مقادیر در این بازه برابر **58,364,714** است. تعداد ردیف‌ها: **1** - جمع کل: **58,364,714**",
+    "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **58,364,714**\n- جمع کل مقادیر در این بازه برابر **58,364,714** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 58,364,714 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **58,364,714**",
+    "table_data": "| جمع کل |\n| --- |\n| 58,364,714 |",
+    "database_info": {
+      "has_results": true,
+      "row_count": 0,
+      "detail_count": 0,
+      "sql_query": "",
+      "success": true
+    },
+    "rag_info": {},
+    "used_features": {
+      "reranking": false,
+      "multi_hop": false,
+      "query_understanding": false,
+      "self_rag": false,
+      "corrective_rag": false
+    },
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database_override",
+      "database_rows_count": 1,
+      "database_columns_count": 1,
+      "sources_count": 0,
+      "processing_time_seconds": 15.208012,
+      "timestamp": "2025-11-30T14:25:11.464356",
+      "retrieval_method": "database"
+    },
+    "full_response": {
+      "success": true,
+      "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **58,364,714** - جمع کل مقادیر در این بازه برابر **58,364,714** است. تعداد ردیف‌ها: **1** - جمع کل: **58,364,714**",
+      "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **58,364,714**\n- جمع کل مقادیر در این بازه برابر **58,364,714** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 58,364,714 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **58,364,714**",
+      "table_data": "| جمع کل |\n| --- |\n| 58,364,714 |",
+      "full_text": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **58,364,714**\n- جمع کل مقادیر در این بازه برابر **58,364,714** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 58,364,714 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **58,364,714**",
+      "sources": [],
+      "confidence": 0.6200000000000001,
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database_override",
+        "database_rows_count": 1,
+        "database_columns_count": 1,
+        "sources_count": 0,
+        "processing_time_seconds": 15.208012,
+        "timestamp": "2025-11-30T14:25:11.464356",
+        "retrieval_method": "database"
+      },
+      "domain_info": {
+        "domain": "financial",
+        "confidence": 0.7062937062937062,
+        "summary": "سند مالی و بودجه شامل اطلاعات تخصیص منابع، هزینه‌ها و درآمدها: قسمت | کد بخش | عنوان بخش | کد بند | عنوان بند | کد جزء | عنوان جزء | کد دستگاه | عنوان دستگاه | عنوان دستگاه اصلی | ملی در آمد عمومی | استانی در آمد عمومی | جمع در آمد عمومی | ملی در آمد اختصاصی | اس",
+        "keywords": [
+          "مالی",
+          "درآمد",
+          "سازمان",
+          "دولتی",
+          "بند",
+          "بخش",
+          "قسمت",
+          "حساب"
+        ],
+        "method": "heuristic"
+      },
+      "error": null,
+      "processing_time": 15.208012,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "conversation_id": null,
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ا\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1400')",
+        "results": [
+          {
+            "total_amount": 58364714.0
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount"
+        ],
+        "analysis_used": "simple_sum"
+      },
+      "route_path": null,
+      "suggested_questions": [],
+      "applicable_filters": [],
+      "api_version": "v2",
+      "raw_table_data": {
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 58364714.0
+          }
+        ],
+        "row_count": 1,
+        "column_count": 1,
+        "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ا\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1400')",
+        "table_type": "database"
+      },
+      "detailed_sources": [
+        {
+          "id": "database_0",
+          "type": "database",
+          "source": "database_query",
+          "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ا\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1400')",
+          "table_name": null,
+          "row_count": 1,
+          "column_count": 1,
+          "columns": [
+            "total_amount"
+          ],
+          "sample_rows": [
+            {
+              "total_amount": 58364714.0
+            }
+          ],
+          "total_rows": 1,
+          "metadata": {
+            "query_type": null,
+            "success": true
+          }
+        }
+      ],
+      "chart_data": {
+        "type": "table",
+        "suggestions": [],
+        "data": {
+          "labels": [],
+          "datasets": [
+            {
+              "label": "total_amount",
+              "data": [
+                58364714.0
+              ]
+            }
+          ]
+        },
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 58364714.0
+          }
+        ]
+      },
+      "statistics": {
+        "total_rows": 1,
+        "total_columns": 1,
+        "column_statistics": {
+          "total_amount": {
+            "type": "numeric",
+            "count": 1,
+            "min": 58364714.0,
+            "max": 58364714.0,
+            "sum": 58364714.0,
+            "avg": 58364714.0
+          }
+        }
+      },
+      "export_formats": [
+        "json",
+        "csv",
+        "xlsx",
+        "sql"
+      ]
+    }
+  },
+  {
+    "query": "جمع تملک دارایی سرمایه ای عمومی مجمع تشخیص مصلحت نظام از سال 1398 تا 1403",
+    "query_num": 2,
+    "status": "success",
+    "http_code": 200,
+    "route": "DATABASE",
+    "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **2,220,522.44** - جمع کل مقادیر در این بازه برابر **2,220,522.44** است. تعداد ردیف‌ها: **1** - جمع کل: **2,220,522.44**",
+    "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **2,220,522.44**\n- جمع کل مقادیر در این بازه برابر **2,220,522.44** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 2,220,522.44 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **2,220,522.44**",
+    "table_data": "| جمع کل |\n| --- |\n| 2,220,522.44 |",
+    "database_info": {
+      "has_results": true,
+      "row_count": 0,
+      "detail_count": 0,
+      "sql_query": "",
+      "success": true
+    },
+    "rag_info": {},
+    "used_features": {
+      "reranking": false,
+      "multi_hop": false,
+      "query_understanding": false,
+      "self_rag": false,
+      "corrective_rag": false
+    },
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database_override",
+      "database_rows_count": 1,
+      "database_columns_count": 1,
+      "sources_count": 0,
+      "processing_time_seconds": 0.459584,
+      "timestamp": "2025-11-30T14:25:14.947808",
+      "retrieval_method": "database"
+    },
+    "full_response": {
+      "success": true,
+      "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **2,220,522.44** - جمع کل مقادیر در این بازه برابر **2,220,522.44** است. تعداد ردیف‌ها: **1** - جمع کل: **2,220,522.44**",
+      "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **2,220,522.44**\n- جمع کل مقادیر در این بازه برابر **2,220,522.44** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 2,220,522.44 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **2,220,522.44**",
+      "table_data": "| جمع کل |\n| --- |\n| 2,220,522.44 |",
+      "full_text": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **2,220,522.44**\n- جمع کل مقادیر در این بازه برابر **2,220,522.44** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 2,220,522.44 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **2,220,522.44**",
+      "sources": [],
+      "confidence": 0.6200000000000001,
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database_override",
+        "database_rows_count": 1,
+        "database_columns_count": 1,
+        "sources_count": 0,
+        "processing_time_seconds": 0.459584,
+        "timestamp": "2025-11-30T14:25:14.947808",
+        "retrieval_method": "database"
+      },
+      "domain_info": {
+        "domain": "financial",
+        "confidence": 0.7062937062937062,
+        "summary": "سند مالی و بودجه شامل اطلاعات تخصیص منابع، هزینه‌ها و درآمدها: قسمت | کد بخش | عنوان بخش | کد بند | عنوان بند | کد جزء | عنوان جزء | کد دستگاه | عنوان دستگاه | عنوان دستگاه اصلی | ملی در آمد عمومی | استانی در آمد عمومی | جمع در آمد عمومی | ملی در آمد اختصاصی | اس",
+        "keywords": [
+          "مالی",
+          "درآمد",
+          "سازمان",
+          "دولتی",
+          "بند",
+          "بخش",
+          "قسمت",
+          "حساب"
+        ],
+        "method": "heuristic"
+      },
+      "error": null,
+      "processing_time": 0.459584,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "conversation_id": null,
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ع\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%' OR TRANSLATE(\"عنوان_دستگاه_اصلي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398', '1399', '1400', '1401', '1402', '1403')",
+        "results": [
+          {
+            "total_amount": 2220522.44
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount"
+        ],
+        "analysis_used": "simple_sum"
+      },
+      "route_path": null,
+      "suggested_questions": [],
+      "applicable_filters": [],
+      "api_version": "v2",
+      "raw_table_data": {
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 2220522.44
+          }
+        ],
+        "row_count": 1,
+        "column_count": 1,
+        "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ع\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%' OR TRANSLATE(\"عنوان_دستگاه_اصلي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398', '1399', '1400', '1401', '1402', '1403')",
+        "table_type": "database"
+      },
+      "detailed_sources": [
+        {
+          "id": "database_0",
+          "type": "database",
+          "source": "database_query",
+          "sql": "SELECT SUM(COALESCE(CAST(\"براورد_تملك_دارايي_هاي_سرمايه_اي_ع\" AS DOUBLE PRECISION), 0)) AS total_amount FROM masaref_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%' OR TRANSLATE(\"عنوان_دستگاه_اصلي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%مجمع تشخیص مصلحت نظام%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398', '1399', '1400', '1401', '1402', '1403')",
+          "table_name": null,
+          "row_count": 1,
+          "column_count": 1,
+          "columns": [
+            "total_amount"
+          ],
+          "sample_rows": [
+            {
+              "total_amount": 2220522.44
+            }
+          ],
+          "total_rows": 1,
+          "metadata": {
+            "query_type": null,
+            "success": true
+          }
+        }
+      ],
+      "chart_data": {
+        "type": "table",
+        "suggestions": [],
+        "data": {
+          "labels": [],
+          "datasets": [
+            {
+              "label": "total_amount",
+              "data": [
+                2220522.44
+              ]
+            }
+          ]
+        },
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 2220522.44
+          }
+        ]
+      },
+      "statistics": {
+        "total_rows": 1,
+        "total_columns": 1,
+        "column_statistics": {
+          "total_amount": {
+            "type": "numeric",
+            "count": 1,
+            "min": 2220522.44,
+            "max": 2220522.44,
+            "sum": 2220522.44,
+            "avg": 2220522.44
+          }
+        }
+      },
+      "export_formats": [
+        "json",
+        "csv",
+        "xlsx",
+        "sql"
+      ]
+    }
+  },
+  {
+    "query": "درامد استانی اختصاصی دانشگاه تبریزدر سال 1403",
+    "query_num": 3,
+    "status": "success",
+    "http_code": 200,
+    "route": "DATABASE",
+    "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **1,954,545** - جمع کل مقادیر در این بازه برابر **1,954,545** است. تعداد ردیف‌ها: **1** - جمع کل: **1,954,545**",
+    "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **1,954,545**\n- جمع کل مقادیر در این بازه برابر **1,954,545** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 1,954,545 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **1,954,545**",
+    "table_data": "| جمع کل |\n| --- |\n| 1,954,545 |",
+    "database_info": {
+      "has_results": true,
+      "row_count": 0,
+      "detail_count": 0,
+      "sql_query": "",
+      "success": true
+    },
+    "rag_info": {},
+    "used_features": {
+      "reranking": false,
+      "multi_hop": false,
+      "query_understanding": false,
+      "self_rag": false,
+      "corrective_rag": false
+    },
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database_override",
+      "database_rows_count": 1,
+      "database_columns_count": 1,
+      "sources_count": 0,
+      "processing_time_seconds": 1.831159,
+      "timestamp": "2025-11-30T14:24:40.148225",
+      "retrieval_method": "database",
+      "from_cache": true
+    },
+    "full_response": {
+      "success": true,
+      "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - جمع کل: **1,954,545** - جمع کل مقادیر در این بازه برابر **1,954,545** است. تعداد ردیف‌ها: **1** - جمع کل: **1,954,545**",
+      "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **1,954,545**\n- جمع کل مقادیر در این بازه برابر **1,954,545** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 1,954,545 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **1,954,545**",
+      "table_data": "| جمع کل |\n| --- |\n| 1,954,545 |",
+      "full_text": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- جمع کل: **1,954,545**\n- جمع کل مقادیر در این بازه برابر **1,954,545** است.\n\n### نتایج پایگاه داده\n\n| جمع کل |\n| --- |\n| 1,954,545 |\n\nتعداد ردیف‌ها: **1**\n\n### جمع‌بندی\n- جمع کل: **1,954,545**",
+      "sources": [],
+      "confidence": 0.6200000000000001,
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database_override",
+        "database_rows_count": 1,
+        "database_columns_count": 1,
+        "sources_count": 0,
+        "processing_time_seconds": 1.831159,
+        "timestamp": "2025-11-30T14:24:40.148225",
+        "retrieval_method": "database",
+        "from_cache": true
+      },
+      "domain_info": {
+        "domain": "financial",
+        "confidence": 0.7062937062937062,
+        "summary": "سند مالی و بودجه شامل اطلاعات تخصیص منابع، هزینه‌ها و درآمدها: قسمت | کد بخش | عنوان بخش | کد بند | عنوان بند | کد جزء | عنوان جزء | کد دستگاه | عنوان دستگاه | عنوان دستگاه اصلی | ملی در آمد عمومی | استانی در آمد عمومی | جمع در آمد عمومی | ملی در آمد اختصاصی | اس",
+        "keywords": [
+          "مالی",
+          "درآمد",
+          "سازمان",
+          "دولتی",
+          "بند",
+          "بخش",
+          "قسمت",
+          "حساب"
+        ],
+        "method": "heuristic"
+      },
+      "error": null,
+      "processing_time": 9.3e-05,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "conversation_id": null,
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(COALESCE(CAST(\"استاني_در_آمد_اختصاصي\" AS DOUBLE PRECISION), 0)) AS total_amount FROM incomes_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE(\"عنوان_دستگاه_اصلی\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1403')",
+        "results": [
+          {
+            "total_amount": 1954545.0
+          }
+        ],
+        "count": 1,
+        "columns": [
+          "total_amount"
+        ],
+        "analysis_used": "simple_sum"
+      },
+      "route_path": null,
+      "suggested_questions": [],
+      "applicable_filters": [],
+      "api_version": "v2",
+      "raw_table_data": {
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 1954545.0
+          }
+        ],
+        "row_count": 1,
+        "column_count": 1,
+        "sql": "SELECT SUM(COALESCE(CAST(\"استاني_در_آمد_اختصاصي\" AS DOUBLE PRECISION), 0)) AS total_amount FROM incomes_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE(\"عنوان_دستگاه_اصلی\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1403')",
+        "table_type": "database"
+      },
+      "detailed_sources": [
+        {
+          "id": "database_0",
+          "type": "database",
+          "source": "database_query",
+          "sql": "SELECT SUM(COALESCE(CAST(\"استاني_در_آمد_اختصاصي\" AS DOUBLE PRECISION), 0)) AS total_amount FROM incomes_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%' OR TRANSLATE(\"عنوان_دستگاه_اصلی\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%دانشگاه تبریز%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1403')",
+          "table_name": null,
+          "row_count": 1,
+          "column_count": 1,
+          "columns": [
+            "total_amount"
+          ],
+          "sample_rows": [
+            {
+              "total_amount": 1954545.0
+            }
+          ],
+          "total_rows": 1,
+          "metadata": {
+            "query_type": null,
+            "success": true
+          }
+        }
+      ],
+      "chart_data": {
+        "type": "table",
+        "suggestions": [],
+        "data": {
+          "labels": [],
+          "datasets": [
+            {
+              "label": "total_amount",
+              "data": [
+                1954545.0
+              ]
+            }
+          ]
+        },
+        "columns": [
+          "total_amount"
+        ],
+        "rows": [
+          {
+            "total_amount": 1954545.0
+          }
+        ]
+      },
+      "statistics": {
+        "total_rows": 1,
+        "total_columns": 1,
+        "column_statistics": {
+          "total_amount": {
+            "type": "numeric",
+            "count": 1,
+            "min": 1954545.0,
+            "max": 1954545.0,
+            "sum": 1954545.0,
+            "avg": 1954545.0
+          }
+        }
+      },
+      "export_formats": [
+        "json",
+        "csv",
+        "xlsx",
+        "sql"
+      ]
+    }
+  },
+  {
+    "query": "هزینه عمومی نهاد ریاست  جمهوری در سال 1403  بیشتر بوده یا شورای عالی امنیت ملی",
+    "query_num": 4,
+    "status": "failed",
+    "http_code": 200,
+    "route": "UNKNOWN",
+    "answer": "متأسفانه اطلاعات مرتبطی برای این سوال یافت نشد: HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+    "full_answer": null,
+    "table_data": null,
+    "database_info": {},
+    "rag_info": {},
+    "used_features": {},
+    "metadata": {
+      "error": "HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+      "query": "هزینه عمومی نهاد ریاست  جمهوری در سال 1403  بیشتر بوده یا شورای عالی امنیت ملی"
+    },
+    "full_response": {
+      "success": false,
+      "answer": "متأسفانه اطلاعات مرتبطی برای این سوال یافت نشد: HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+      "full_answer": null,
+      "table_data": null,
+      "full_text": "متأسفانه اطلاعات مرتبطی برای این سوال یافت نشد: HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+      "sources": [],
+      "confidence": 0.0,
+      "metadata": {
+        "error": "HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+        "query": "هزینه عمومی نهاد ریاست  جمهوری در سال 1403  بیشتر بوده یا شورای عالی امنیت ملی"
+      },
+      "domain_info": null,
+      "error": "HTTP 500: {\"error\":\"vLLM request failed: All connection attempts failed\",\"status_code\":500,\"timestamp\":\"2025-11-30T14:25:39.464178\"}",
+      "processing_time": 24.50902,
+      "used_features": {},
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "conversation_id": null,
+      "database_results": null,
+      "route_path": null,
+      "suggested_questions": [],
+      "applicable_filters": [],
+      "api_version": "v2",
+      "raw_table_data": null,
+      "detailed_sources": null,
+      "chart_data": null,
+      "statistics": null,
+      "export_formats": null
+    }
+  },
+  {
+    "query": "هزینه عمومی کدام یک از مجموعه های نهاد ریاست جمهوری در سال 1403 از بقیه بیشتر است؟",
+    "query_num": 5,
+    "status": "success",
+    "http_code": 200,
+    "route": "DATABASE",
+    "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - 1 ردیف مالی مرتبط شناسایی شد. تعداد ردیف‌ها: **1**",
+    "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- 1 ردیف مالی مرتبط شناسایی شد.\n\n### نتایج پایگاه داده\n\n| هزینه |\n| --- |\n| - |\n\nتعداد ردیف‌ها: **1**",
+    "table_data": "| هزینه |\n| --- |\n| - |",
+    "database_info": {
+      "has_results": true,
+      "row_count": 1,
+      "detail_count": 0,
+      "sql_query": "",
+      "success": true
+    },
+    "rag_info": {},
+    "used_features": {
+      "reranking": false,
+      "multi_hop": false,
+      "query_understanding": false,
+      "self_rag": false,
+      "corrective_rag": false
+    },
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database",
+      "database_rows_count": 1,
+      "database_columns_count": 1,
+      "sources_count": 0,
+      "processing_time_seconds": 7.975788,
+      "timestamp": "2025-11-30T14:25:50.460435",
+      "retrieval_method": "database"
+    },
+    "full_response": {
+      "success": true,
+      "answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما: - 1 ردیف مالی مرتبط شناسایی شد. تعداد ردیف‌ها: **1**",
+      "full_answer": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- 1 ردیف مالی مرتبط شناسایی شد.\n\n### نتایج پایگاه داده\n\n| هزینه |\n| --- |\n| - |\n\nتعداد ردیف‌ها: **1**",
+      "table_data": "| هزینه |\n| --- |\n| - |",
+      "full_text": "بر اساس تحلیل پایگاه داده، در پاسخ به سوال شما:\n\n### خلاصه پاسخ\n- 1 ردیف مالی مرتبط شناسایی شد.\n\n### نتایج پایگاه داده\n\n| هزینه |\n| --- |\n| - |\n\nتعداد ردیف‌ها: **1**",
+      "sources": [],
+      "confidence": 0.6200000000000001,
+      "metadata": {
+        "auto_multi_hop": false,
+        "multi_hop_reason": null,
+        "multi_hop_sub_questions": [],
+        "retrieval_route": "database",
+        "database_rows_count": 1,
+        "database_columns_count": 1,
+        "sources_count": 0,
+        "processing_time_seconds": 7.975788,
+        "timestamp": "2025-11-30T14:25:50.460435",
+        "retrieval_method": "database"
+      },
+      "domain_info": {
+        "domain": "financial",
+        "confidence": 0.7062937062937062,
+        "summary": "سند مالی و بودجه شامل اطلاعات تخصیص منابع، هزینه‌ها و درآمدها: قسمت | کد بخش | عنوان بخش | کد بند | عنوان بند | کد جزء | عنوان جزء | کد دستگاه | عنوان دستگاه | عنوان دستگاه اصلی | ملی در آمد عمومی | استانی در آمد عمومی | جمع در آمد عمومی | ملی در آمد اختصاصی | اس",
+        "keywords": [
+          "مالی",
+          "درآمد",
+          "سازمان",
+          "دولتی",
+          "بند",
+          "بخش",
+          "قسمت",
+          "حساب"
+        ],
+        "method": "heuristic"
+      },
+      "error": null,
+      "processing_time": 7.975788,
+      "used_features": {
+        "reranking": false,
+        "multi_hop": false,
+        "query_understanding": false,
+        "self_rag": false,
+        "corrective_rag": false
+      },
+      "self_rag_metadata": {},
+      "corrective_rag_metadata": {},
+      "conversation_id": null,
+      "database_results": {
+        "success": true,
+        "sql": "SELECT SUM(هزینه) FROM table_rows",
+        "rows": [
+          {
+            "table_name": "masaref_sheet1",
+            "column": "هزینه",
+            "operation": "SUM",
+            "result": 48259538897.740005,
+            "count": 5318
+          }
+        ],
+        "results": [
+          {
+            "table_name": "masaref_sheet1",
+            "column": "هزینه",
+            "operation": "SUM",
+            "result": 48259538897.740005,
+            "count": 5318
+          }
+        ],
+        "total": 48259538897.740005,
+        "count": 1,
+        "columns": [
+          "هزینه"
+        ],
+        "warnings": [
+          "Used direct aggregation query (Qwen service unavailable)"
+        ]
+      },
+      "route_path": null,
+      "suggested_questions": [],
+      "applicable_filters": [],
+      "api_version": "v2",
+      "raw_table_data": {
+        "columns": [
+          "هزینه"
+        ],
+        "rows": [
+          {
+            "table_name": "masaref_sheet1",
+            "column": "هزینه",
+            "operation": "SUM",
+            "result": 48259538897.740005,
+            "count": 5318
+          }
+        ],
+        "row_count": 1,
+        "column_count": 1,
+        "sql": "SELECT SUM(هزینه) FROM table_rows",
+        "table_type": "database"
+      },
+      "detailed_sources": [
+        {
+          "id": "database_0",
+          "type": "database",
+          "source": "database_query",
+          "sql": "SELECT SUM(هزینه) FROM table_rows",
+          "table_name": null,
+          "row_count": 1,
+          "column_count": 1,
+          "columns": [
+            "هزینه"
+          ],
+          "sample_rows": [
+            {
+              "table_name": "masaref_sheet1",
+              "column": "هزینه",
+              "operation": "SUM",
+              "result": 48259538897.740005,
+              "count": 5318
+            }
+          ],
+          "total_rows": 1,
+          "metadata": {
+            "query_type": null,
+            "success": true
+          }
+        }
+      ],
+      "chart_data": {
+        "type": "table",
+        "suggestions": [],
+        "data": {
+          "labels": [],
+          "datasets": []
+        },
+        "columns": [
+          "هزینه"
+        ],
+        "rows": [
+          {
+            "table_name": "masaref_sheet1",
+            "column": "هزینه",
+            "operation": "SUM",
+            "result": 48259538897.740005,
+            "count": 5318
+          }
+        ]
+      },
+      "statistics": {
+        "total_rows": 1,
+        "total_columns": 1,
+        "column_statistics": {
+          "هزینه": {
+            "type": "text",
+            "count": 0,
+            "unique_count": 0
+          }
+        }
+      },
+      "export_formats": [
+        "json",
+        "csv",
+        "xlsx",
+        "sql"
+      ]
+    }
+  }
+]

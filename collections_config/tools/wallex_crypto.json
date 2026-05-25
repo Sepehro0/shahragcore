@@ -1,0 +1,120 @@
+[
+  {
+    "tool_id": "0e2595e5-19a8-4266-a602-96c3b16a6342",
+    "name": "get_wallex_markets",
+    "description": "دریافت لیست بازارها و قیمت لحظه‌ای رمزارزها در صرافی والکس شامل آخرین قیمت، تغییرات ۲۴ ساعته و حجم معاملات",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    },
+    "http_method": "GET",
+    "endpoint_url": "https://api.wallex.ir/v1/markets",
+    "auth_config": {
+      "type": "",
+      "token": null,
+      "key": null,
+      "header_name": null,
+      "username": null,
+      "password": null,
+      "refresh_url": null,
+      "refresh_token": null,
+      "client_id": null,
+      "client_secret": null,
+      "token_expires_at": null
+    },
+    "trigger_description": "قیمت رمزارز قیمت لحظه‌ای بیت‌کوین اتریوم تتر سولانا دوج‌کوین نرخ تتر قیمت تومانی BTC ETH USDT SOL والکس wallex قیمت ارز دیجیتال",
+    "collection_name": "wallex_crypto",
+    "tenant_id": "",
+    "headers": {},
+    "request_body_template": null,
+    "response_jmespath": null,
+    "timeout_seconds": 10,
+    "is_enabled": true,
+    "is_auth_tool": false,
+    "token_path": "",
+    "token_key": "user_token"
+  },
+  {
+    "tool_id": "b4617e39-e05b-4e1f-9e9a-e0dcdb7a11ee",
+    "name": "get_crypto_global_stats",
+    "description": "دریافت آمار جهانی یک رمزارز شامل قیمت دلاری، رتبه بازار، ارزش بازار، تغییرات درصدی در بازه‌های مختلف زمانی و حجم معاملات ۲۴ ساعته",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "key": {
+          "type": "string",
+          "description": "نماد رمزارز مثل BTC, ETH, USDT, SOL (اختیاری - بدون آن همه ارزها برمیگرده)"
+        }
+      },
+      "required": []
+    },
+    "http_method": "GET",
+    "endpoint_url": "https://api.wallex.ir/v1/currencies/stats",
+    "auth_config": {
+      "type": "",
+      "token": null,
+      "key": null,
+      "header_name": null,
+      "username": null,
+      "password": null,
+      "refresh_url": null,
+      "refresh_token": null,
+      "client_id": null,
+      "client_secret": null,
+      "token_expires_at": null
+    },
+    "trigger_description": "آمار جهانی رمزارز آمار کلی بازار ارزش بازار مارکت کپ market cap تغییرات هفتگی ماهانه رتبه بیت‌کوین رتبه اتریوم قیمت دلاری رمزارز global stats cryptocurrency",
+    "collection_name": "wallex_crypto",
+    "tenant_id": "",
+    "headers": {},
+    "request_body_template": null,
+    "response_jmespath": null,
+    "timeout_seconds": 10,
+    "is_enabled": true,
+    "is_auth_tool": false,
+    "token_path": "",
+    "token_key": "user_token"
+  },
+  {
+    "tool_id": "8ea4a1a8-9f4f-4ff5-95bb-bd4423dff46c",
+    "name": "get_latest_trades",
+    "description": "دریافت لیست آخرین معاملات انجام‌شده در یک بازار والکس شامل قیمت، حجم و زمان هر معامله",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "symbol": {
+          "type": "string",
+          "description": "نماد جفت ارز مثل BTCUSDT, ETHUSDT, USDTIRT (پیش‌فرض: BTCUSDT)"
+        }
+      },
+      "required": []
+    },
+    "http_method": "GET",
+    "endpoint_url": "https://api.wallex.ir/v1/trades",
+    "auth_config": {
+      "type": "",
+      "token": null,
+      "key": null,
+      "header_name": null,
+      "username": null,
+      "password": null,
+      "refresh_url": null,
+      "refresh_token": null,
+      "client_id": null,
+      "client_secret": null,
+      "token_expires_at": null
+    },
+    "trigger_description": "آخرین معاملات معاملات اخیر تراکنش تراکنش‌های اخیر لیست خرید فروش last trades recent trades history والکس بازار",
+    "collection_name": "wallex_crypto",
+    "tenant_id": "",
+    "headers": {},
+    "request_body_template": null,
+    "response_jmespath": null,
+    "timeout_seconds": 10,
+    "is_enabled": true,
+    "is_auth_tool": false,
+    "token_path": "",
+    "token_key": "user_token"
+  }
+]

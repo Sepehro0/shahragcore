@@ -1,0 +1,148 @@
+{
+  "base_path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal",
+  "models": {
+    "microsoft/trocr-base-printed": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/document_understanding/microsoft--trocr-base-printed/models--microsoft--trocr-base-printed/snapshots/93450be3f1ed40a930690d951ef3932687cc1892",
+      "category": "document_understanding",
+      "download_time": 13.876190185546875,
+      "status": "success"
+    },
+    "openai/clip-vit-base-patch32": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/vision_language/openai--clip-vit-base-patch32/models--openai--clip-vit-base-patch32/snapshots/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "category": "vision_language",
+      "download_time": 62.14840579032898,
+      "status": "success"
+    },
+    "microsoft/layoutlmv3-base": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/document_understanding/microsoft--layoutlmv3-base/models--microsoft--layoutlmv3-base/snapshots/cfbbbff0762e6aab37086fdd4739ad14fe7d5db4",
+      "category": "document_understanding",
+      "download_time": 63.62127232551575,
+      "status": "success"
+    },
+    "naver-clova-ix/donut-base-finetuned-docvqa": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/document_understanding/naver-clova-ix--donut-base-finetuned-docvqa/models--naver-clova-ix--donut-base-finetuned-docvqa/snapshots/b19d2e332684b0e2d35d9144ce34047767335cf8",
+      "category": "document_understanding",
+      "download_time": 16.244333505630493,
+      "status": "success"
+    },
+    "Salesforce/blip2-opt-2.7b": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/vision_language/Salesforce--blip2-opt-2.7b/models--Salesforce--blip2-opt-2.7b/snapshots/59a1ef6c1e5117b3f65523d1c6066825bcf315e3",
+      "category": "vision_language",
+      "download_time": 146.41253447532654,
+      "status": "success"
+    },
+    "llava-hf/llava-1.5-7b-hf": {
+      "path": "/home/user01/qwen-api/enhanced_rag_system/models/multimodal/vision_language/llava-hf--llava-1.5-7b-hf/models--llava-hf--llava-1.5-7b-hf/snapshots/b234b804b114d9e37bb655e11cbbb5f5e971b7a9",
+      "category": "vision_language",
+      "download_time": 158.49736762046814,
+      "status": "success"
+    }
+  },
+  "gpu_info": {
+    "0": {
+      "total": 49140,
+      "used": 29526,
+      "free": 18895,
+      "available": 16847,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "1": {
+      "total": 49140,
+      "used": 45536,
+      "free": 2885,
+      "available": 837,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "2": {
+      "total": 49140,
+      "used": 41503,
+      "free": 6918,
+      "available": 4870,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "3": {
+      "total": 49140,
+      "used": 34275,
+      "free": 14146,
+      "available": 12098,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "4": {
+      "total": 49140,
+      "used": 34275,
+      "free": 14146,
+      "available": 12098,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "5": {
+      "total": 49140,
+      "used": 46615,
+      "free": 1807,
+      "available": 0,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "6": {
+      "total": 49140,
+      "used": 32696,
+      "free": 15726,
+      "available": 13678,
+      "name": "NVIDIA GeForce RTX 4090"
+    },
+    "7": {
+      "total": 49140,
+      "used": 32696,
+      "free": 15726,
+      "available": 13678,
+      "name": "NVIDIA GeForce RTX 4090"
+    }
+  },
+  "recommendations": {
+    "can_load": [
+      {
+        "model": "microsoft/trocr-base-printed",
+        "priority": "priority_1",
+        "required_vram": 2,
+        "status": "available"
+      },
+      {
+        "model": "openai/clip-vit-base-patch32",
+        "priority": "priority_1",
+        "required_vram": 2,
+        "status": "available"
+      },
+      {
+        "model": "microsoft/layoutlmv3-base",
+        "priority": "priority_2",
+        "required_vram": 4,
+        "status": "available"
+      },
+      {
+        "model": "naver-clova-ix/donut-base-finetuned-docvqa",
+        "priority": "priority_2",
+        "required_vram": 6,
+        "status": "available"
+      },
+      {
+        "model": "Salesforce/blip2-opt-2.7b",
+        "priority": "priority_3",
+        "required_vram": 10,
+        "status": "available"
+      },
+      {
+        "model": "llava-hf/llava-1.5-7b-hf",
+        "priority": "priority_3",
+        "required_vram": 14,
+        "status": "available"
+      }
+    ],
+    "cannot_load": [],
+    "recommended_priority": [
+      "microsoft/trocr-base-printed",
+      "openai/clip-vit-base-patch32",
+      "microsoft/layoutlmv3-base",
+      "naver-clova-ix/donut-base-finetuned-docvqa",
+      "Salesforce/blip2-opt-2.7b",
+      "llava-hf/llava-1.5-7b-hf"
+    ]
+  }
+}

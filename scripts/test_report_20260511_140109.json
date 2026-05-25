@@ -1,0 +1,475 @@
+{
+  "retrieval": {
+    "total": 27,
+    "top5": 23,
+    "top10": 25,
+    "top15": 26,
+    "not_found": [
+      "قانون وزارت بهداشت،  ماده 3"
+    ],
+    "by_law": {
+      "قانون جامع خدمات رسانی به ایثارگران": [
+        {
+          "article": "2",
+          "rank": 7,
+          "found": true
+        },
+        {
+          "article": "3",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "37",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "59",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "61",
+          "rank": 1,
+          "found": true
+        }
+      ],
+      "قانون جهاد دانشگاهی": [
+        {
+          "article": "1",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "2",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "5",
+          "rank": 11,
+          "found": true
+        },
+        {
+          "article": "12",
+          "rank": 8,
+          "found": true
+        }
+      ],
+      "قانون دیوان عدالت اداری": [
+        {
+          "article": "1",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "2",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "5",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "10",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "13",
+          "rank": 1,
+          "found": true
+        }
+      ],
+      "قانون وزارت بهداشت، درمان و آموزش پزشکی": [
+        {
+          "article": "1",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "3",
+          "rank": -1,
+          "found": false
+        },
+        {
+          "article": "7",
+          "rank": 3,
+          "found": true
+        },
+        {
+          "article": "9",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "12",
+          "rank": 1,
+          "found": true
+        }
+      ],
+      "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری": [
+        {
+          "article": "1",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "2",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "5",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "10",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "15",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "18",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "20",
+          "rank": 1,
+          "found": true
+        },
+        {
+          "article": "29",
+          "rank": 1,
+          "found": true
+        }
+      ]
+    }
+  },
+  "api": {
+    "total": 25,
+    "passed": 25,
+    "high_score": 25,
+    "avg_score": 0.8199999999999997,
+    "avg_time_ms": 6027.353734970093,
+    "results": [
+      {
+        "law": "قانون جامع خدمات رسانی به ایثارگران",
+        "article": "2",
+        "query": "ماده ۲ قانون ایثارگران چیست؟",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6452.481269836426,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۲ قانون ایثارگران چیست؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\","
+      },
+      {
+        "law": "قانون جامع خدمات رسانی به ایثارگران",
+        "article": "3",
+        "query": "ماده ۳ قانون جامع خدمات رسانی به ایثارگران",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6706.189155578613,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۳ قانون جامع خدمات رسانی به ایثارگران\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متو"
+      },
+      {
+        "law": "قانون جهاد دانشگاهی",
+        "article": "1",
+        "query": "ماده ۱ قانون جهاد دانشگاهی",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5582.280874252319,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱ قانون جهاد دانشگاهی\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \""
+      },
+      {
+        "law": "قانون جهاد دانشگاهی",
+        "article": "2",
+        "query": "ماده ۲ قانون جهاد دانشگاهی چیست؟",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 4626.808643341064,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۲ قانون جهاد دانشگاهی چیست؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ه"
+      },
+      {
+        "law": "قانون دیوان عدالت اداری",
+        "article": "1",
+        "query": "ماده ۱ قانون دیوان عدالت اداری",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6267.866373062134,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱ قانون دیوان عدالت اداری\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها."
+      },
+      {
+        "law": "قانون دیوان عدالت اداری",
+        "article": "2",
+        "query": "ماده ۲ دیوان عدالت اداری",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6279.190540313721,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۲ دیوان عدالت اداری\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"ke"
+      },
+      {
+        "law": "قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "article": "1",
+        "query": "ماده ۱ قانون وزارت بهداشت",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6472.800970077515,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱ قانون وزارت بهداشت\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"k"
+      },
+      {
+        "law": "قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "article": "3",
+        "query": "ماده ۳ قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 8878.66187095642,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۳ قانون وزارت بهداشت، درمان و آموزش پزشکی\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از"
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "1",
+        "query": "ماده ۱ مجموعه قوانین و مقررات وزارت علوم",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5190.621137619019,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱ مجموعه قوانین و مقررات وزارت علوم\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون "
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "2",
+        "query": "ماده ۲ قوانین وزارت علوم، تحقیقات و فناوری",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 7057.3015213012695,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۲ قوانین وزارت علوم، تحقیقات و فناوری\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متو"
+      },
+      {
+        "law": "قانون جامع خدمات رسانی به ایثارگران",
+        "article": "37",
+        "query": "ماده ۳۷ قانون ایثارگران درباره چیست؟",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6873.181104660034,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۳۷ قانون ایثارگران درباره چیست؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و دا"
+      },
+      {
+        "law": "قانون جامع خدمات رسانی به ایثارگران",
+        "article": "59",
+        "query": "ماده ۵۹ قانون جامع ایثارگران",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5878.774166107178,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۵۹ قانون جامع ایثارگران\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\","
+      },
+      {
+        "law": "قانون جامع خدمات رسانی به ایثارگران",
+        "article": "61",
+        "query": "ماده ۶۱ قانون ایثارگران چه می‌گوید؟",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 4901.6783237457275,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۶۱ قانون ایثارگران چه می‌گوید؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داد"
+      },
+      {
+        "law": "قانون جهاد دانشگاهی",
+        "article": "5",
+        "query": "ماده ۵ قانون جهاد دانشگاهی",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5944.136381149292,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۵ قانون جهاد دانشگاهی\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \""
+      },
+      {
+        "law": "قانون جهاد دانشگاهی",
+        "article": "12",
+        "query": "ماده ۱۲ قانون جهاد دانشگاهی",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5871.817588806152,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۲ قانون جهاد دانشگاهی\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", "
+      },
+      {
+        "law": "قانون دیوان عدالت اداری",
+        "article": "5",
+        "query": "ماده ۵ دیوان عدالت",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5789.437770843506,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۵ دیوان عدالت\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"keywords"
+      },
+      {
+        "law": "قانون دیوان عدالت اداری",
+        "article": "10",
+        "query": "ماده ۱۰ قانون دیوان عدالت اداری",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 6820.77956199646,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۰ قانون دیوان عدالت اداری\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها"
+      },
+      {
+        "law": "قانون دیوان عدالت اداری",
+        "article": "13",
+        "query": "ماده ۱۳ دیوان عدالت اداری چیست؟",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 6196.027755737305,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۳ دیوان عدالت اداری چیست؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها"
+      },
+      {
+        "law": "قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "article": "7",
+        "query": "ماده ۷ وزارت بهداشت",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5228.49178314209,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۷ وزارت بهداشت\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"keyword"
+      },
+      {
+        "law": "قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "article": "9",
+        "query": "ماده ۹ قانون وزارت بهداشت",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5307.0948123931885,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۹ قانون وزارت بهداشت\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"k"
+      },
+      {
+        "law": "قانون وزارت بهداشت، درمان و آموزش پزشکی",
+        "article": "12",
+        "query": "ماده ۱۲ قانون وزارت بهداشت چیست؟",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 4752.129077911377,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۲ قانون وزارت بهداشت چیست؟\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ه"
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "5",
+        "query": "ماده ۵ مقررات وزارت علوم",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5083.941221237183,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۵ مقررات وزارت علوم\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"ke"
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "10",
+        "query": "ماده ۱۰ قوانین وزارت علوم",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 5650.366306304932,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۰ قوانین وزارت علوم\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ها.\", \"k"
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "15",
+        "query": "ماده ۱۵ مجموعه قوانین وزارت علوم",
+        "score": 1.0,
+        "is_correct": true,
+        "elapsed_ms": 5112.6673221588135,
+        "notes": "",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۵ مجموعه قوانین وزارت علوم\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از متون و داده‌ه"
+      },
+      {
+        "law": "مجموعه قوانین و مقررات وزارت علوم، تحقیقات و فناوری",
+        "article": "18",
+        "query": "ماده ۱۸ قوانین وزارت علوم، تحقیقات و فناوری",
+        "score": 0.7,
+        "is_correct": true,
+        "elapsed_ms": 7759.117841720581,
+        "notes": "failed_not_negative",
+        "response_snippet": "event: start\ndata: {\"type\": \"start\", \"query\": \"ماده ۱۸ قوانین وزارت علوم، تحقیقات و فناوری\", \"collection_name\": \"azizashna\", \"top_k\": 15, \"use_reranking\": true, \"use_multi_hop\": true, \"temperature\": 0.1, \"domain_info\": {\"domain\": \"general\", \"confidence\": 0.6, \"summary\": \"محتوای عمومی با ترکیبی از مت"
+      }
+    ]
+  },
+  "conceptual": {
+    "total": 5,
+    "passed": 4,
+    "avg_score": 0.78,
+    "results": [
+      {
+        "description": "لیست قوانین موجود",
+        "score": 0.4,
+        "passed": false,
+        "found_keywords": [
+          "ایثارگران",
+          "وزارت علوم"
+        ]
+      },
+      {
+        "description": "هدف جهاد دانشگاهی",
+        "score": 1.0,
+        "passed": true,
+        "found_keywords": [
+          "جهاد دانشگاهی",
+          "علمی",
+          "پژوهش",
+          "دانشگاه"
+        ]
+      },
+      {
+        "description": "مزایای ایثارگران",
+        "score": 0.75,
+        "passed": true,
+        "found_keywords": [
+          "ایثارگر",
+          "مزایا",
+          "خدمات"
+        ]
+      },
+      {
+        "description": "صلاحیت دیوان عدالت",
+        "score": 0.75,
+        "passed": true,
+        "found_keywords": [
+          "دیوان عدالت",
+          "صلاحیت",
+          "رسیدگی"
+        ]
+      },
+      {
+        "description": "وظایف وزارت بهداشت",
+        "score": 1.0,
+        "passed": true,
+        "found_keywords": [
+          "بهداشت",
+          "وظایف",
+          "پزشکی",
+          "درمان"
+        ]
+      }
+    ]
+  }
+}

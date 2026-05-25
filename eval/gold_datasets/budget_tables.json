@@ -1,0 +1,116 @@
+{
+  "collection_name": "budget_tables",
+  "version": "1.1.0",
+  "description": "Gold dataset for budget_tables — hierarchical budget data 1398-1403",
+  "created_at": "2026-04-26",
+  "test_cases": [
+    {
+      "id": "bt-001",
+      "query": "مصارف بودجه کل کشور در سال 1403",
+      "expected_sources": ["masaref:t1"],
+      "expected_years": [1403],
+      "expected_answer_keywords": ["مصارف", "1403"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bt-002",
+      "query": "منابع بودجه کل کشور در سال 1401",
+      "expected_sources": ["manabe:t1"],
+      "expected_years": [1401],
+      "expected_answer_keywords": ["منابع", "1401"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bt-003",
+      "query": "جبران خدمت کارکنان در سال 1403",
+      "expected_sources": ["masaref:i5"],
+      "expected_years": [1403],
+      "expected_answer_keywords": ["جبران خدمت", "1403"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bt-004",
+      "query": "جمع مصارف عمومی دولت در سال 98",
+      "expected_sources": ["masaref:t3"],
+      "expected_years": [1398],
+      "expected_answer_keywords": ["مصارف عمومی", "1398"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bt-005",
+      "query": "مجموع درامد حاصل از فروش کالا و خدمات در سال های 98 تا 1403",
+      "expected_sources": ["manabe:i7"],
+      "expected_years": [1398, 1399, 1400, 1401, 1402, 1403],
+      "expected_answer_keywords": ["فروش کالا", "مجموع"],
+      "answer_type": "multi_year_sum",
+      "difficulty": "hard"
+    },
+    {
+      "id": "bt-006",
+      "query": "در سال های 98 تا 403 چقدر هزینه صرف بازپرداخت اصل تسهیلات بانکی شده است",
+      "expected_sources": ["masaref:i21"],
+      "expected_years": [1398, 1399, 1400, 1401, 1402, 1403],
+      "expected_answer_keywords": ["بازپرداخت", "تسهیلات"],
+      "answer_type": "multi_year_sum",
+      "difficulty": "hard"
+    },
+    {
+      "id": "bt-007",
+      "query": "تملک دارایی های مالی در سال 98",
+      "expected_sources": ["masaref:t7"],
+      "expected_years": [1398],
+      "expected_answer_keywords": ["تملک دارایی", "1398"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bt-008",
+      "query": "ماشین آلات و تجهیزات در سال 1403",
+      "expected_sources": ["masaref:i13"],
+      "expected_years": [1403],
+      "expected_answer_keywords": ["ماشین آلات", "تجهیزات", "1403"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "medium"
+    },
+    {
+      "id": "bt-009",
+      "query": "منابع بودجه کل کشور در سال های 1400 تا 1403",
+      "expected_sources": ["manabe:t1"],
+      "expected_years": [1400, 1401, 1402, 1403],
+      "expected_answer_keywords": ["منابع"],
+      "answer_type": "multi_year_sum",
+      "difficulty": "hard"
+    },
+    {
+      "id": "bt-010",
+      "query": "درآمدهای مالیاتی در سال 1402",
+      "expected_sources": ["manabe:i4"],
+      "expected_years": [1402],
+      "expected_answer_keywords": ["مالیات", "1402"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bt-011",
+      "query": "هزینه های یارانه در سال 1403",
+      "expected_sources": ["masaref:i8"],
+      "expected_years": [1403],
+      "expected_answer_keywords": ["یارانه", "1403"],
+      "answer_type": "single_year_lookup",
+      "difficulty": "easy"
+    },
+    {
+      "id": "bt-012",
+      "query": "واگذاری دارایی های سرمایه ای از سال 99 تا 1402",
+      "expected_sources": ["manabe:t5"],
+      "expected_years": [1399, 1400, 1401, 1402],
+      "expected_answer_keywords": ["واگذاری", "سرمایه ای"],
+      "answer_type": "multi_year_sum",
+      "difficulty": "hard"
+    }
+  ]
+}

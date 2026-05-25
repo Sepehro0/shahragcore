@@ -1,0 +1,895 @@
+{
+  "timestamp": "2025-12-19T15:49:29.315635",
+  "summary": {
+    "total_tests": 19,
+    "successful_tests": 19,
+    "phase3_usage": 0,
+    "phase4_usage": 0,
+    "validation_passed": 14,
+    "validation_total": 35
+  },
+  "results": [
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Simple Definitional Query",
+      "query": "ماده 46 چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 18.686067,
+          "timestamp": "2025-12-19T15:46:21.295535",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "definitional"
+          ],
+          "actual": "unknown",
+          "pass": false
+        },
+        "strategy": {
+          "expected": [
+            "direct",
+            "warning_light"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Factual Query with Number",
+      "query": "تبصره 2 ماده 46 چه می‌گوید؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 11.033318,
+          "timestamp": "2025-12-19T15:46:32.332000",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "factual"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Analytical Query - Why",
+      "query": "چرا قراردادهای EPC مهم هستند؟",
+      "complexity": "high",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 14.236178,
+          "timestamp": "2025-12-19T15:46:46.575235",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "analytical"
+          ],
+          "actual": "unknown",
+          "pass": false
+        },
+        "strategy": {
+          "expected": [
+            "warning_light",
+            "warning_strong",
+            "direct"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Comparative Query",
+      "query": "تفاوت EPC و BOT چیست؟",
+      "complexity": "high",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 21.681864,
+          "timestamp": "2025-12-19T15:47:08.264029",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "comparative",
+            "definitional"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Procedural Query",
+      "query": "چگونه قرارداد EPC منعقد می‌شود؟",
+      "complexity": "medium",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 20.016972,
+          "timestamp": "2025-12-19T15:47:28.300082",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "procedural"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Out of Scope Query",
+      "query": "هوا چطور است؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 4.686998,
+          "timestamp": "2025-12-19T15:47:33.000819",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": false,
+          "actual": false,
+          "pass": false,
+          "rejected_by": null
+        }
+      }
+    },
+    {
+      "collection": "zabete_qa",
+      "scenario_name": "Cross-Domain Query",
+      "query": "بودجه سال 1403 چقدر است؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 4.676672,
+          "timestamp": "2025-12-19T15:47:37.681485",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": false,
+          "actual": false,
+          "pass": false,
+          "rejected_by": null
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "scenario_name": "Simple Definitional Query",
+      "query": "صندوق باور چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 12.591109,
+          "timestamp": "2025-12-19T15:47:50.277456",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "definitional"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "scenario_name": "Procedural Query",
+      "query": "چگونه در صندوق باور ثبت نام کنم؟",
+      "complexity": "medium",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 4.486604,
+          "timestamp": "2025-12-19T15:47:54.770960",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "procedural"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "scenario_name": "Analytical Query",
+      "query": "چرا صندوق باور برای نوآوری مهم است؟",
+      "complexity": "high",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 17.099487,
+          "timestamp": "2025-12-19T15:48:11.874310",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "analytical"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "scenario_name": "Out of Scope Query",
+      "query": "آرد خام چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 17.154208,
+          "timestamp": "2025-12-19T15:48:29.041661",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": false,
+          "actual": false,
+          "pass": false,
+          "rejected_by": null
+        }
+      }
+    },
+    {
+      "collection": "karbaran_omomi",
+      "scenario_name": "Multi-part Query",
+      "query": "صندوق باور چیست و چگونه ثبت نام کنم؟",
+      "complexity": "high",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 11.203968,
+          "timestamp": "2025-12-19T15:48:40.256886",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "definitional",
+            "procedural"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "scenario_name": "Definitional Query",
+      "query": "دوره آموزشی چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 14.590847,
+          "timestamp": "2025-12-19T15:48:54.851287",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "definitional"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "scenario_name": "Factual Query",
+      "query": "حداقل نمره قبولی چقدر است؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 6.726884,
+          "timestamp": "2025-12-19T15:49:01.588152",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "factual"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "scenario_name": "Procedural Query",
+      "query": "چگونه در دوره ثبت نام کنم؟",
+      "complexity": "medium",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 9.135451,
+          "timestamp": "2025-12-19T15:49:10.726954",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "procedural"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "zinaf_dakheli",
+      "scenario_name": "Cross-Domain Query",
+      "query": "صندوق نوآور چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 4.03842,
+          "timestamp": "2025-12-19T15:49:14.770547",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": false,
+          "actual": false,
+          "pass": false,
+          "rejected_by": null
+        }
+      }
+    },
+    {
+      "collection": "budget_financial",
+      "scenario_name": "Factual Query",
+      "query": "بودجه سال 1403 چقدر است؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 5.802878,
+          "timestamp": "2025-12-19T15:49:20.577776",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "factual"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "budget_financial",
+      "scenario_name": "Analytical Query",
+      "query": "چرا بودجه سال 1403 افزایش یافت؟",
+      "complexity": "high",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 5.104066,
+          "timestamp": "2025-12-19T15:49:25.685175",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        "query_type": {
+          "expected": [
+            "analytical"
+          ],
+          "actual": "unknown",
+          "pass": false
+        }
+      }
+    },
+    {
+      "collection": "budget_financial",
+      "scenario_name": "Out of Scope Query",
+      "query": "فوتبال چیست؟",
+      "complexity": "low",
+      "success": true,
+      "error": null,
+      "response_data": {
+        "success": true,
+        "has_answer": true,
+        "confidence": 0.2,
+        "metadata": {
+          "processing_time_seconds": 3.626167,
+          "timestamp": "2025-12-19T15:49:29.314605",
+          "sources_count": 5,
+          "database_rows_count": 0,
+          "database_columns_count": 0,
+          "retrieval_method": "standard"
+        },
+        "used_features": {
+          "reranking": false,
+          "multi_hop": false,
+          "query_understanding": false,
+          "self_rag": false,
+          "corrective_rag": false,
+          "intent_gate": false,
+          "relevance_gate": false,
+          "answer_policy": false
+        }
+      },
+      "phase3_features": {},
+      "phase4_features": {},
+      "validation": {
+        "should_answer": {
+          "expected": false,
+          "actual": false,
+          "pass": false,
+          "rejected_by": null
+        }
+      }
+    }
+  ]
+}

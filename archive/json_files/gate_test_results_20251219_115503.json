@@ -1,0 +1,281 @@
+[
+  {
+    "collection": "karbaran_omomi",
+    "test_case": {
+      "query": "آیا ایده خیلی خام هم در صندوق پذیرفته می‌شود؟",
+      "expected": "in_scope",
+      "description": "سوال مرتبط با صندوق - باید pass کند"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:00.040868",
+      "expected": "in_scope",
+      "description": "سوال مرتبط با صندوق - باید pass کند",
+      "actual_result": "accepted",
+      "verdict": "⚠️ ACCEPTED BUT LOW CONFIDENCE",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "karbaran_omomi",
+    "test_case": {
+      "query": "آیا آرد خام هم پذیرفته می‌شود؟",
+      "expected": "out_of_scope",
+      "description": "سوال نامرتبط (غذا) - باید reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:03.472133",
+      "expected": "out_of_scope",
+      "description": "سوال نامرتبط (غذا) - باید reject شود",
+      "actual_result": "accepted",
+      "verdict": "❌ FALSE NEGATIVE (should have been rejected)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "karbaran_omomi",
+    "test_case": {
+      "query": "برای شروع تو صندوق باور چیکار باید کرد؟",
+      "expected": "in_scope",
+      "description": "سوال مرتبط - باید pass کند"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:09.638200",
+      "expected": "in_scope",
+      "description": "سوال مرتبط - باید pass کند",
+      "actual_result": "accepted",
+      "verdict": "⚠️ ACCEPTED BUT LOW CONFIDENCE",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "karbaran_omomi",
+    "test_case": {
+      "query": "برای شروع فوتبال بازی کردن چیکار باید بکنم؟",
+      "expected": "out_of_scope",
+      "description": "سوال نامرتبط (ورزش) - باید reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:10.643493",
+      "expected": "out_of_scope",
+      "description": "سوال نامرتبط (ورزش) - باید reject شود",
+      "actual_result": "accepted",
+      "verdict": "❌ FALSE NEGATIVE (should have been rejected)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "zinaf_dakheli",
+    "test_case": {
+      "query": "من معاون یکی از هولدینگام دوره خاضی برای من وجود داره ؟",
+      "expected": "in_scope",
+      "description": "سوال مرتبط با دوره‌های آموزشی - باید pass کند"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:19.914013",
+      "expected": "in_scope",
+      "description": "سوال مرتبط با دوره‌های آموزشی - باید pass کند",
+      "actual_result": "accepted",
+      "verdict": "⚠️ ACCEPTED BUT LOW CONFIDENCE",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "zinaf_dakheli",
+    "test_case": {
+      "query": "حداقل نمره قبولی چقدره؟",
+      "expected": "in_scope_or_ambiguous",
+      "description": "سوال ambiguous - ممکن است pass یا reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:28.212897",
+      "expected": "in_scope_or_ambiguous",
+      "description": "سوال ambiguous - ممکن است pass یا reject شود",
+      "actual_result": "accepted",
+      "verdict": "⚠️ ACCEPTED (ambiguous case)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "zinaf_dakheli",
+    "test_case": {
+      "query": "صندوق نوآور چیه",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:34.207595",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود",
+      "actual_result": "accepted",
+      "verdict": "❌ FALSE NEGATIVE (should have been rejected)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "zinaf_dakheli",
+    "test_case": {
+      "query": "چطور از صندوق ها سرمایه بگیرم ؟",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:54:51.406429",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود",
+      "actual_result": "accepted",
+      "verdict": "❌ FALSE NEGATIVE (should have been rejected)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  },
+  {
+    "collection": "zinaf_dakheli",
+    "test_case": {
+      "query": "فرق جایزه نوآوری با جایزه مدیریت چیه ؟",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود"
+    },
+    "result": {
+      "success": true,
+      "full_response": "",
+      "chunks": [],
+      "metadata": {},
+      "confidence": null,
+      "used_features": {},
+      "status_code": 200
+    },
+    "analysis": {
+      "timestamp": "2025-12-19T11:55:02.486208",
+      "expected": "cross_domain",
+      "description": "سوال cross-domain (مربوط به karbaran_omomi) - باید reject شود",
+      "actual_result": "accepted",
+      "verdict": "❌ FALSE NEGATIVE (should have been rejected)",
+      "details": {
+        "confidence": null,
+        "policy_strategy": null,
+        "intent_gate_enabled": false,
+        "relevance_gate_enabled": false,
+        "answer_policy_enabled": false
+      }
+    }
+  }
+]

@@ -1,0 +1,92 @@
+{
+  "timestamp": "2025-12-12T10:49:55.333201",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "results": [
+    {
+      "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+      "success": true,
+      "answer": "اطلاعات مربوط به قراردادهای QBC و امکان تسری آن برای سال‌های بعد در دیتابیس موجود نیست. این بخشنامه برای سال‌های 1402 و 1403 از دستور کار خارج شده است و در صورت نیاز، کارفرما می‌تواند از طریق تغییر مبلغ قرارداد، درخواست خود را مطرح کند.",
+      "confidence": 0.4,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 1.0,
+      "confidence_breakdown": {},
+      "top_results_count": 5,
+      "query_info": {
+        "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است و پیام مناسب بدهد",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+      "success": true,
+      "answer": "در پیمان‌های مطابق بخشنامه 54/842-102/1088، هر قسط پرداختی صورت وضعیت به صورت جداگانه در نظر گرفته می‌شود و تاخیر در هر قسط به طور مجزا محاسبه و جمع می‌شود. این مقررات بر اساس بند (4) بخشنامه 5090/54/11082-1 مورخ 02/09/1360 اعمال می‌شود.",
+      "confidence": 0.4,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 1.0,
+      "confidence_breakdown": {},
+      "top_results_count": 5,
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+        "expected_behavior": "باید از چند منبع استنتاج کند و پاسخ جامع بدهد",
+        "issue": "قبلاً فقط از منبع دوم استفاده می‌کرد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+      "success": true,
+      "answer": "در پیمان‌های EPC مبتنی بر بخشنامه 54/7105-105/18929 مورخ 14/11/1380، در صورت تاخیر در پرداخت صورت وضعیت‌ها، کارفرما به پیمانکار جبران هزینه‌های اضافی به میزان مشخص در شرایط خصوصی پرداخت می‌کند. استفاده از بخشنامه 5090/54/11082-1 مورخ 02/09/1360 برای محاسبه تاخیر مجاز نیست.",
+      "confidence": 0.4,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 1.0,
+      "confidence_breakdown": {},
+      "top_results_count": 5,
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+        "expected_behavior": "باید نتایج مرتبط‌تر پیدا کند",
+        "issue": "قبلاً نتایج نامرتبط پیدا می‌کرد"
+      }
+    },
+    {
+      "query": "توضیح ماده 46 شرایط عمومی پیمان",
+      "success": true,
+      "answer": "اطلاعات کافی برای توضیح ماده ۴۶ شرایط عمومی پیمان در متن موجود نیست. هیچ اطلاعاتی درباره این ماده در اسناد ارائه شده وجود ندارد.",
+      "confidence": 0.4,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 1.0,
+      "confidence_breakdown": {},
+      "top_results_count": 5,
+      "query_info": {
+        "query": "توضیح ماده 46 شرایط عمومی پیمان",
+        "expected_behavior": "باید از محتوای متن استفاده کند و از maddeh_id استفاده نکند",
+        "issue": "قبلاً از maddeh_id استفاده می‌کرد و اعداد اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": true,
+      "answer": "کارفرما باید ظرف 15 روز پس از دریافت صورت حساب آن را بررسی و پس از کسر کسور، حق الزحمه را پرداخت کند. در صورت تاخیر بیش از 15 روز، این مدت نیز در محاسبه بازه زمانی حفظ قدرت خرید اسناد خزانه اسلامی لحاظ می‌شود. این مقررات در قراردادهای مبتنی بر بخشنامه شماره 2460/54-842/105 و مصوبه شماره 12536/ت58715ه اعمال می‌گردد.",
+      "confidence": 0.4,
+      "is_relevant": true,
+      "relevance_message": null,
+      "hallucination_detected": false,
+      "faithfulness_score": 1.0,
+      "confidence_breakdown": {},
+      "top_results_count": 5,
+      "query_info": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    }
+  ]
+}

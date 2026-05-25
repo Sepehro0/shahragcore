@@ -1,0 +1,207 @@
+/home/user01/.local/lib/python3.10/site-packages/pypdf/_crypt_providers/_cryptography.py:32: CryptographyDeprecationWarning: ARC4 has been moved to cryptography.hazmat.decrepit.ciphers.algorithms.ARC4 and will be removed from cryptography.hazmat.primitives.ciphers.algorithms in 48.0.0.
+  from cryptography.hazmat.primitives.ciphers.algorithms import AES, ARC4
+INFO:ultimate_rag_system:🚀 Initializing Ultimate RAG System...
+INFO:chromadb.telemetry.product.posthog:Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+INFO:services.qwen_client:QwenClient initialized: http://localhost:8009
+INFO:search.multi_hop_retriever:🚀 Multi-Hop Retriever initialized in ENHANCED mode
+INFO:search.multi_hop_retriever:🧠 Intelligent mode also available
+INFO:services.database_service:✅ PostgreSQL connection successful
+INFO:services.database_service:✅ Database engine initialized successfully
+INFO:services.database_service:✅ Database connection test successful
+INFO:ultimate_rag_system:   - 🗄️ Database Integration: ENABLED
+INFO:ultimate_rag_system:   - 🎯 Intelligent Query Classifier: ENABLED
+INFO:ultimate_rag_system:✅ Database service updated in HybridQueryAnalyzer
+INFO:ultimate_rag_system:✅ Ultimate RAG System initialized (basic components)
+INFO:ultimate_rag_system:   - ChromaDB: Enabled
+INFO:ultimate_rag_system:   - Qwen Client: Enabled
+INFO:ultimate_rag_system:   - Persian Embeddings: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Reranker: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Multi-Hop: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - Advanced PDF: Lazy loaded (initialized on first use)
+INFO:ultimate_rag_system:   - 🌟 Universal AI Components: Enabled
+INFO:ultimate_rag_system:      ├─ Universal Pattern Detector
+INFO:ultimate_rag_system:      ├─ Universal Sequential Detector
+INFO:ultimate_rag_system:      └─ Universal Metadata Extractor
+INFO:ultimate_rag_system:📊 Processing Excel: karbaran-omomi.xlsx...
+INFO:ultimate_rag_system:📊 Dynamic schema detected: type=qa, columns=['عنوان زیرمجموعه ', 'کتگوری سوال ', 'سوال ', 'پاسخ ']
+INFO:ultimate_rag_system:✅ Created 195 chunks from Excel
+INFO:ultimate_rag_system:🔍 Classifying Excel document domain...
+INFO:processors.document_domain_classifier:🔍 Classifying document domain: karbaran-omomi.xlsx
+INFO:processors.document_domain_classifier:📊 Running heuristic classification...
+INFO:processors.document_domain_classifier:📊 Heuristic classification: educational (confidence: 0.50)
+INFO:processors.document_domain_classifier:   Matched keywords: درس, karbaran, omomi, سوال, پاسخ
+INFO:processors.document_domain_classifier:   Heuristic: educational (confidence: 0.50)
+INFO:processors.document_domain_classifier:🤖 Running LLM classification...
+INFO:services.qwen_client:✅ aiohttp session created in event loop 140590154623936
+================================================================================
+🔄 Reindexing with Improved Embedding Model
+================================================================================
+
+📊 Improvements:
+   1. Model: MiniLM-L12 → DistilUSE
+   2. Dimension: 384 → 512
+   3. Accuracy: 80% → 100%
+   4. Text: Noisy → Clean
+
+📁 Excel file: /home/user01/qwen-api/enhanced_rag_system_dev/karbaran-omomi.xlsx
+🗄️  Database: /home/user01/qwen-api/enhanced_rag_system_dev/chroma_db
+
+📦 Creating backup...
+✅ Backup: /home/user01/qwen-api/enhanced_rag_system_dev/chroma_db_backup_20251209_080240
+
+🚀 Initializing RAG system...
+
+📖 Reading Excel...
+
+⚙️  Processing with:
+   - Model: DistilUSE (512-dim)
+   - Text: Clean format
+   - Collection: karbaran_omomi
+
+🔹 [QwenClient] Messages count: 1
+🔹 [QwenClient] System prompt: None...
+🔹 [QwenClient] User prompt: لطفاً دامنه/حوزه این سند را تشخیص دهید.
+
+**نام فایل:** karbaran-omomi.xlsx
+
+**نمونه محتوا:**
+سوال: فلسفه و ماموریت اصلی صندوق باور چیست؟
+پاسخ: صندوق «باور» با هدف حمایت از ایده های نوآورانه و فناورانه...
+ERROR:processors.document_domain_classifier:JSON extraction failed: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+INFO:processors.document_domain_classifier:✅ Using heuristic result: educational
+INFO:ultimate_rag_system:✅ Domain detected: educational (confidence: 0.50, method: heuristic)
+INFO:ultimate_rag_system:   Summary: سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی
+INFO:ultimate_rag_system:🔢 Generating Persian embeddings...
+INFO:ultimate_rag_system:   Loading Persian Embedding model...
+INFO:services.persian_embedding_service:🔄 Loading SentenceTransformer model: sentence-transformers/distiluse-base-multilingual-cased-v2
+INFO:services.persian_embedding_service:✅ Using CPU for embeddings (vLLM uses GPU memory)
+INFO:sentence_transformers.SentenceTransformer:Load pretrained SentenceTransformer: sentence-transformers/distiluse-base-multilingual-cased-v2
+INFO:services.persian_embedding_service:✅ Model loaded and cached (dim=512, device=cpu)
+INFO:services.persian_embedding_service:PersianEmbeddingService initialized with 512-dim model on cpu
+INFO:ultimate_rag_system:📝 Storing collection with domain: educational
+INFO:ultimate_rag_system:✅ Stored 195 chunks in 'karbaran_omomi'
+INFO:processors.excel_to_database:📊 Processing Excel file: karbaran-omomi.xlsx for collection: karbaran_omomi
+INFO:processors.excel_to_database:  Processing sheet: Sheet1
+INFO:services.database_service:✅ Created table 'karbaran_omomi_sheet1' with 195 rows
+INFO:services.database_service:✅ Materialized SQL table 'karbaran_omomi_sheet1' for direct queries
+INFO:processors.excel_to_database:  ✅ Sheet 'Sheet1' processed: 195 rows, 5 columns
+INFO:ultimate_rag_system:✅ Excel data stored in PostgreSQL: 1 tables
+INFO:ultimate_rag_system:💬 Query: اگر ایدم خیلی خام باشه میتونم بازم برا دانشمند ایدمو بفرستم ؟
+INFO:ultimate_rag_system:📂 Collection domain: educational (confidence: 0.50)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'اگر ایدم خیلی خام باشه میتونم بازم برا دانشمند ایدمو بفرستم ؟' -> 'اگر ایدم خیلی خام باشه می‌توانم بازم برا دانشمند ایدمو بفرستم ؟'
+INFO:services.persian_embedding_service:PersianEmbeddingService initialized with 512-dim model on cpu
+INFO:services.smart_query_preprocessor:✅ Embedding client initialized for SmartQueryPreprocessor
+
+✅ Processing successful!
+   Documents: 0
+
+================================================================================
+🧪 Testing Improved Search
+================================================================================
+
+--- Test 1/3 ---
+Query: اگر ایدم خیلی خام باشه میتونم بازم برا دانشمند ایدمو بفرستم ؟
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.10s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.10s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]
+INFO:services.smart_query_preprocessor:📊 Domain relevance score: 0.169
+INFO:services.smart_query_preprocessor:⚠️ Low domain relevance: 0.169
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'warning': 'low_domain_relevance'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using expanded query for matching: اگر ایدم خیلی خام باشه می‌توانم بازم برا دانشمند ایدمو بفرستم ؟...
+INFO:ultimate_rag_system:📂 Collection domain: educational (confidence: 0.50)
+INFO:ultimate_rag_system:📂 Domain: educational, Financial patterns: False
+INFO:ultimate_rag_system:📊 Query Analyzer: general
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_55
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_56
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_49
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_30
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_45
+INFO:ultimate_rag_system:✅ Found semantic question match (score=4.65, overlap=0.10): chunk_21
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_39
+INFO:ultimate_rag_system:✅ Found semantic question match (score=3.50, overlap=0.00): chunk_33
+INFO:ultimate_rag_system:✅ Found 8 semantic question matches
+INFO:ultimate_rag_system:📊 [retrieve_and_answer] After retrieval: 6 results
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Checking for exact question match in 6 results (BEFORE reranking)...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Original query: اگر ایدم خیلی خام باشه می‌توانم بازم برا دانشمند ایدمو بفرستم ؟...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Normalized query: اگر ایدم خیلی خام باشه می توانم بازم برا دانشمند ایدمو بفرستم ؟...
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 1: Row 22, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 22 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=21, match=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 2: Row 56, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 56 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=15, match=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 3: Row 57, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 57 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=7, match=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 4: Row 50, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 50 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=3, match=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 5: Row 31, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 31 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=22, match=False
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Result 6: Row 46, has_question=True, has_answer=True
+INFO:ultimate_rag_system:🔍 [DIRECT_ANSWER] Row 46 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=8, match=False
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Entering single match block: final_answer=None, results_count=6
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] First trying _find_exact_metadata_question on full collection
+WARNING:ultimate_rag_system:🔍 [SINGLE_MATCH] Falling back to _find_best_matching_result with 6 results
+WARNING:ultimate_rag_system:⚠️ [BEST_MATCH] Fallback to first result with answer
+INFO:ultimate_rag_system:✅ [SINGLE_MATCH-EXACT] Best matching result found (intent_matched=False)
+WARNING:ultimate_rag_system:⚠️ [DIRECT_ANSWER] No direct/structured answer found, will use LLM
+INFO:ultimate_rag_system:📚 [QA] QA dataset detected in non-stream mode, trying exact metadata question first...
+INFO:ultimate_rag_system:🔍 [QA] Falling back to _find_best_matching_result...
+WARNING:ultimate_rag_system:⚠️ [BEST_MATCH] Fallback to first result with answer
+INFO:ultimate_rag_system:✅ [QA] Using direct QA metadata answer (no LLM) in non-stream mode.
+INFO:ultimate_rag_system:💬 Query: ایمیل صندوق باور چیه؟
+INFO:ultimate_rag_system:📂 Collection domain: educational (confidence: 0.50)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'ایمیل صندوق باور چیه؟' -> 'ایمیل صندوق باور چیست؟'
+🔍 [DIRECT_ANSWER] Checking for exact question match in 6 results (BEFORE reranking)...
+🔍 [DIRECT_ANSWER] Original query: اگر ایدم خیلی خام باشه می‌توانم بازم برا دانشمند ایدمو بفرستم ؟...
+🔍 [DIRECT_ANSWER] Normalized query: اگر ایدم خیلی خام باشه می توانم بازم برا دانشمند ایدمو بفرستم ؟...
+🔍 [DIRECT_ANSWER] Result 1: Row 22, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 22 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=21, match=False
+🔍 [DIRECT_ANSWER] Result 2: Row 56, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 56 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=15, match=False
+🔍 [DIRECT_ANSWER] Result 3: Row 57, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 57 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=7, match=False
+🔍 [DIRECT_ANSWER] Result 4: Row 50, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 50 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=3, match=False
+🔍 [DIRECT_ANSWER] Result 5: Row 31, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 31 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=22, match=False
+🔍 [DIRECT_ANSWER] Result 6: Row 46, has_question=True, has_answer=True
+🔍 [DIRECT_ANSWER] Row 46 Match check: exact=False, query_in_q=False, q_in_query=False, len_diff=8, match=False
+❌ No results
+
+--- Test 2/3 ---
+Query: ایمیل صندوق باور چیه؟
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.09s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.02it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.02it/s]
+INFO:services.smart_query_preprocessor:📊 Domain relevance score: 0.175
+INFO:services.smart_query_preprocessor:⚠️ Low domain relevance: 0.175
+INFO:ultimate_rag_system:📞 Direct contact info response for incomplete query: 'ایمیل صندوق باور چیه؟'
+INFO:ultimate_rag_system:💬 Query: چقدر سرمایه می‌تونم بگیرم؟
+INFO:ultimate_rag_system:📂 Collection domain: educational (confidence: 0.50)
+INFO:services.smart_query_preprocessor:📝 Normalized query: 'چقدر سرمایه می‌تونم بگیرم؟' -> 'چقدر سرمایه می‌تونم بگیرم؟'
+❌ No results
+
+--- Test 3/3 ---
+Query: چقدر سرمایه می‌تونم بگیرم؟
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]Batches: 100%|██████████| 1/1 [00:01<00:00,  1.08s/it]
+Batches:   0%|          | 0/1 [00:00<?, ?it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]Batches: 100%|██████████| 1/1 [00:00<00:00,  1.01it/s]
+INFO:services.smart_query_preprocessor:📊 Domain relevance score: 0.106
+INFO:services.smart_query_preprocessor:⚠️ Low domain relevance: 0.106
+WARNING:ultimate_rag_system:🔍 [DEBUG] Preprocess metadata: {'warning': 'low_domain_relevance'}
+WARNING:ultimate_rag_system:⚠️ [SEMANTIC] No additional_search_terms in metadata
+INFO:ultimate_rag_system:🚀 [NON-STREAM] Fast path: checking for exact QA match...
+INFO:ultimate_rag_system:🔍 [FAST] Using original query for matching: چقدر سرمایه می‌تونم بگیرم؟...
+INFO:ultimate_rag_system:✅ [EXACT_META] Found match: 'برای چه موارد هزینه ای سرمایه تخصیص داده می شود؟...' with score=5.35, intent=0.57
+INFO:ultimate_rag_system:✅ [NON-STREAM][FAST] Exact QA match found, returning immediately!
+ERROR:asyncio:Unclosed client session
+client_session: <aiohttp.client.ClientSession object at 0x7fdb72393f10>
+ERROR:asyncio:Unclosed connector
+connections: ['deque([(<aiohttp.client_proto.ResponseHandler object at 0x7fdb7239ece0>, 153030.597607154)])']
+connector: <aiohttp.connector.TCPConnector object at 0x7fdb723938e0>
+❌ No results
+
+================================================================================
+📊 Results: 0/3 correct (0%)
+================================================================================
+
+⚠️  Some queries need improvement

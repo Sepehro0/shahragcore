@@ -1,0 +1,172 @@
+[
+  {
+    "query": "تملک دارایی های سرمایه ای پارک فناوری پردیس در سال 1399",
+    "route": "database_override",
+    "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1399. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+    "database_rows": 0,
+    "database_cols": 3,
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database_override",
+      "database_rows_count": 1,
+      "database_columns_count": 3,
+      "sources_count": 0
+    },
+    "database_results": {
+      "success": true,
+      "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%پارک فناوری پردیس%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%پارک فناوری پردیس%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1399')",
+      "results": [
+        {
+          "total_amount": null,
+          "total_current_cost": null,
+          "total_capital_cost": null
+        }
+      ],
+      "count": 1,
+      "columns": [
+        "total_amount",
+        "total_current_cost",
+        "total_capital_cost"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "query": "اعتبارات هزینه ای ستاد مبارزه با مواد مخدر سال 98",
+    "route": "database",
+    "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+    "database_rows": 0,
+    "database_cols": 3,
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database",
+      "database_rows_count": 1,
+      "database_columns_count": 3,
+      "sources_count": 0
+    },
+    "database_results": {
+      "success": true,
+      "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد مخدر%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%ستاد مبارزه با مواد مخدر%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398')",
+      "results": [
+        {
+          "total_amount": null,
+          "total_current_cost": null,
+          "total_capital_cost": null
+        }
+      ],
+      "count": 1,
+      "columns": [
+        "total_amount",
+        "total_current_cost",
+        "total_capital_cost"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "query": "اعتبارات هزینه ای متفرقه بنیاد ایران شناسی در سال 98",
+    "route": "database",
+    "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+    "database_rows": 0,
+    "database_cols": 3,
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database",
+      "database_rows_count": 1,
+      "database_columns_count": 3,
+      "sources_count": 0
+    },
+    "database_results": {
+      "success": true,
+      "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%بنیاد ایران شناسی%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398')",
+      "results": [
+        {
+          "total_amount": null,
+          "total_current_cost": null,
+          "total_capital_cost": null
+        }
+      ],
+      "count": 1,
+      "columns": [
+        "total_amount",
+        "total_current_cost",
+        "total_capital_cost"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "query": "مجموع تمامی مصارف معاونت علمی و فناوری رییس جمهور سال 1402",
+    "route": "database",
+    "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1402. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+    "database_rows": 0,
+    "database_cols": 3,
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database",
+      "database_rows_count": 1,
+      "database_columns_count": 3,
+      "sources_count": 0
+    },
+    "database_results": {
+      "success": true,
+      "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری رییس%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%معاونت علمی و فناوری رییس%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1402')",
+      "results": [
+        {
+          "total_amount": null,
+          "total_current_cost": null,
+          "total_capital_cost": null
+        }
+      ],
+      "count": 1,
+      "columns": [
+        "total_amount",
+        "total_current_cost",
+        "total_capital_cost"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "query": "تملک دارایی های سرمایه ای متفرقه مرکز ملی فضای مجازی کشور سال های 98 تا 1402",
+    "route": "database_override",
+    "answer": "هیچ ردیفی مطابق با فیلترهای درخواستی در پایگاه داده پیدا نشد در سال‌های 1398 تا 1399 تا 1400 تا 1401 تا 1402. لطفاً فایل‌های ورودی یا سال انتخابی را بررسی کنید.",
+    "database_rows": 0,
+    "database_cols": 3,
+    "metadata": {
+      "auto_multi_hop": false,
+      "multi_hop_reason": null,
+      "multi_hop_sub_questions": [],
+      "retrieval_route": "database_override",
+      "database_rows_count": 1,
+      "database_columns_count": 3,
+      "sources_count": 0
+    },
+    "database_results": {
+      "success": true,
+      "sql": "SELECT SUM(COALESCE(CAST(\"جمع_كل\" AS DOUBLE PRECISION), 0)) AS total_amount, SUM(COALESCE(CAST(\"جمع_براورد_اعتبارات_هزینه_ای\" AS DOUBLE PRECISION), 0)) AS total_current_cost, SUM(COALESCE(CAST(\"جمع_تملك_دارايي_هاي_سرمايه_اي\" AS DOUBLE PRECISION), 0)) AS total_capital_cost FROM costs_sheet1 WHERE ((TRANSLATE(\"عنوان_دستگاه_اجرايي\", 'يكيۀةأإٱآ', 'یکیهههااا') ILIKE '%مرکز ملی فضای مجازی کشور%' OR TRANSLATE(\"عنوان_دستگاه_اصلي_دستگاه_اجرايي\", 'يكiۀةأإٱآ', 'یکیهههااا') ILIKE '%مرکز ملی فضای مجازی کشور%')) AND TRANSLATE(\"سال\", 'يكيۀة', 'یکیهه') IN ('1398', '1399', '1400', '1401', '1402')",
+      "results": [
+        {
+          "total_amount": null,
+          "total_current_cost": null,
+          "total_capital_cost": null
+        }
+      ],
+      "count": 1,
+      "columns": [
+        "total_amount",
+        "total_current_cost",
+        "total_capital_cost"
+      ],
+      "warnings": []
+    }
+  }
+]

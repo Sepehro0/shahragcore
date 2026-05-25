@@ -1,0 +1,2305 @@
+{
+  "karbaran_omomi": {
+    "collection_name": "karbaran_omomi",
+    "total_queries": 10,
+    "successful": 1,
+    "failed": 9,
+    "queries": [
+      {
+        "query_info": {
+          "query": "واحد آموزش های تخصصی چیست؟",
+          "complexity": "ساده",
+          "expected_features": [
+            "direct_answer",
+            "qa_dataset"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+          "full_answer": "## پاسخ 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+          "full_text": "## پاسخ\n\n1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_37",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ\nRow 38: تبادل فناوری | ملاک های انتخاب یا تایید فناور برای همکاری چیست؟ | 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه\nسوال: ملاک های انتخاب یا تایید فناور برای همکاری چیست؟\nپاسخ: 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه\nعنوان: تبادل فناوری",
+              "metadata": {
+                "answer": "1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "cells": "تبادل فناوری | ملاک های انتخاب یا تایید فناور برای همکاری چیست؟ | 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "ملاک های انتخاب یا تایید فناور برای همکاری چیست؟",
+                "row_index": 38,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.256208,
+            "timestamp": "2025-12-02T06:08:20.835912",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.256208,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "cells": "تبادل فناوری | ملاک های انتخاب یا تایید فناور برای همکاری چیست؟ | 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "ملاک های انتخاب یا تایید فناور برای همکاری چیست؟",
+                "row_index": 38,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "واحد آموزش های تخصصی چیست؟",
+          "complexity": "ساده",
+          "timestamp": "2025-12-02T06:08:20.837849",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24",
+            "⚠️ سوال موجود شباهت کمی با سوال کاربر دارد (overlap: 0.17)"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 64,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 65,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.16666666666666666,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.48412698412698413
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "هدف واحد آموزش های تخصصی چیست؟",
+          "complexity": "ساده",
+          "expected_features": [
+            "direct_answer",
+            "qa_dataset"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.161568,
+            "timestamp": "2025-12-02T06:08:24.002805",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.161568,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "cells": "تبادل فناوری | ملاک های انتخاب یا تایید فناور برای همکاری چیست؟ | 1.جلسات ارزیابی 2. مطالعه پروپوزال ها 3.بازدید از مجموعه",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "ملاک های انتخاب یا تایید فناور برای همکاری چیست؟",
+                "row_index": 38,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "هدف واحد آموزش های تخصصی چیست؟",
+          "complexity": "ساده",
+          "timestamp": "2025-12-02T06:08:24.005132",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "واحد آموزش های تخصصی چه وظایفی دارد؟",
+          "complexity": "متوسط",
+          "expected_features": [
+            "multi_part",
+            "structured_answer"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.495594,
+            "timestamp": "2025-12-02T06:08:27.504510",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.495594,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "در قالب قرارداد همه چیز نگارش می شود",
+                "cells": "تبادل فناوری | سطح حمایت برای پروژه های مطالعاتی و عملیاتی چه تفاوتی دارد؟ | در قالب قرارداد همه چیز نگارش می شود",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "سطح حمایت برای پروژه های مطالعاتی و عملیاتی چه تفاوتی دارد؟",
+                "row_index": 43,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "واحد آموزش های تخصصی چه وظایفی دارد؟",
+          "complexity": "متوسط",
+          "timestamp": "2025-12-02T06:08:27.506891",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "چطور می‌توانم از خدمات واحد آموزش های تخصصی استفاده کنم؟",
+          "complexity": "متوسط",
+          "expected_features": [
+            "how_to",
+            "guidance"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.070547,
+            "timestamp": "2025-12-02T06:08:30.581195",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.070547,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "می توانید طرح خود را از طریق وبسایت ما به نشانی https://bavarcapital.com ارسال نمایید",
+                "cells": "صندوق باور | اطلاعات تماس و ارسال طرح | چگونه می توانم طرحم را برای شما ارسال کنم؟ | می توانید طرح خود را از طریق وبسایت ما به نشانی https://bavarcapital.com ارسال نمایید",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "چگونه می توانم طرحم را برای شما ارسال کنم؟",
+                "row_index": 22,
+                "sheet_name": "Sheet1",
+                "title": "صندوق باور",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "چطور می‌توانم از خدمات واحد آموزش های تخصصی استفاده کنم؟",
+          "complexity": "متوسط",
+          "timestamp": "2025-12-02T06:08:30.583717",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "واحد آموزش های تخصصی چه تفاوتی با سایر واحدهای آموزشی دارد و چه مزایایی دارد؟",
+          "complexity": "پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "comparison",
+            "multi_part"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "comparison",
+              "hops": [
+                {
+                  "query": "دارد",
+                  "purpose": "find_entity1",
+                  "top_k": 5
+                },
+                {
+                  "query": "چه",
+                  "purpose": "find_entity2",
+                  "top_k": 5
+                }
+              ],
+              "target_entity": "واحد آموزش های تخصصی چه تفاوتی با سایر واحدهای آموزشی دارد چه مزایایی دارد",
+              "operation": "تفاوت",
+              "requires_multi_hop": true,
+              "executed_hops": [
+                {
+                  "hop_number": 1,
+                  "purpose": "find_entity1",
+                  "query": "دارد",
+                  "results_count": 5,
+                  "top_result_score": 0.95
+                },
+                {
+                  "hop_number": 2,
+                  "purpose": "find_entity2",
+                  "query": "چه",
+                  "results_count": 5,
+                  "top_result_score": 0.95
+                }
+              ]
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 15.8059,
+            "timestamp": "2025-12-02T06:08:46.393540",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 15.8059,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "در قالب قرارداد همه چیز نگارش می شود",
+                "cells": "تبادل فناوری | سطح حمایت برای پروژه های مطالعاتی و عملیاتی چه تفاوتی دارد؟ | در قالب قرارداد همه چیز نگارش می شود",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "سطح حمایت برای پروژه های مطالعاتی و عملیاتی چه تفاوتی دارد؟",
+                "row_index": 43,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "واحد آموزش های تخصصی چه تفاوتی با سایر واحدهای آموزشی دارد و چه مزایایی دارد؟",
+          "complexity": "پیچیده",
+          "timestamp": "2025-12-02T06:08:46.396002",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "برای استفاده از خدمات واحد آموزش های تخصصی چه مراحلی باید طی کنم و چه مدارکی نیاز دارم؟",
+          "complexity": "پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "step_by_step",
+            "requirements"
+          ]
+        },
+        "error": "HTTP 500",
+        "analysis": {
+          "issues": [
+            "خطای HTTP: 500"
+          ]
+        }
+      },
+      {
+        "query_info": {
+          "query": "واحد آموزش های تخصصی چگونه به بهبود عملکرد شرکت‌ها کمک می‌کند و چه تاثیری بر بهره‌وری دارد؟",
+          "complexity": "بسیار پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "analytical",
+            "impact_analysis"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 10.935802,
+            "timestamp": "2025-12-02T06:09:22.621045",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 10.935802,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "امکان همکاری بین المللی بطور کلی وجود دارد",
+                "cells": "تبادل فناوری | آیا پروژه ها فقط برای شرکت های داخلی است یا همکاری بین المللی هم امکان دارد؟ | امکان همکاری بین المللی بطور کلی وجود دارد",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "آیا پروژه ها فقط برای شرکت های داخلی است یا همکاری بین المللی هم امکان دارد؟",
+                "row_index": 48,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "واحد آموزش های تخصصی چگونه به بهبود عملکرد شرکت‌ها کمک می‌کند و چه تاثیری بر بهره‌وری دارد؟",
+          "complexity": "بسیار پیچیده",
+          "timestamp": "2025-12-02T06:09:22.623159",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "مزایا و معایب استفاده از واحد آموزش های تخصصی چیست و در چه شرایطی توصیه می‌شود؟",
+          "complexity": "بسیار پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "pros_cons",
+            "conditional"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.207472,
+            "timestamp": "2025-12-02T06:09:25.833969",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.48412698412698413,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+            "keywords": [
+              "درس",
+              "آزمون",
+              "karbaran",
+              "omomi",
+              "سوال",
+              "پاسخ"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.207472,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "درصورت نیاز بله",
+                "cells": "تبادل فناوری | آیا آموزش یا مشاوره هم به فناوران ارایه می شود؟ | درصورت نیاز بله",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوال | سوال | پاسخ | تگ",
+                "question": "آیا آموزش یا مشاوره هم به فناوران ارایه می شود؟",
+                "row_index": 42,
+                "sheet_name": "Sheet1",
+                "title": "تبادل فناوری",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "مزایا و معایب استفاده از واحد آموزش های تخصصی چیست و در چه شرایطی توصیه می‌شود؟",
+          "complexity": "بسیار پیچیده",
+          "timestamp": "2025-12-02T06:09:25.835938",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "اگر به مشکل خوردم چیکار کنم؟",
+          "complexity": "متوسط",
+          "expected_features": [
+            "indirect_question",
+            "guidance"
+          ]
+        },
+        "error": "HTTP 500",
+        "analysis": {
+          "issues": [
+            "خطای HTTP: 500"
+          ]
+        }
+      },
+      {
+        "query_info": {
+          "query": "کمک می‌خوام",
+          "complexity": "ساده",
+          "expected_features": [
+            "indirect_question",
+            "guidance"
+          ]
+        },
+        "error": "HTTP 500",
+        "analysis": {
+          "issues": [
+            "خطای HTTP: 500"
+          ]
+        }
+      }
+    ]
+  },
+  "zinaf_dakheli": {
+    "collection_name": "zinaf_dakheli",
+    "total_queries": 10,
+    "successful": 7,
+    "failed": 3,
+    "queries": [
+      {
+        "query_info": {
+          "query": "جایزه نوآوری و فناوری چیست؟",
+          "complexity": "ساده",
+          "expected_features": [
+            "direct_answer",
+            "qa_dataset"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+          "full_answer": "رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+          "full_text": "در پاسخ به سوال شما «جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟»:\n\nرویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.\n\n\nاین پاسخ در چارچوب «رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد» ارائه شده است.\n\n\nدر صورت نیاز می‌توانید برای دریافت جزئیات بیشتر یا راهنمایی تکمیلی، سوالات دیگری هم بپرسید.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_51",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 52: رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟ | رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.\nسوال: جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟\nپاسخ: رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.\nعنوان: رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+              "metadata": {
+                "answer": "رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "cells": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟ | رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟",
+                "row_index": 52,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.162246,
+            "timestamp": "2025-12-02T06:09:55.428570",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.162246,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "cells": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟ | رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟",
+                "row_index": 52,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "جایزه نوآوری و فناوری چیست؟",
+          "complexity": "ساده",
+          "timestamp": "2025-12-02T06:09:55.431024",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 173,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 444,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.4,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "معیارهای ارزیابی جایزه چیست؟",
+          "complexity": "ساده",
+          "expected_features": [
+            "direct_answer",
+            "criteria"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+          "full_answer": "## پاسخ شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+          "full_text": "## پاسخ\n\nشرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_67",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 68: رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟ | شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.\nسوال: آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟\nپاسخ: شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.\nعنوان: رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+              "metadata": {
+                "answer": "شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+                "cells": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟ | شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟",
+                "row_index": 68,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.166888,
+            "timestamp": "2025-12-02T06:09:58.601215",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.166888,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+                "cells": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟ | شرکت رسمی داوطلبانه است؛ تاثیر آن بسته به سیاست داخلی شرکت دارد و معمولاً فعالیت مثبت تلقی می شود.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا حضور در جایزه بر ارزیابی عملکرد شغلی اثر دارد؟",
+                "row_index": 68,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "معیارهای ارزیابی جایزه چیست؟",
+          "complexity": "ساده",
+          "timestamp": "2025-12-02T06:09:58.603135",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24",
+            "⚠️ سوال موجود شباهت کمی با سوال کاربر دارد (overlap: 0.17)"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 106,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 107,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.16666666666666666,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "چگونه می‌توانم در جایزه نوآوری شرکت کنم؟",
+          "complexity": "متوسط",
+          "expected_features": [
+            "how_to",
+            "guidance"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+          "full_answer": "## پاسخ بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+          "full_text": "## پاسخ\n\nبله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_11",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 12: آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟ | بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.\nسوال: آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟\nپاسخ: بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.\nعنوان: آموزش های ضمن خدمت کارکنان بنیاد",
+              "metadata": {
+                "answer": "بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+                "cells": "آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟ | بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟",
+                "row_index": 12,
+                "sheet_name": "Sheet1",
+                "title": "آموزش های ضمن خدمت کارکنان بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.179151,
+            "timestamp": "2025-12-02T06:10:01.785347",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.179151,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+                "cells": "آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟ | بله جهت ثبت نام در دوره های آموزشی برنامه ریزی شده صرفاً هماهنگی با هلدینگ یا شرکت مربوطه و موافقت مدیران شما لازم است و موسسه محدودیتی جهت ثبت نام و تعداد دوره ای که شرکت می کنید ایجاد نمی کند.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا می توانم در بیش از یک دوره هم زمان شرکت کنم؟",
+                "row_index": 12,
+                "sheet_name": "Sheet1",
+                "title": "آموزش های ضمن خدمت کارکنان بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "چگونه می‌توانم در جایزه نوآوری شرکت کنم؟",
+          "complexity": "متوسط",
+          "timestamp": "2025-12-02T06:10:01.787366",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24",
+            "⚠️ سوال موجود شباهت کمی با سوال کاربر دارد (overlap: 0.19)"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 202,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 203,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.1875,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "چه مدارکی برای شرکت در جایزه نیاز است؟",
+          "complexity": "متوسط",
+          "expected_features": [
+            "requirements",
+            "list"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+          "full_answer": "## پاسخ همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+          "full_text": "## پاسخ\n\nهمان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_12",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 13: آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | چه شرایطی برای شرکت در هر دوره لازم است؟ | همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.\nسوال: چه شرایطی برای شرکت در هر دوره لازم است؟\nپاسخ: همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.\nعنوان: آموزش های ضمن خدمت کارکنان بنیاد",
+              "metadata": {
+                "answer": "همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+                "cells": "آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | چه شرایطی برای شرکت در هر دوره لازم است؟ | همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چه شرایطی برای شرکت در هر دوره لازم است؟",
+                "row_index": 13,
+                "sheet_name": "Sheet1",
+                "title": "آموزش های ضمن خدمت کارکنان بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.667228,
+            "timestamp": "2025-12-02T06:10:05.457705",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.667228,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+                "cells": "آموزش های ضمن خدمت کارکنان بنیاد | ثبت نام و دسترسی به دوره ها (شخص حقیقی) | چه شرایطی برای شرکت در هر دوره لازم است؟ | همان طورکه در شرایط ثبت نام اولیه ذکر شد، هر شرکت کننده باید از طریق شرکت یا شخصاً جهت ثبت نام اقدام نماید.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چه شرایطی برای شرکت در هر دوره لازم است؟",
+                "row_index": 13,
+                "sheet_name": "Sheet1",
+                "title": "آموزش های ضمن خدمت کارکنان بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "چه مدارکی برای شرکت در جایزه نیاز است؟",
+          "complexity": "متوسط",
+          "timestamp": "2025-12-02T06:10:05.459736",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 115,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 116,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.4166666666666667,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "معیارهای نتایج مالی و اقتصادی چیا هستن؟",
+          "complexity": "پیچیده",
+          "expected_features": [
+            "criteria",
+            "financial",
+            "multi_part"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+          "full_answer": "## پاسخ سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+          "full_text": "## پاسخ\n\nسهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_136",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 137: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟ | سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.\nسوال: چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟\nپاسخ: سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.\nعنوان: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+              "metadata": {
+                "answer": "سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟ | سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟",
+                "row_index": 137,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": null,
+            "multi_hop_sub_questions": [],
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.153868,
+            "timestamp": "2025-12-02T06:10:08.616675",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.153868,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟ | سهم بازار از محصولات نوآورانه، رشد درآمد مرتبط با نوآوری، میزان صرفه جویی هزینه و بازخورد مشتریان سنجیده می شود.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چگونه نتایج بازار و مالی شرکت در ارزیابی لحاظ می شود؟",
+                "row_index": 137,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "معیارهای نتایج مالی و اقتصادی چیا هستن؟",
+          "complexity": "پیچیده",
+          "timestamp": "2025-12-02T06:10:08.619160",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24",
+            "⚠️ سوال موجود شباهت کمی با سوال کاربر دارد (overlap: 0.20)"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 120,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 121,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.2,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "آیا حضور در جایزه روی شغلمون و جایگاهش تاثیر داره؟",
+          "complexity": "پیچیده",
+          "expected_features": [
+            "impact_analysis",
+            "career_effect"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.201191,
+            "timestamp": "2025-12-02T06:10:11.824358",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.201191,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "cells": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های عمومی | جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟ | رویدادی درون سازمانی بنیاد مستضعفان برای شناسایی، تشویق و حمایت از ایده ها، اختراعات و نوآوری های کارکنان و شرکت های تابعه با هدف تقویت فرهنگ نوآوری و کمک به تجاری سازی است.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "جایزه نوآوری و فناوری بنیاد چیست و چه هدفی دارد؟",
+                "row_index": 52,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری / جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "آیا حضور در جایزه روی شغلمون و جایگاهش تاثیر داره؟",
+          "complexity": "پیچیده",
+          "timestamp": "2025-12-02T06:10:11.826765",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "چگونه می‌توانم از نتایج جایزه برای جذب سرمایه‌گذار استفاده کنم؟",
+          "complexity": "پیچیده",
+          "expected_features": [
+            "how_to",
+            "utilization",
+            "business"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+          "full_answer": "با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+          "full_text": "در پاسخ به سوال شما «چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟»:\n\nبا مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.\n\n\nاین پاسخ در چارچوب «رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد» ارائه شده است.\n\n\nدر صورت نیاز می‌توانید برای دریافت جزئیات بیشتر یا راهنمایی تکمیلی، سوالات دیگری هم بپرسید.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_145",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 146: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟ | با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.\nسوال: چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟\nپاسخ: با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.\nعنوان: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+              "metadata": {
+                "answer": "با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟ | با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟",
+                "row_index": 146,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 3.223113,
+            "timestamp": "2025-12-02T06:10:21.204488",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 3.223113,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟ | با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟",
+                "row_index": 146,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "چگونه می‌توانم از نتایج جایزه برای جذب سرمایه‌گذار استفاده کنم؟",
+          "complexity": "پیچیده",
+          "timestamp": "2025-12-02T06:10:21.207574",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 124,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 416,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.4117647058823529,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "تفاوت بین جایزه نوآوری و جایزه مدیریت نوآوری چیست و کدام یک برای شرکت من مناسب‌تر است؟",
+          "complexity": "بسیار پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "comparison",
+            "recommendation"
+          ]
+        },
+        "response": {
+          "success": true,
+          "answer": "## پاسخ بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+          "full_answer": "## پاسخ بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+          "full_text": "## پاسخ\n\nبله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+          "table_data": null,
+          "sources": [
+            {
+              "id": "chunk_139",
+              "text": "Sheet: Sheet1\nHeaders: عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ\nRow 140: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟ | بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.\nسوال: آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟\nپاسخ: بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.\nعنوان: رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+              "metadata": {
+                "answer": "بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟ | بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟",
+                "row_index": 140,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              },
+              "score": 0.0
+            }
+          ],
+          "confidence": 0.24000000000000002,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "comparison",
+              "hops": [
+                {
+                  "query": "نوآوری",
+                  "purpose": "find_entity1",
+                  "top_k": 5
+                },
+                {
+                  "query": "جایزه",
+                  "purpose": "find_entity2",
+                  "top_k": 5
+                }
+              ],
+              "target_entity": "تفاوت بین جایزه نوآوری جایزه مدیریت نوآوری کدام یک برای شرکت من مناسب تر",
+              "operation": "تفاوت",
+              "requires_multi_hop": true,
+              "executed_hops": [
+                {
+                  "hop_number": 1,
+                  "purpose": "find_entity1",
+                  "query": "نوآوری",
+                  "results_count": 5,
+                  "top_result_score": 1.05
+                },
+                {
+                  "hop_number": 2,
+                  "purpose": "find_entity2",
+                  "query": "جایزه",
+                  "results_count": 5,
+                  "top_result_score": 1.05
+                }
+              ]
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 9.397417,
+            "timestamp": "2025-12-02T06:10:30.608754",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 9.397417,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟ | بله؛ مسیر ورود مرحله ای و پیشنهادات اولیه برای پیاده سازی ساختار پایه ارایه می شود تا شرکت ها به تدریج بلوغ پیدا کنند.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "آیا برای شرکت هایی که هنوز سامانه مدیریت نوآوری ندارند مسیر ورود تعریف شده است؟",
+                "row_index": 140,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "تفاوت بین جایزه نوآوری و جایزه مدیریت نوآوری چیست و کدام یک برای شرکت من مناسب‌تر است؟",
+          "complexity": "بسیار پیچیده",
+          "timestamp": "2025-12-02T06:10:30.611251",
+          "issues": [],
+          "warnings": [
+            "⚠️ Confidence پایین است: 0.24",
+            "⚠️ سوال موجود شباهت کمی با سوال کاربر دارد (overlap: 0.21)",
+            "⚠️ انتظار می‌رفت multi-hop فعال شود اما نشد"
+          ],
+          "strengths": [
+            "✅ full_text توسط LLM تولید شده و متفاوت است"
+          ],
+          "metrics": {
+            "answer_length": 126,
+            "full_answer_same_as_answer": true,
+            "full_text_length": 127,
+            "full_text_different": true,
+            "confidence": 0.24000000000000002,
+            "sources_count": 1,
+            "metadata": {
+              "answer_mode": "direct",
+              "preferred_answer_source": "direct_metadata",
+              "used_multi_hop": false,
+              "used_reranking": false,
+              "used_query_understanding": false,
+              "qa_direct_answer": true
+            },
+            "question_overlap": 0.20833333333333334,
+            "used_features": {
+              "reranking": false,
+              "multi_hop": false,
+              "query_understanding": false,
+              "self_rag": false,
+              "corrective_rag": false
+            },
+            "domain": "educational",
+            "domain_confidence": 0.8565400843881856
+          }
+        }
+      },
+      {
+        "query_info": {
+          "query": "چه استراتژی‌هایی برای موفقیت در جایزه نوآوری وجود دارد و چگونه می‌توانم شانس برنده شدن را افزایش دهم؟",
+          "complexity": "بسیار پیچیده",
+          "expected_features": [
+            "multi_hop",
+            "strategy",
+            "analytical"
+          ]
+        },
+        "response": {
+          "success": false,
+          "answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_answer": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "full_text": "متأسفانه این سوال خارج از حوزه تخصصی این سیستم است. لطفاً سوالی مرتبط با موضوعات موجود در پایگاه دانش بپرسید.",
+          "table_data": null,
+          "sources": [],
+          "confidence": 0.0,
+          "metadata": {
+            "auto_multi_hop": false,
+            "multi_hop_reason": "user_enabled",
+            "multi_hop_sub_questions": [],
+            "multi_hop_analysis": {
+              "type": "simple",
+              "hops": [],
+              "target_entity": null,
+              "operation": null,
+              "requires_multi_hop": false
+            },
+            "answer_mode": "direct",
+            "preferred_answer_source": "direct_metadata",
+            "qa_direct_answer": true,
+            "processing_time_seconds": 8.935034,
+            "timestamp": "2025-12-02T06:10:39.550281",
+            "sources_count": 1,
+            "database_rows_count": 0,
+            "database_columns_count": 0,
+            "retrieval_method": "standard",
+            "retrieval_route": "rag"
+          },
+          "domain_info": {
+            "domain": "educational",
+            "confidence": 0.8565400843881856,
+            "summary": "سند آموزشی و تحقیقاتی شامل مفاهیم، توضیحات و مطالب علمی: زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+            "keywords": [
+              "آموزش",
+              "دانشگاه",
+              "تحقیق",
+              "آموزشی",
+              "دوره",
+              "واحد آموزش",
+              "آموزش های تخصصی",
+              "zinaf",
+              "dakheli",
+              "سوال"
+            ],
+            "method": "heuristic"
+          },
+          "error": null,
+          "processing_time": 8.935034,
+          "used_features": {
+            "reranking": false,
+            "multi_hop": false,
+            "query_understanding": false,
+            "self_rag": false,
+            "corrective_rag": false
+          },
+          "self_rag_metadata": {},
+          "corrective_rag_metadata": {},
+          "conversation_id": null,
+          "database_results": null,
+          "route_path": "rag",
+          "suggested_questions": [],
+          "applicable_filters": [],
+          "api_version": "v2",
+          "raw_table_data": null,
+          "detailed_sources": [
+            {
+              "id": "rag_0",
+              "type": "rag",
+              "source": "",
+              "page": null,
+              "chunk_index": null,
+              "content": "",
+              "score": 0.0,
+              "dense_score": null,
+              "sparse_score": null,
+              "rerank_score": null,
+              "metadata": {
+                "answer": "با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "cells": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد | پرسش ها و پاسخ های مدیریتی و تخصصی برای هلدینگ/شرکت | چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟ | با مستندسازی دستاوردها، تهیه بسته های سرمایه گذاری و گزارش های عملکرد می توان ظرفیت ها را به سرمایه گذاران و شرکا معرفی کرد.",
+                "dataset_type": "qa",
+                "file_type": "excel",
+                "headers": "عنوان زیرمجموعه | کتگوری سوالات | سوال | پاسخ",
+                "question": "چگونه می توان از نتایج جایزه برای جذب شریک یا سرمایه گذار استفاده کرد؟",
+                "row_index": 146,
+                "sheet_name": "Sheet1",
+                "title": "رویداد جایزه نوآوری و فناوری/ جایزه مدیریت نوآوری و فناوری بنیاد",
+                "type": "excel_row"
+              }
+            }
+          ],
+          "chart_data": null,
+          "statistics": null,
+          "export_formats": null
+        },
+        "analysis": {
+          "query": "چه استراتژی‌هایی برای موفقیت در جایزه نوآوری وجود دارد و چگونه می‌توانم شانس برنده شدن را افزایش دهم؟",
+          "complexity": "بسیار پیچیده",
+          "timestamp": "2025-12-02T06:10:39.552632",
+          "issues": [
+            "❌ پاسخ ناموفق بود"
+          ],
+          "warnings": [],
+          "strengths": [],
+          "metrics": {}
+        }
+      },
+      {
+        "query_info": {
+          "query": "راهنمایی می‌خوام",
+          "complexity": "ساده",
+          "expected_features": [
+            "indirect_question",
+            "guidance"
+          ]
+        },
+        "error": "HTTP 500",
+        "analysis": {
+          "issues": [
+            "خطای HTTP: 500"
+          ]
+        }
+      }
+    ]
+  }
+}

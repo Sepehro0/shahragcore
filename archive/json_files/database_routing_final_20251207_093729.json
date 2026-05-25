@@ -1,0 +1,45 @@
+{
+  "test_info": {
+    "date": "2025-12-07T09:37:29.636175",
+    "api_url": "http://localhost:8001",
+    "collection": "budget_financial",
+    "total_tests": 3,
+    "successful_total": 3,
+    "successful_db_routing": 0
+  },
+  "results": [
+    {
+      "test_id": "1a-1",
+      "query": "اعتبارات هزینه‌ای متفرقه ستاد مبارزه با مواد مخدر در سال 1403",
+      "success": true,
+      "route_path": "rag",
+      "retrieval_route": "unknown",
+      "has_database_results": false,
+      "database_success": false,
+      "database_rows": 0,
+      "answer": "دستگاه اصلی: ستاد مبارزه با مواد مخدر\nدستگاه اجرایی: ستاد مبارزه با مواد مخدر\nکد دستگاه: 101034\nسال:"
+    },
+    {
+      "test_id": "1a-2",
+      "query": "اعتبارات هزینه ای عمومی بنیاد ایران شناسی در سال 1403",
+      "success": true,
+      "route_path": "rag",
+      "retrieval_route": "unknown",
+      "has_database_results": false,
+      "database_success": false,
+      "database_rows": 0,
+      "answer": "دستگاه اصلی: \nدستگاه اجرایی: بنیاد ایران‌شناسی\nکد دستگاه: 101028\nسال: 1400\n\n## اعتبارات هزینه‌ای (جا"
+    },
+    {
+      "test_id": "1a-3",
+      "query": "تملک دارایی عمومی دانشگاه تهران در سال 1403",
+      "success": true,
+      "route_path": "rag",
+      "retrieval_route": "unknown",
+      "has_database_results": false,
+      "database_success": false,
+      "database_rows": 0,
+      "answer": "دستگاه اصلی: دانشگاه علوم پزشكي و خدمات بهداشتي، درماني تهران - بهداشت و درمان\nدستگاه اجرایی: دانشگا"
+    }
+  ]
+}

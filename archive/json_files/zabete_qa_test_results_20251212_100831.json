@@ -1,0 +1,57 @@
+{
+  "timestamp": "2025-12-12T10:08:31.330558",
+  "collection": "zabete_qa",
+  "api_url": "http://localhost:8010",
+  "results": [
+    {
+      "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+      "success": false,
+      "error": "HTTP 404: {\"error\":\"Endpoint not found\",\"detail\":\"404: Not Found\"}",
+      "query_info": {
+        "query": "در مورد قراردادهای qbc امکان پاسخگویی به این سوال بر اساس دیتابیس وجود ندارد",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است و پیام مناسب بدهد",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+      "success": false,
+      "error": "HTTP 404: {\"error\":\"Endpoint not found\",\"detail\":\"404: Not Found\"}",
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای طرح و ساخت چگونه است",
+        "expected_behavior": "باید از چند منبع استنتاج کند و پاسخ جامع بدهد",
+        "issue": "قبلاً فقط از منبع دوم استفاده می‌کرد"
+      }
+    },
+    {
+      "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+      "success": false,
+      "error": "HTTP 404: {\"error\":\"Endpoint not found\",\"detail\":\"404: Not Found\"}",
+      "query_info": {
+        "query": "تاخیر در پرداخت قراردادهای EPC چگونه است",
+        "expected_behavior": "باید نتایج مرتبط‌تر پیدا کند",
+        "issue": "قبلاً نتایج نامرتبط پیدا می‌کرد"
+      }
+    },
+    {
+      "query": "توضیح ماده 46 شرایط عمومی پیمان",
+      "success": false,
+      "error": "HTTP 404: {\"error\":\"Endpoint not found\",\"detail\":\"404: Not Found\"}",
+      "query_info": {
+        "query": "توضیح ماده 46 شرایط عمومی پیمان",
+        "expected_behavior": "باید از محتوای متن استفاده کند و از maddeh_id استفاده نکند",
+        "issue": "قبلاً از maddeh_id استفاده می‌کرد و اعداد اشتباه می‌داد"
+      }
+    },
+    {
+      "query": "قراردادهای QBC چگونه است",
+      "success": false,
+      "error": "HTTP 404: {\"error\":\"Endpoint not found\",\"detail\":\"404: Not Found\"}",
+      "query_info": {
+        "query": "قراردادهای QBC چگونه است",
+        "expected_behavior": "باید تشخیص دهد که query نامرتبط است",
+        "issue": "قبلاً پاسخ اشتباه می‌داد"
+      }
+    }
+  ]
+}
